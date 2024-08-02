@@ -1,0 +1,99 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 4.0
+description: "Patch a bgp session object."
+enabled: true
+entry_point: run.py
+name: patch.plugins.bgp.session
+parameters:
+  endpoint_uri:
+    default: "/plugins/bgp/session/{{ id }}/"
+    immutable: true
+    type: string
+  http_verb:
+    default: patch
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: true
+    immutable: true
+    type: boolean
+  tags:
+    required: false
+    type: array
+    description: "Array of tag strings"
+  custom_fields:
+    required: false
+    type: object
+    description: "Custom fields"
+  status:
+    required: false
+    type: string
+    description: "* `offline` - Offline
+* `active` - Active
+* `planned` - Planned
+* `failed` - Failed"
+  site:
+    required: false
+    type: object
+    description: "Site"
+  tenant:
+    required: false
+    type: object
+    description: "Tenant"
+  device:
+    required: false
+    type: object
+    description: "Device"
+  local_address:
+    required: false
+    type: object
+    description: "Local address"
+  remote_address:
+    required: false
+    type: object
+    description: "Remote address"
+  local_as:
+    required: false
+    type: object
+    description: "Local as"
+  remote_as:
+    required: false
+    type: object
+    description: "Remote as"
+  peer_group:
+    required: false
+    type: object
+    description: "Peer group"
+  import_policies:
+    required: false
+    type: array
+    description: "Import policies"
+  export_policies:
+    required: false
+    type: array
+    description: "Export policies"
+  prefix_list_in:
+    required: false
+    type: object
+    description: "Prefix list in"
+  prefix_list_out:
+    required: false
+    type: object
+    description: "Prefix list out"
+  name:
+    required: false
+    type: string
+    description: "Name"
+  description:
+    required: false
+    type: string
+    description: "Description"
+  comments:
+    required: false
+    type: string
+    description: "Comments"
+  id:
+    required: true
+    type: integer
+    description: "ID of the object to patch."
+runner_type: python-script

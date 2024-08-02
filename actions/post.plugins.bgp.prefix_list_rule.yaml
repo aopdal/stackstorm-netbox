@@ -1,0 +1,65 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 4.0
+description: "Post a list of prefix list rule objects."
+enabled: true
+entry_point: run.py
+name: post.plugins.bgp.prefix_list_rule
+parameters:
+  endpoint_uri:
+    default: "/plugins/bgp/prefix-list-rule/"
+    immutable: true
+    type: string
+  http_verb:
+    default: post
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: true
+    immutable: true
+    type: boolean
+  description:
+    required: false
+    type: string
+    description: "Description"
+  tags:
+    required: false
+    type: array
+    description: "Array of tag strings"
+  custom_fields:
+    required: false
+    type: object
+    description: "Custom fields"
+  prefix_list:
+    required: false
+    type: object
+    description: "Prefix list"
+  index:
+    required: false
+    type: integer
+    description: "Index"
+  action:
+    required: false
+    type: string
+    description: "* `permit` - Permit
+* `deny` - Deny"
+  prefix_custom:
+    required: false
+    type: string
+    description: "Prefix custom"
+  ge:
+    required: false
+    type: integer
+    description: "Ge"
+  le:
+    required: false
+    type: integer
+    description: "Le"
+  prefix:
+    required: false
+    type: object
+    description: "Prefix"
+  comments:
+    required: false
+    type: string
+    description: "Comments"
+runner_type: python-script

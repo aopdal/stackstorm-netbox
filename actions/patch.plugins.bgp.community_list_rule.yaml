@@ -1,0 +1,53 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 4.0
+description: "Patch a community list rule object."
+enabled: true
+entry_point: run.py
+name: patch.plugins.bgp.community_list_rule
+parameters:
+  endpoint_uri:
+    default: "/plugins/bgp/community-list-rule/{{ id }}/"
+    immutable: true
+    type: string
+  http_verb:
+    default: patch
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: true
+    immutable: true
+    type: boolean
+  tags:
+    required: false
+    type: array
+    description: "Array of tag strings"
+  custom_fields:
+    required: false
+    type: object
+    description: "Custom fields"
+  description:
+    required: false
+    type: string
+    description: "Description"
+  community_list:
+    required: false
+    type: object
+    description: "Community list"
+  action:
+    required: false
+    type: string
+    description: "* `permit` - Permit
+* `deny` - Deny"
+  community:
+    required: false
+    type: object
+    description: "Community"
+  comments:
+    required: false
+    type: string
+    description: "Comments"
+  id:
+    required: true
+    type: integer
+    description: "ID of the object to patch."
+runner_type: python-script

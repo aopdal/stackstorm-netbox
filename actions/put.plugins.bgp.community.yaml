@@ -1,0 +1,62 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 4.0
+description: "Put a community object."
+enabled: true
+entry_point: run.py
+name: put.plugins.bgp.community
+parameters:
+  endpoint_uri:
+    default: "/plugins/bgp/community/{{ id }}/"
+    immutable: true
+    type: string
+  http_verb:
+    default: put
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: true
+    immutable: true
+    type: boolean
+  tags:
+    required: false
+    type: array
+    description: "Array of tag strings"
+  custom_fields:
+    required: false
+    type: object
+    description: "Custom fields"
+  status:
+    required: false
+    type: string
+    description: "* `active` - Active
+* `reserved` - Reserved
+* `deprecated` - Deprecated"
+  tenant:
+    required: false
+    type: object
+    description: "Tenant"
+  description:
+    required: false
+    type: string
+    description: "Description"
+  value:
+    required: false
+    type: string
+    description: "Value"
+  site:
+    required: false
+    type: integer
+    description: "Site"
+  role:
+    required: false
+    type: integer
+    description: "Role"
+  comments:
+    required: false
+    type: string
+    description: "Comments"
+  id:
+    required: true
+    type: integer
+    description: "ID of the object to put."
+runner_type: python-script
