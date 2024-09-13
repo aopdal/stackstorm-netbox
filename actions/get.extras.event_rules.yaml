@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.0
+# NetBox API version: 4.1
 description: "Get a list of event rule objects."
 enabled: true
 entry_point: run.py
@@ -141,6 +141,10 @@ parameters:
     required: false
     type: boolean
     description: "Enabled"
+  event_type:
+    required: false
+    type: array
+    description: "Event_type"
   id:
     required: false
     type: array
@@ -317,26 +321,6 @@ parameters:
     required: false
     type: array
     description: "Tag not equal to"
-  type_create:
-    required: false
-    type: boolean
-    description: "Type_create"
-  type_delete:
-    required: false
-    type: boolean
-    description: "Type_delete"
-  type_job_end:
-    required: false
-    type: boolean
-    description: "Type_job_end"
-  type_job_start:
-    required: false
-    type: boolean
-    description: "Type_job_start"
-  type_update:
-    required: false
-    type: boolean
-    description: "Type_update"
   updated_by_request:
     required: false
     type: string

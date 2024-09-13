@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.0
+# NetBox API version: 4.1
 description: "Get a list of rack objects."
 enabled: true
 entry_point: run.py
@@ -17,6 +17,15 @@ parameters:
     default: true
     immutable: true
     type: boolean
+  airflow:
+    required: false
+    type: string
+    description: "* `front-to-rear` - Front to rear
+* `rear-to-front` - Rear to front"
+  airflow__n:
+    required: false
+    type: string
+    description: "Airflow not equal to"
   asset_tag:
     required: false
     type: array
@@ -72,7 +81,7 @@ parameters:
   contact_group:
     required: false
     type: array
-    description: "Contact group"
+    description: "Contact_group"
   contact_group__n:
     required: false
     type: array
@@ -209,6 +218,14 @@ parameters:
     required: false
     type: array
     description: "Facility_id does not start with (case-sensitive)"
+  form_factor:
+    required: false
+    type: array
+    description: "Form_factor"
+  form_factor__n:
+    required: false
+    type: array
+    description: "Form_factor not equal to"
   id:
     required: false
     type: array
@@ -272,7 +289,7 @@ parameters:
   location:
     required: false
     type: array
-    description: "Location (slug)"
+    description: "Location"
   location__n:
     required: false
     type: array
@@ -280,11 +297,27 @@ parameters:
   location_id:
     required: false
     type: array
-    description: "Location (ID)"
+    description: "Location_id"
   location_id__n:
     required: false
     type: array
     description: "Location_id not equal to"
+  manufacturer:
+    required: false
+    type: array
+    description: "Manufacturer (slug)"
+  manufacturer__n:
+    required: false
+    type: array
+    description: "Manufacturer not equal to"
+  manufacturer_id:
+    required: false
+    type: array
+    description: "Manufacturer (ID)"
+  manufacturer_id__n:
+    required: false
+    type: array
+    description: "Manufacturer_id not equal to"
   max_weight:
     required: false
     type: array
@@ -466,10 +499,26 @@ parameters:
     required: false
     type: string
     description: "Search"
+  rack_type:
+    required: false
+    type: array
+    description: "Rack type (slug)"
+  rack_type__n:
+    required: false
+    type: array
+    description: "Rack_type not equal to"
+  rack_type_id:
+    required: false
+    type: array
+    description: "Rack type (ID)"
+  rack_type_id__n:
+    required: false
+    type: array
+    description: "Rack_type_id not equal to"
   region:
     required: false
     type: array
-    description: "Region (slug)"
+    description: "Region"
   region__n:
     required: false
     type: array
@@ -477,7 +526,7 @@ parameters:
   region_id:
     required: false
     type: array
-    description: "Region (ID)"
+    description: "Region_id"
   region_id__n:
     required: false
     type: array
@@ -553,7 +602,7 @@ parameters:
   site_group:
     required: false
     type: array
-    description: "Site group (slug)"
+    description: "Site_group"
   site_group__n:
     required: false
     type: array
@@ -561,7 +610,7 @@ parameters:
   site_group_id:
     required: false
     type: array
-    description: "Site group (ID)"
+    description: "Site_group_id"
   site_group_id__n:
     required: false
     type: array
@@ -629,7 +678,7 @@ parameters:
   tenant_group:
     required: false
     type: array
-    description: "Tenant Group (slug)"
+    description: "Tenant_group"
   tenant_group__n:
     required: false
     type: array
@@ -637,7 +686,7 @@ parameters:
   tenant_group_id:
     required: false
     type: array
-    description: "Tenant Group (ID)"
+    description: "Tenant_group_id"
   tenant_group_id__n:
     required: false
     type: array
@@ -650,14 +699,6 @@ parameters:
     required: false
     type: array
     description: "Tenant_id not equal to"
-  type:
-    required: false
-    type: array
-    description: "Type"
-  type__n:
-    required: false
-    type: array
-    description: "Type not equal to"
   u_height:
     required: false
     type: array

@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.0
+# NetBox API version: 4.1
 description: "Patch a circuit object."
 enabled: true
 entry_point: run.py
@@ -74,6 +74,10 @@ parameters:
     required: false
     type: object
     description: "Custom fields"
+  assignments:
+    required: false
+    type: array
+    description: "Assignments"
   id:
     required: true
     type: integer

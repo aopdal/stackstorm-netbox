@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.0
+# NetBox API version: 4.1
 description: "Put a front port object."
 enabled: true
 entry_point: run.py
@@ -82,6 +82,14 @@ parameters:
 * `urm-p4` - URM-P4
 * `urm-p8` - URM-P8
 * `splice` - Splice
+* `usb-a` - USB Type A
+* `usb-b` - USB Type B
+* `usb-c` - USB Type C
+* `usb-mini-a` - USB Mini A
+* `usb-mini-b` - USB Mini B
+* `usb-micro-a` - USB Micro A
+* `usb-micro-b` - USB Micro B
+* `usb-micro-ab` - USB Micro AB
 * `other` - Other"
   color:
     required: false

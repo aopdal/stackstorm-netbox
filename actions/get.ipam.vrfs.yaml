@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.0
+# NetBox API version: 4.1
 description: "Get a list of VRF objects."
 enabled: true
 entry_point: run.py
@@ -312,7 +312,7 @@ parameters:
   tenant_group:
     required: false
     type: array
-    description: "Tenant Group (slug)"
+    description: "Tenant_group"
   tenant_group__n:
     required: false
     type: array
@@ -320,7 +320,7 @@ parameters:
   tenant_group_id:
     required: false
     type: array
-    description: "Tenant Group (ID)"
+    description: "Tenant_group_id"
   tenant_group_id__n:
     required: false
     type: array

@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.0
+# NetBox API version: 4.1
 description: "Get a list of module objects."
 enabled: true
 entry_point: run.py
@@ -228,7 +228,7 @@ parameters:
   module_bay_id:
     required: false
     type: array
-    description: "Module Bay (ID)"
+    description: "Module_bay_id"
   module_bay_id__n:
     required: false
     type: array

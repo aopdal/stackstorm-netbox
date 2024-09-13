@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.0
+# NetBox API version: 4.1
 description: "Get a list of device objects."
 enabled: true
 entry_point: run.py
@@ -75,6 +75,22 @@ parameters:
     required: false
     type: array
     description: "Asset_tag does not start with (case-sensitive)"
+  cluster_group:
+    required: false
+    type: array
+    description: "Cluster group (slug)"
+  cluster_group__n:
+    required: false
+    type: array
+    description: "Cluster_group not equal to"
+  cluster_group_id:
+    required: false
+    type: array
+    description: "Cluster group (ID)"
+  cluster_group_id__n:
+    required: false
+    type: array
+    description: "Cluster_group_id not equal to"
   cluster_id:
     required: false
     type: array
@@ -166,7 +182,7 @@ parameters:
   contact_group:
     required: false
     type: array
-    description: "Contact group"
+    description: "Contact_group"
   contact_group__n:
     required: false
     type: array
@@ -511,7 +527,7 @@ parameters:
   location_id:
     required: false
     type: array
-    description: "Location (ID)"
+    description: "Location_id"
   location_id__n:
     required: false
     type: array
@@ -891,7 +907,7 @@ parameters:
   region:
     required: false
     type: array
-    description: "Region (slug)"
+    description: "Region"
   region__n:
     required: false
     type: array
@@ -899,7 +915,7 @@ parameters:
   region_id:
     required: false
     type: array
-    description: "Region (ID)"
+    description: "Region_id"
   region_id__n:
     required: false
     type: array
@@ -975,7 +991,7 @@ parameters:
   site_group:
     required: false
     type: array
-    description: "Site group (slug)"
+    description: "Site_group"
   site_group__n:
     required: false
     type: array
@@ -983,7 +999,7 @@ parameters:
   site_group_id:
     required: false
     type: array
-    description: "Site group (ID)"
+    description: "Site_group_id"
   site_group_id__n:
     required: false
     type: array
@@ -1023,7 +1039,7 @@ parameters:
   tenant_group:
     required: false
     type: array
-    description: "Tenant Group (slug)"
+    description: "Tenant_group"
   tenant_group__n:
     required: false
     type: array
@@ -1031,7 +1047,7 @@ parameters:
   tenant_group_id:
     required: false
     type: array
-    description: "Tenant Group (ID)"
+    description: "Tenant_group_id"
   tenant_group_id__n:
     required: false
     type: array

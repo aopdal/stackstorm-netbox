@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.0
+# NetBox API version: 4.1
 description: "Patch a custom link object."
 enabled: true
 entry_point: run.py
@@ -50,7 +50,7 @@ parameters:
     type: string
     description: "The class of the first link in a group will be used for the dropdown button
 
-* `outline-dark` - Default
+* `default` - Default
 * `blue` - Blue
 * `indigo` - Indigo
 * `purple` - Purple

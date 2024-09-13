@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.0
+# NetBox API version: 4.1
 description: "Get a list of wireless link objects."
 enabled: true
 entry_point: run.py
@@ -153,6 +153,45 @@ parameters:
     required: false
     type: array
     description: "Description does not start with (case-sensitive)"
+  distance:
+    required: false
+    type: array
+    description: "Distance"
+  distance__empty:
+    required: false
+    type: boolean
+    description: "Distance is empty/null (boolean)"
+  distance__gt:
+    required: false
+    type: array
+    description: "Distance greater than"
+  distance__gte:
+    required: false
+    type: array
+    description: "Distance greater than or equal to"
+  distance__lt:
+    required: false
+    type: array
+    description: "Distance less than"
+  distance__lte:
+    required: false
+    type: array
+    description: "Distance less than or equal to"
+  distance__n:
+    required: false
+    type: array
+    description: "Distance not equal to"
+  distance_unit:
+    required: false
+    type: string
+    description: "* `km` - Kilometers
+* `m` - Meters
+* `mi` - Miles
+* `ft` - Feet"
+  distance_unit__n:
+    required: false
+    type: string
+    description: "Distance_unit not equal to"
   id:
     required: false
     type: array
@@ -316,7 +355,7 @@ parameters:
   tenant_group:
     required: false
     type: array
-    description: "Tenant Group (slug)"
+    description: "Tenant_group"
   tenant_group__n:
     required: false
     type: array
@@ -324,7 +363,7 @@ parameters:
   tenant_group_id:
     required: false
     type: array
-    description: "Tenant Group (ID)"
+    description: "Tenant_group_id"
   tenant_group_id__n:
     required: false
     type: array

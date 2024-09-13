@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.0
+# NetBox API version: 4.1
 description: "Get a list of module type objects."
 enabled: true
 entry_point: run.py
@@ -17,6 +17,19 @@ parameters:
     default: true
     immutable: true
     type: boolean
+  airflow:
+    required: false
+    type: string
+    description: "* `front-to-rear` - Front to rear
+* `rear-to-front` - Rear to front
+* `left-to-right` - Left to right
+* `right-to-left` - Right to left
+* `side-to-rear` - Side to rear
+* `passive` - Passive"
+  airflow__n:
+    required: false
+    type: string
+    description: "Airflow not equal to"
   console_ports:
     required: false
     type: boolean

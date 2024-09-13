@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.0
+# NetBox API version: 4.1
 description: "Post a list of rack objects."
 enabled: true
 entry_point: run.py
@@ -57,7 +57,11 @@ parameters:
     required: false
     type: string
     description: "A unique tag used to identify this rack"
-  type:
+  rack_type:
+    required: false
+    type: object
+    description: "Rack type"
+  form_factor:
     required: false
     type: string
     description: "* `2-post-frame` - 2-post frame
@@ -120,6 +124,11 @@ parameters:
     required: false
     type: integer
     description: "Maximum depth of a mounted device, in millimeters. For four-post racks, this is the distance between the front and rear rails."
+  airflow:
+    required: false
+    type: string
+    description: "* `front-to-rear` - Front to rear
+* `rear-to-front` - Rear to front"
   description:
     required: false
     type: string

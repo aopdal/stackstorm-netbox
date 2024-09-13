@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.0
+# NetBox API version: 4.1
 description: "Post a list of power port objects."
 enabled: true
 entry_point: run.py
@@ -99,6 +99,7 @@ parameters:
 * `nema-l15-60p` - NEMA L15-60P
 * `nema-l21-20p` - NEMA L21-20P
 * `nema-l21-30p` - NEMA L21-30P
+* `nema-l22-20p` - NEMA L22-20P
 * `nema-l22-30p` - NEMA L22-30P
 * `cs6361c` - CS6361C
 * `cs6365c` - CS6365C

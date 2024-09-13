@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.0
+# NetBox API version: 4.1
 description: "Patch a wireless link object."
 enabled: true
 entry_point: run.py
@@ -51,6 +51,17 @@ parameters:
     required: false
     type: string
     description: "Pre-shared key"
+  distance:
+    required: false
+    type: integer
+    description: "Distance"
+  distance_unit:
+    required: false
+    type: string
+    description: "* `km` - Kilometers
+* `m` - Meters
+* `mi` - Miles
+* `ft` - Feet"
   description:
     required: false
     type: string

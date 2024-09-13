@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.0
+# NetBox API version: 4.1
 description: "Get a list of contact assignment objects."
 enabled: true
 entry_point: run.py
@@ -60,7 +60,7 @@ parameters:
   group:
     required: false
     type: array
-    description: "Contact group (slug)"
+    description: "Group"
   group__n:
     required: false
     type: array
@@ -68,7 +68,7 @@ parameters:
   group_id:
     required: false
     type: array
-    description: "Contact group (ID)"
+    description: "Group_id"
   group_id__n:
     required: false
     type: array

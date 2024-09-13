@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.0
+# NetBox API version: 4.1
 description: "Get a list of device bay template objects."
 enabled: true
 entry_point: run.py
@@ -101,14 +101,6 @@ parameters:
     required: false
     type: array
     description: "Device_type_id not equal to"
-  devicetype_id:
-    required: false
-    type: array
-    description: "Device type (ID)"
-  devicetype_id__n:
-    required: false
-    type: array
-    description: "Devicetype_id not equal to"
   id:
     required: false
     type: array
