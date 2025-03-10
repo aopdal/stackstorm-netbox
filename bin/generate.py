@@ -113,6 +113,9 @@ def get_actions(spec):
     actions = {}
     deferred_detail_gets = []
     for path, path_spec in spec['paths'].items():
+        """
+        Dont process core endpoints - I need to find a way to get them to work
+        """
         if "core" in path:
             continue
 
