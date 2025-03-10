@@ -1,12 +1,12 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.0
-description: "Retrieve a list of job results"
+# NetBox API version: 4.2
+description: "Get a list of VLAN translation policy objects."
 enabled: true
 entry_point: run.py
-name: get.core.jobs
+name: get.ipam.vlan_translation_policies
 parameters:
   endpoint_uri:
-    default: "/core/jobs/"
+    default: "/ipam/vlan-translation-policies/"
     immutable: true
     type: string
   http_verb:
@@ -17,30 +17,82 @@ parameters:
     default: true
     immutable: true
     type: boolean
-  completed:
-    required: false
-    type: string
-    description: "Completed"
-  completed__after:
-    required: false
-    type: string
-    description: "Completed"
-  completed__before:
-    required: false
-    type: string
-    description: "Completed"
   created:
     required: false
-    type: string
+    type: array
     description: "Created"
-  created__after:
+  created__empty:
+    required: false
+    type: array
+    description: "Created is empty/null (boolean)"
+  created__gt:
+    required: false
+    type: array
+    description: "Created greater than"
+  created__gte:
+    required: false
+    type: array
+    description: "Created greater than or equal to"
+  created__lt:
+    required: false
+    type: array
+    description: "Created less than"
+  created__lte:
+    required: false
+    type: array
+    description: "Created less than or equal to"
+  created__n:
+    required: false
+    type: array
+    description: "Created not equal to"
+  created_by_request:
     required: false
     type: string
-    description: "Created"
-  created__before:
+    description: "Created_by_request"
+  description:
     required: false
-    type: string
-    description: "Created"
+    type: array
+    description: "Description"
+  description__empty:
+    required: false
+    type: boolean
+    description: "Description is empty/null (boolean)"
+  description__ic:
+    required: false
+    type: array
+    description: "Description contains (case-insensitive)"
+  description__ie:
+    required: false
+    type: array
+    description: "Description exact match (case-insensitive)"
+  description__iew:
+    required: false
+    type: array
+    description: "Description ends with (case-insensitive)"
+  description__isw:
+    required: false
+    type: array
+    description: "Description starts with (case-sensitive)"
+  description__n:
+    required: false
+    type: array
+    description: "Description not equal to"
+  description__nic:
+    required: false
+    type: array
+    description: "Description does not contain (case-insensitive)"
+  description__nie:
+    required: false
+    type: array
+    description: "Description inverse exact match (case-insensitive)"
+  description__niew:
+    required: false
+    type: array
+    description: "Description does not end with (case-insensitive)"
+  description__nisw:
+    required: false
+    type: array
+    description: "Description does not start with (case-sensitive)"
   id:
     required: false
     type: array
@@ -69,42 +121,42 @@ parameters:
     required: false
     type: array
     description: "Id not equal to"
-  interval:
+  last_updated:
     required: false
     type: array
-    description: "Interval"
-  interval__empty:
-    required: false
-    type: boolean
-    description: "Interval is empty/null (boolean)"
-  interval__gt:
+    description: "Last_updated"
+  last_updated__empty:
     required: false
     type: array
-    description: "Interval greater than"
-  interval__gte:
+    description: "Last_updated is empty/null (boolean)"
+  last_updated__gt:
     required: false
     type: array
-    description: "Interval greater than or equal to"
-  interval__lt:
+    description: "Last_updated greater than"
+  last_updated__gte:
     required: false
     type: array
-    description: "Interval less than"
-  interval__lte:
+    description: "Last_updated greater than or equal to"
+  last_updated__lt:
     required: false
     type: array
-    description: "Interval less than or equal to"
-  interval__n:
+    description: "Last_updated less than"
+  last_updated__lte:
     required: false
     type: array
-    description: "Interval not equal to"
-  job_id:
+    description: "Last_updated less than or equal to"
+  last_updated__n:
     required: false
-    type: string
-    description: "Job_id"
+    type: array
+    description: "Last_updated not equal to"
   limit:
     required: false
     type: integer
     description: "Number of results to return per page."
+  modified_by_request:
+    required: false
+    type: string
+    description: "Modified_by_request"
   name:
     required: false
     type: array
@@ -149,42 +201,6 @@ parameters:
     required: false
     type: array
     description: "Name does not start with (case-sensitive)"
-  object_id:
-    required: false
-    type: array
-    description: "Object_id"
-  object_id__empty:
-    required: false
-    type: boolean
-    description: "Object_id is empty/null (boolean)"
-  object_id__gt:
-    required: false
-    type: array
-    description: "Object_id greater than"
-  object_id__gte:
-    required: false
-    type: array
-    description: "Object_id greater than or equal to"
-  object_id__lt:
-    required: false
-    type: array
-    description: "Object_id less than"
-  object_id__lte:
-    required: false
-    type: array
-    description: "Object_id less than or equal to"
-  object_id__n:
-    required: false
-    type: array
-    description: "Object_id not equal to"
-  object_type:
-    required: false
-    type: integer
-    description: "Object_type"
-  object_type__n:
-    required: false
-    type: integer
-    description: "Object_type not equal to"
   offset:
     required: false
     type: integer
@@ -197,46 +213,18 @@ parameters:
     required: false
     type: string
     description: "Search"
-  scheduled:
-    required: false
-    type: string
-    description: "Scheduled"
-  scheduled__after:
-    required: false
-    type: string
-    description: "Scheduled"
-  scheduled__before:
-    required: false
-    type: string
-    description: "Scheduled"
-  started:
-    required: false
-    type: string
-    description: "Started"
-  started__after:
-    required: false
-    type: string
-    description: "Started"
-  started__before:
-    required: false
-    type: string
-    description: "Started"
-  status:
+  tag:
     required: false
     type: array
-    description: "Status"
-  status__n:
+    description: "Tag"
+  tag__n:
     required: false
     type: array
-    description: "Status not equal to"
-  user:
+    description: "Tag not equal to"
+  updated_by_request:
     required: false
-    type: integer
-    description: "User"
-  user__n:
-    required: false
-    type: integer
-    description: "User not equal to"
+    type: string
+    description: "Updated_by_request"
   save_in_key_store:
     type: boolean
     default: false

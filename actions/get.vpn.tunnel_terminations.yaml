@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.0
+# NetBox API version: 4.2
 description: "Get a list of tunnel termination objects."
 enabled: true
 entry_point: run.py
@@ -153,10 +153,46 @@ parameters:
     required: false
     type: array
     description: "Role"
+  role__empty:
+    required: false
+    type: boolean
+    description: "Role is empty/null (boolean)"
+  role__ic:
+    required: false
+    type: array
+    description: "Role contains (case-insensitive)"
+  role__ie:
+    required: false
+    type: array
+    description: "Role exact match (case-insensitive)"
+  role__iew:
+    required: false
+    type: array
+    description: "Role ends with (case-insensitive)"
+  role__isw:
+    required: false
+    type: array
+    description: "Role starts with (case-sensitive)"
   role__n:
     required: false
     type: array
     description: "Role not equal to"
+  role__nic:
+    required: false
+    type: array
+    description: "Role does not contain (case-insensitive)"
+  role__nie:
+    required: false
+    type: array
+    description: "Role inverse exact match (case-insensitive)"
+  role__niew:
+    required: false
+    type: array
+    description: "Role does not end with (case-insensitive)"
+  role__nisw:
+    required: false
+    type: array
+    description: "Role does not start with (case-sensitive)"
   tag:
     required: false
     type: array

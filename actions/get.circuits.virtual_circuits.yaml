@@ -1,12 +1,12 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.0
-description: "Get a list of data file objects."
+# NetBox API version: 4.2
+description: "Get a list of virtual circuit objects."
 enabled: true
 entry_point: run.py
-name: get.core.data_files
+name: get.circuits.virtual_circuits
 parameters:
   endpoint_uri:
-    default: "/core/data-files/"
+    default: "/circuits/virtual-circuits/"
     immutable: true
     type: string
   http_verb:
@@ -17,6 +17,50 @@ parameters:
     default: true
     immutable: true
     type: boolean
+  cid:
+    required: false
+    type: array
+    description: "Cid"
+  cid__empty:
+    required: false
+    type: boolean
+    description: "Cid is empty/null (boolean)"
+  cid__ic:
+    required: false
+    type: array
+    description: "Cid contains (case-insensitive)"
+  cid__ie:
+    required: false
+    type: array
+    description: "Cid exact match (case-insensitive)"
+  cid__iew:
+    required: false
+    type: array
+    description: "Cid ends with (case-insensitive)"
+  cid__isw:
+    required: false
+    type: array
+    description: "Cid starts with (case-sensitive)"
+  cid__n:
+    required: false
+    type: array
+    description: "Cid not equal to"
+  cid__nic:
+    required: false
+    type: array
+    description: "Cid does not contain (case-insensitive)"
+  cid__nie:
+    required: false
+    type: array
+    description: "Cid inverse exact match (case-insensitive)"
+  cid__niew:
+    required: false
+    type: array
+    description: "Cid does not end with (case-insensitive)"
+  cid__nisw:
+    required: false
+    type: array
+    description: "Cid does not start with (case-sensitive)"
   created:
     required: false
     type: array
@@ -49,50 +93,50 @@ parameters:
     required: false
     type: string
     description: "Created_by_request"
-  hash:
+  description:
     required: false
     type: array
-    description: "Hash"
-  hash__empty:
+    description: "Description"
+  description__empty:
     required: false
     type: boolean
-    description: "Hash is empty/null (boolean)"
-  hash__ic:
+    description: "Description is empty/null (boolean)"
+  description__ic:
     required: false
     type: array
-    description: "Hash contains (case-insensitive)"
-  hash__ie:
+    description: "Description contains (case-insensitive)"
+  description__ie:
     required: false
     type: array
-    description: "Hash exact match (case-insensitive)"
-  hash__iew:
+    description: "Description exact match (case-insensitive)"
+  description__iew:
     required: false
     type: array
-    description: "Hash ends with (case-insensitive)"
-  hash__isw:
+    description: "Description ends with (case-insensitive)"
+  description__isw:
     required: false
     type: array
-    description: "Hash starts with (case-sensitive)"
-  hash__n:
+    description: "Description starts with (case-sensitive)"
+  description__n:
     required: false
     type: array
-    description: "Hash not equal to"
-  hash__nic:
+    description: "Description not equal to"
+  description__nic:
     required: false
     type: array
-    description: "Hash does not contain (case-insensitive)"
-  hash__nie:
+    description: "Description does not contain (case-insensitive)"
+  description__nie:
     required: false
     type: array
-    description: "Hash inverse exact match (case-insensitive)"
-  hash__niew:
+    description: "Description inverse exact match (case-insensitive)"
+  description__niew:
     required: false
     type: array
-    description: "Hash does not end with (case-insensitive)"
-  hash__nisw:
+    description: "Description does not end with (case-insensitive)"
+  description__nisw:
     required: false
     type: array
-    description: "Hash does not start with (case-sensitive)"
+    description: "Description does not start with (case-sensitive)"
   id:
     required: false
     type: array
@@ -165,98 +209,150 @@ parameters:
     required: false
     type: string
     description: "Which field to use when ordering the results."
-  path:
+  provider:
     required: false
     type: array
-    description: "Path"
-  path__empty:
-    required: false
-    type: boolean
-    description: "Path is empty/null (boolean)"
-  path__ic:
+    description: "Provider (slug)"
+  provider__n:
     required: false
     type: array
-    description: "Path contains (case-insensitive)"
-  path__ie:
+    description: "Provider not equal to"
+  provider_account:
     required: false
     type: array
-    description: "Path exact match (case-insensitive)"
-  path__iew:
+    description: "Provider account (account)"
+  provider_account__n:
     required: false
     type: array
-    description: "Path ends with (case-insensitive)"
-  path__isw:
+    description: "Provider_account not equal to"
+  provider_account_id:
     required: false
     type: array
-    description: "Path starts with (case-sensitive)"
-  path__n:
+    description: "Provider account (ID)"
+  provider_account_id__n:
     required: false
     type: array
-    description: "Path not equal to"
-  path__nic:
+    description: "Provider_account_id not equal to"
+  provider_id:
     required: false
     type: array
-    description: "Path does not contain (case-insensitive)"
-  path__nie:
+    description: "Provider (ID)"
+  provider_id__n:
     required: false
     type: array
-    description: "Path inverse exact match (case-insensitive)"
-  path__niew:
+    description: "Provider_id not equal to"
+  provider_network_id:
     required: false
     type: array
-    description: "Path does not end with (case-insensitive)"
-  path__nisw:
+    description: "Provider network (ID)"
+  provider_network_id__n:
     required: false
     type: array
-    description: "Path does not start with (case-sensitive)"
+    description: "Provider_network_id not equal to"
   q:
     required: false
     type: string
-    description: "Q"
-  size:
+    description: "Search"
+  status:
     required: false
     type: array
-    description: "Size"
-  size__empty:
+    description: "Status"
+  status__empty:
     required: false
     type: boolean
-    description: "Size is empty/null (boolean)"
-  size__gt:
+    description: "Status is empty/null (boolean)"
+  status__ic:
     required: false
     type: array
-    description: "Size greater than"
-  size__gte:
+    description: "Status contains (case-insensitive)"
+  status__ie:
     required: false
     type: array
-    description: "Size greater than or equal to"
-  size__lt:
+    description: "Status exact match (case-insensitive)"
+  status__iew:
     required: false
     type: array
-    description: "Size less than"
-  size__lte:
+    description: "Status ends with (case-insensitive)"
+  status__isw:
     required: false
     type: array
-    description: "Size less than or equal to"
-  size__n:
+    description: "Status starts with (case-sensitive)"
+  status__n:
     required: false
     type: array
-    description: "Size not equal to"
-  source:
+    description: "Status not equal to"
+  status__nic:
     required: false
     type: array
-    description: "Data source (name)"
-  source__n:
+    description: "Status does not contain (case-insensitive)"
+  status__nie:
     required: false
     type: array
-    description: "Source not equal to"
-  source_id:
+    description: "Status inverse exact match (case-insensitive)"
+  status__niew:
     required: false
     type: array
-    description: "Data source (ID)"
-  source_id__n:
+    description: "Status does not end with (case-insensitive)"
+  status__nisw:
     required: false
     type: array
-    description: "Source_id not equal to"
+    description: "Status does not start with (case-sensitive)"
+  tag:
+    required: false
+    type: array
+    description: "Tag"
+  tag__n:
+    required: false
+    type: array
+    description: "Tag not equal to"
+  tenant:
+    required: false
+    type: array
+    description: "Tenant (slug)"
+  tenant__n:
+    required: false
+    type: array
+    description: "Tenant not equal to"
+  tenant_group:
+    required: false
+    type: array
+    description: "Tenant_group"
+  tenant_group__n:
+    required: false
+    type: array
+    description: "Tenant_group not equal to"
+  tenant_group_id:
+    required: false
+    type: array
+    description: "Tenant_group_id"
+  tenant_group_id__n:
+    required: false
+    type: array
+    description: "Tenant_group_id not equal to"
+  tenant_id:
+    required: false
+    type: array
+    description: "Tenant (ID)"
+  tenant_id__n:
+    required: false
+    type: array
+    description: "Tenant_id not equal to"
+  type:
+    required: false
+    type: array
+    description: "Virtual circuit type (slug)"
+  type__n:
+    required: false
+    type: array
+    description: "Type not equal to"
+  type_id:
+    required: false
+    type: array
+    description: "Virtual circuit type (ID)"
+  type_id__n:
+    required: false
+    type: array
+    description: "Type_id not equal to"
   updated_by_request:
     required: false
     type: string

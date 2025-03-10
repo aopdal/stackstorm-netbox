@@ -113,6 +113,9 @@ def get_actions(spec):
     actions = {}
     deferred_detail_gets = []
     for path, path_spec in spec['paths'].items():
+        if "core" in path:
+            continue
+
         path = path.replace('/api', '')
         path_parts = [x.replace('-', '_') for x in path.replace('/{id}', '').strip('/').split('/')]
 

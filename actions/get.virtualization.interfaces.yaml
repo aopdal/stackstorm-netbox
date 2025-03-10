@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.0
+# NetBox API version: 4.2
 description: "Get a list of interface objects."
 enabled: true
 entry_point: run.py
@@ -244,11 +244,8 @@ parameters:
 
 * `access` - Access
 * `tagged` - Tagged
-* `tagged-all` - Tagged (All)"
-  mode__n:
-    required: false
-    type: string
-    description: "Mode not equal to"
+* `tagged-all` - Tagged (All)
+* `q-in-q` - Q-in-Q (802.1ad)"
   modified_by_request:
     required: false
     type: string
@@ -341,6 +338,22 @@ parameters:
     required: false
     type: array
     description: "Parent_id not equal to"
+  primary_mac_address:
+    required: false
+    type: array
+    description: "Primary MAC address"
+  primary_mac_address__n:
+    required: false
+    type: array
+    description: "Primary_mac_address not equal to"
+  primary_mac_address_id:
+    required: false
+    type: array
+    description: "Primary MAC address (ID)"
+  primary_mac_address_id__n:
+    required: false
+    type: array
+    description: "Primary_mac_address_id not equal to"
   q:
     required: false
     type: string
@@ -381,6 +394,22 @@ parameters:
     required: false
     type: string
     description: "Assigned VLAN"
+  vlan_translation_policy:
+    required: false
+    type: array
+    description: "VLAN Translation Policy"
+  vlan_translation_policy__n:
+    required: false
+    type: array
+    description: "Vlan_translation_policy not equal to"
+  vlan_translation_policy_id:
+    required: false
+    type: array
+    description: "VLAN Translation Policy (ID)"
+  vlan_translation_policy_id__n:
+    required: false
+    type: array
+    description: "Vlan_translation_policy_id not equal to"
   vrf:
     required: false
     type: array

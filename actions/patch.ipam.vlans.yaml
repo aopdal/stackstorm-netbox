@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.0
+# NetBox API version: 4.2
 description: "Patch a VLAN object."
 enabled: true
 entry_point: run.py
@@ -53,6 +53,14 @@ parameters:
     required: false
     type: string
     description: "Description"
+  qinq_role:
+    required: false
+    type: string
+    description: "Q-in-Q role"
+  qinq_svlan:
+    required: false
+    type: integer
+    description: "Qinq svlan"
   comments:
     required: false
     type: string

@@ -1,12 +1,12 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.0
-description: "Patch a data source object."
+# NetBox API version: 4.2
+description: "Patch a virtual circuit termination object."
 enabled: true
 entry_point: run.py
-name: patch.core.data_sources
+name: patch.circuits.virtual_circuit_terminations
 parameters:
   endpoint_uri:
-    default: "/core/data-sources/{{ id }}/"
+    default: "/circuits/virtual-circuit-terminations/{{ id }}/"
     immutable: true
     type: string
   http_verb:
@@ -17,38 +17,28 @@ parameters:
     default: true
     immutable: true
     type: boolean
-  name:
+  virtual_circuit:
+    required: false
+    type: object
+    description: "Virtual circuit"
+  role:
     required: false
     type: string
-    description: "Name"
-  type:
+    description: "* `peer` - Peer
+* `hub` - Hub
+* `spoke` - Spoke"
+  interface:
     required: false
-    type: string
-    description: "Type"
-  source_url:
-    required: false
-    type: string
-    description: "URL"
-  enabled:
-    required: false
-    type: boolean
-    description: "Enabled"
+    type: object
+    description: "Interface"
   description:
     required: false
     type: string
     description: "Description"
-  comments:
+  tags:
     required: false
-    type: string
-    description: "Comments"
-  parameters:
-    required: false
-    type: object
-    description: "Parameters"
-  ignore_rules:
-    required: false
-    type: string
-    description: "Patterns (one per line) matching files to ignore when syncing"
+    type: array
+    description: "Array of tag strings"
   custom_fields:
     required: false
     type: object

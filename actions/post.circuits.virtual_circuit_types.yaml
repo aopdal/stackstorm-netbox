@@ -1,16 +1,16 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.0
-description: "Put a data source object."
+# NetBox API version: 4.2
+description: "Post a list of virtual circuit type objects."
 enabled: true
 entry_point: run.py
-name: put.core.data_sources
+name: post.circuits.virtual_circuit_types
 parameters:
   endpoint_uri:
-    default: "/core/data-sources/{{ id }}/"
+    default: "/circuits/virtual-circuit-types/"
     immutable: true
     type: string
   http_verb:
-    default: put
+    default: post
     immutable: true
     type: string
   get_detail_route_eligible:
@@ -21,40 +21,24 @@ parameters:
     required: false
     type: string
     description: "Name"
-  type:
+  slug:
     required: false
     type: string
-    description: "Type"
-  source_url:
+    description: "Slug"
+  color:
     required: false
     type: string
-    description: "URL"
-  enabled:
-    required: false
-    type: boolean
-    description: "Enabled"
+    description: "Color"
   description:
     required: false
     type: string
     description: "Description"
-  comments:
+  tags:
     required: false
-    type: string
-    description: "Comments"
-  parameters:
-    required: false
-    type: object
-    description: "Parameters"
-  ignore_rules:
-    required: false
-    type: string
-    description: "Patterns (one per line) matching files to ignore when syncing"
+    type: array
+    description: "Array of tag strings"
   custom_fields:
     required: false
     type: object
     description: "Custom fields"
-  id:
-    required: true
-    type: integer
-    description: "ID of the object to put."
 runner_type: python-script

@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.0
+# NetBox API version: 4.2
 description: "Get a list of custom field choice set objects."
 enabled: true
 entry_point: run.py
@@ -25,10 +25,6 @@ parameters:
 * `IATA` - IATA (Airport codes)
 * `ISO_3166` - ISO 3166 (Country codes)
 * `UN_LOCODE` - UN/LOCODE (Location codes)"
-  base_choices__n:
-    required: false
-    type: string
-    description: "Base_choices not equal to"
   choice:
     required: false
     type: array

@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.0
+# NetBox API version: 4.2
 description: "Patch a inventory item object."
 enabled: true
 entry_point: run.py
@@ -33,6 +33,15 @@ parameters:
     required: false
     type: string
     description: "Physical label"
+  status:
+    required: false
+    type: string
+    description: "* `offline` - Offline
+* `active` - Active
+* `planned` - Planned
+* `staged` - Staged
+* `failed` - Failed
+* `decommissioning` - Decommissioning"
   role:
     required: false
     type: object
