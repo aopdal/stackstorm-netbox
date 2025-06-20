@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.0
+# NetBox API version: 4.3
 description: "Patch a IP range object."
 enabled: true
 entry_point: run.py
@@ -61,10 +61,14 @@ parameters:
     required: false
     type: object
     description: "Custom fields"
+  mark_populated:
+    required: false
+    type: boolean
+    description: "Prevent the creation of IP addresses within this range"
   mark_utilized:
     required: false
     type: boolean
-    description: "Treat as fully utilized"
+    description: "Report space as 100% utilized"
   id:
     required: true
     type: integer

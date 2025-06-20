@@ -1,0 +1,44 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 4.3
+description: "Patch a Nameserver object."
+enabled: true
+entry_point: run.py
+name: patch.plugins.netbox_dns.nameservers
+parameters:
+  endpoint_uri:
+    default: "/plugins/netbox-dns/nameservers/{{ id }}/"
+    immutable: true
+    type: string
+  http_verb:
+    default: patch
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: true
+    immutable: true
+    type: boolean
+  name:
+    required: false
+    type: string
+    description: "Name"
+  description:
+    required: false
+    type: string
+    description: "Description"
+  tags:
+    required: false
+    type: array
+    description: "Array of tag strings"
+  custom_fields:
+    required: false
+    type: object
+    description: "Custom fields"
+  tenant:
+    required: false
+    type: object
+    description: "Tenant"
+  id:
+    required: true
+    type: integer
+    description: "ID of the object to patch."
+runner_type: python-script

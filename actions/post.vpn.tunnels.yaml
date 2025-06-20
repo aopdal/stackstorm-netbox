@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.0
+# NetBox API version: 4.3
 description: "Post a list of tunnel objects."
 enabled: true
 entry_point: run.py
@@ -37,7 +37,11 @@ parameters:
     description: "* `ipsec-transport` - IPsec - Transport
 * `ipsec-tunnel` - IPsec - Tunnel
 * `ip-ip` - IP-in-IP
-* `gre` - GRE"
+* `gre` - GRE
+* `wireguard` - WireGuard
+* `openvpn` - OpenVPN
+* `l2tp` - L2TP
+* `pptp` - PPTP"
   ipsec_profile:
     required: false
     type: object

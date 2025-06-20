@@ -1,0 +1,779 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 4.3
+description: "Get a list of DNSSEC Policy objects."
+enabled: true
+entry_point: run.py
+name: get.plugins.netbox_dns.dnssecpolicies
+parameters:
+  endpoint_uri:
+    default: "/plugins/netbox-dns/dnssecpolicies/"
+    immutable: true
+    type: string
+  http_verb:
+    default: get
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: true
+    immutable: true
+    type: boolean
+  cds_digest_types:
+    required: false
+    type: array
+    description: "Cds_digest_types"
+  create_cdnskey:
+    required: false
+    type: boolean
+    description: "Create_cdnskey"
+  created:
+    required: false
+    type: array
+    description: "Created"
+  created__empty:
+    required: false
+    type: array
+    description: "Created is empty/null (boolean)"
+  created__gt:
+    required: false
+    type: array
+    description: "Created greater than"
+  created__gte:
+    required: false
+    type: array
+    description: "Created greater than or equal to"
+  created__lt:
+    required: false
+    type: array
+    description: "Created less than"
+  created__lte:
+    required: false
+    type: array
+    description: "Created less than or equal to"
+  created__n:
+    required: false
+    type: array
+    description: "Created not equal to"
+  created_by_request:
+    required: false
+    type: string
+    description: "Created_by_request"
+  description:
+    required: false
+    type: array
+    description: "Description"
+  description__empty:
+    required: false
+    type: boolean
+    description: "Description is empty/null (boolean)"
+  description__ic:
+    required: false
+    type: array
+    description: "Description contains (case-insensitive)"
+  description__ie:
+    required: false
+    type: array
+    description: "Description exact match (case-insensitive)"
+  description__iew:
+    required: false
+    type: array
+    description: "Description ends with (case-insensitive)"
+  description__isw:
+    required: false
+    type: array
+    description: "Description starts with (case-sensitive)"
+  description__n:
+    required: false
+    type: array
+    description: "Description not equal to"
+  description__nic:
+    required: false
+    type: array
+    description: "Description does not contain (case-insensitive)"
+  description__nie:
+    required: false
+    type: array
+    description: "Description inverse exact match (case-insensitive)"
+  description__niew:
+    required: false
+    type: array
+    description: "Description does not end with (case-insensitive)"
+  description__nisw:
+    required: false
+    type: array
+    description: "Description does not start with (case-sensitive)"
+  dnskey_ttl:
+    required: false
+    type: array
+    description: "Dnskey_ttl"
+  dnskey_ttl__empty:
+    required: false
+    type: boolean
+    description: "Dnskey_ttl is empty/null (boolean)"
+  dnskey_ttl__gt:
+    required: false
+    type: array
+    description: "Dnskey_ttl greater than"
+  dnskey_ttl__gte:
+    required: false
+    type: array
+    description: "Dnskey_ttl greater than or equal to"
+  dnskey_ttl__lt:
+    required: false
+    type: array
+    description: "Dnskey_ttl less than"
+  dnskey_ttl__lte:
+    required: false
+    type: array
+    description: "Dnskey_ttl less than or equal to"
+  dnskey_ttl__n:
+    required: false
+    type: array
+    description: "Dnskey_ttl not equal to"
+  id:
+    required: false
+    type: array
+    description: "Id"
+  id__empty:
+    required: false
+    type: boolean
+    description: "Id is empty/null (boolean)"
+  id__gt:
+    required: false
+    type: array
+    description: "Id greater than"
+  id__gte:
+    required: false
+    type: array
+    description: "Id greater than or equal to"
+  id__lt:
+    required: false
+    type: array
+    description: "Id less than"
+  id__lte:
+    required: false
+    type: array
+    description: "Id less than or equal to"
+  id__n:
+    required: false
+    type: array
+    description: "Id not equal to"
+  key_template:
+    required: false
+    type: array
+    description: "DNSSEC Key Templates"
+  key_template__n:
+    required: false
+    type: array
+    description: "Key_template not equal to"
+  key_template_id:
+    required: false
+    type: array
+    description: "DNSSEC Key Template IDs"
+  key_template_id__n:
+    required: false
+    type: array
+    description: "Key_template_id not equal to"
+  last_updated:
+    required: false
+    type: array
+    description: "Last_updated"
+  last_updated__empty:
+    required: false
+    type: array
+    description: "Last_updated is empty/null (boolean)"
+  last_updated__gt:
+    required: false
+    type: array
+    description: "Last_updated greater than"
+  last_updated__gte:
+    required: false
+    type: array
+    description: "Last_updated greater than or equal to"
+  last_updated__lt:
+    required: false
+    type: array
+    description: "Last_updated less than"
+  last_updated__lte:
+    required: false
+    type: array
+    description: "Last_updated less than or equal to"
+  last_updated__n:
+    required: false
+    type: array
+    description: "Last_updated not equal to"
+  limit:
+    required: false
+    type: integer
+    description: "Number of results to return per page."
+  max_zone_ttl:
+    required: false
+    type: array
+    description: "Max_zone_ttl"
+  max_zone_ttl__empty:
+    required: false
+    type: boolean
+    description: "Max_zone_ttl is empty/null (boolean)"
+  max_zone_ttl__gt:
+    required: false
+    type: array
+    description: "Max_zone_ttl greater than"
+  max_zone_ttl__gte:
+    required: false
+    type: array
+    description: "Max_zone_ttl greater than or equal to"
+  max_zone_ttl__lt:
+    required: false
+    type: array
+    description: "Max_zone_ttl less than"
+  max_zone_ttl__lte:
+    required: false
+    type: array
+    description: "Max_zone_ttl less than or equal to"
+  max_zone_ttl__n:
+    required: false
+    type: array
+    description: "Max_zone_ttl not equal to"
+  modified_by_request:
+    required: false
+    type: string
+    description: "Modified_by_request"
+  name:
+    required: false
+    type: array
+    description: "Name"
+  name__empty:
+    required: false
+    type: boolean
+    description: "Name is empty/null (boolean)"
+  name__ic:
+    required: false
+    type: array
+    description: "Name contains (case-insensitive)"
+  name__ie:
+    required: false
+    type: array
+    description: "Name exact match (case-insensitive)"
+  name__iew:
+    required: false
+    type: array
+    description: "Name ends with (case-insensitive)"
+  name__isw:
+    required: false
+    type: array
+    description: "Name starts with (case-sensitive)"
+  name__n:
+    required: false
+    type: array
+    description: "Name not equal to"
+  name__nic:
+    required: false
+    type: array
+    description: "Name does not contain (case-insensitive)"
+  name__nie:
+    required: false
+    type: array
+    description: "Name inverse exact match (case-insensitive)"
+  name__niew:
+    required: false
+    type: array
+    description: "Name does not end with (case-insensitive)"
+  name__nisw:
+    required: false
+    type: array
+    description: "Name does not start with (case-sensitive)"
+  nsec3_iterations:
+    required: false
+    type: array
+    description: "Nsec3_iterations"
+  nsec3_iterations__empty:
+    required: false
+    type: boolean
+    description: "Nsec3_iterations is empty/null (boolean)"
+  nsec3_iterations__gt:
+    required: false
+    type: array
+    description: "Nsec3_iterations greater than"
+  nsec3_iterations__gte:
+    required: false
+    type: array
+    description: "Nsec3_iterations greater than or equal to"
+  nsec3_iterations__lt:
+    required: false
+    type: array
+    description: "Nsec3_iterations less than"
+  nsec3_iterations__lte:
+    required: false
+    type: array
+    description: "Nsec3_iterations less than or equal to"
+  nsec3_iterations__n:
+    required: false
+    type: array
+    description: "Nsec3_iterations not equal to"
+  nsec3_opt_out:
+    required: false
+    type: boolean
+    description: "Nsec3_opt_out"
+  nsec3_salt_size:
+    required: false
+    type: array
+    description: "Nsec3_salt_size"
+  nsec3_salt_size__empty:
+    required: false
+    type: boolean
+    description: "Nsec3_salt_size is empty/null (boolean)"
+  nsec3_salt_size__gt:
+    required: false
+    type: array
+    description: "Nsec3_salt_size greater than"
+  nsec3_salt_size__gte:
+    required: false
+    type: array
+    description: "Nsec3_salt_size greater than or equal to"
+  nsec3_salt_size__lt:
+    required: false
+    type: array
+    description: "Nsec3_salt_size less than"
+  nsec3_salt_size__lte:
+    required: false
+    type: array
+    description: "Nsec3_salt_size less than or equal to"
+  nsec3_salt_size__n:
+    required: false
+    type: array
+    description: "Nsec3_salt_size not equal to"
+  offset:
+    required: false
+    type: integer
+    description: "The initial index from which to return the results."
+  ordering:
+    required: false
+    type: string
+    description: "Which field to use when ordering the results."
+  parent_ds_ttl:
+    required: false
+    type: array
+    description: "Parent_ds_ttl"
+  parent_ds_ttl__empty:
+    required: false
+    type: boolean
+    description: "Parent_ds_ttl is empty/null (boolean)"
+  parent_ds_ttl__gt:
+    required: false
+    type: array
+    description: "Parent_ds_ttl greater than"
+  parent_ds_ttl__gte:
+    required: false
+    type: array
+    description: "Parent_ds_ttl greater than or equal to"
+  parent_ds_ttl__lt:
+    required: false
+    type: array
+    description: "Parent_ds_ttl less than"
+  parent_ds_ttl__lte:
+    required: false
+    type: array
+    description: "Parent_ds_ttl less than or equal to"
+  parent_ds_ttl__n:
+    required: false
+    type: array
+    description: "Parent_ds_ttl not equal to"
+  parent_propagation_delay:
+    required: false
+    type: array
+    description: "Parent_propagation_delay"
+  parent_propagation_delay__empty:
+    required: false
+    type: boolean
+    description: "Parent_propagation_delay is empty/null (boolean)"
+  parent_propagation_delay__gt:
+    required: false
+    type: array
+    description: "Parent_propagation_delay greater than"
+  parent_propagation_delay__gte:
+    required: false
+    type: array
+    description: "Parent_propagation_delay greater than or equal to"
+  parent_propagation_delay__lt:
+    required: false
+    type: array
+    description: "Parent_propagation_delay less than"
+  parent_propagation_delay__lte:
+    required: false
+    type: array
+    description: "Parent_propagation_delay less than or equal to"
+  parent_propagation_delay__n:
+    required: false
+    type: array
+    description: "Parent_propagation_delay not equal to"
+  publish_safety:
+    required: false
+    type: array
+    description: "Publish_safety"
+  publish_safety__empty:
+    required: false
+    type: boolean
+    description: "Publish_safety is empty/null (boolean)"
+  publish_safety__gt:
+    required: false
+    type: array
+    description: "Publish_safety greater than"
+  publish_safety__gte:
+    required: false
+    type: array
+    description: "Publish_safety greater than or equal to"
+  publish_safety__lt:
+    required: false
+    type: array
+    description: "Publish_safety less than"
+  publish_safety__lte:
+    required: false
+    type: array
+    description: "Publish_safety less than or equal to"
+  publish_safety__n:
+    required: false
+    type: array
+    description: "Publish_safety not equal to"
+  purge_keys:
+    required: false
+    type: array
+    description: "Purge_keys"
+  purge_keys__empty:
+    required: false
+    type: boolean
+    description: "Purge_keys is empty/null (boolean)"
+  purge_keys__gt:
+    required: false
+    type: array
+    description: "Purge_keys greater than"
+  purge_keys__gte:
+    required: false
+    type: array
+    description: "Purge_keys greater than or equal to"
+  purge_keys__lt:
+    required: false
+    type: array
+    description: "Purge_keys less than"
+  purge_keys__lte:
+    required: false
+    type: array
+    description: "Purge_keys less than or equal to"
+  purge_keys__n:
+    required: false
+    type: array
+    description: "Purge_keys not equal to"
+  q:
+    required: false
+    type: string
+    description: "Search"
+  retire_safety:
+    required: false
+    type: array
+    description: "Retire_safety"
+  retire_safety__empty:
+    required: false
+    type: boolean
+    description: "Retire_safety is empty/null (boolean)"
+  retire_safety__gt:
+    required: false
+    type: array
+    description: "Retire_safety greater than"
+  retire_safety__gte:
+    required: false
+    type: array
+    description: "Retire_safety greater than or equal to"
+  retire_safety__lt:
+    required: false
+    type: array
+    description: "Retire_safety less than"
+  retire_safety__lte:
+    required: false
+    type: array
+    description: "Retire_safety less than or equal to"
+  retire_safety__n:
+    required: false
+    type: array
+    description: "Retire_safety not equal to"
+  signatures_jitter:
+    required: false
+    type: array
+    description: "Signatures_jitter"
+  signatures_jitter__empty:
+    required: false
+    type: boolean
+    description: "Signatures_jitter is empty/null (boolean)"
+  signatures_jitter__gt:
+    required: false
+    type: array
+    description: "Signatures_jitter greater than"
+  signatures_jitter__gte:
+    required: false
+    type: array
+    description: "Signatures_jitter greater than or equal to"
+  signatures_jitter__lt:
+    required: false
+    type: array
+    description: "Signatures_jitter less than"
+  signatures_jitter__lte:
+    required: false
+    type: array
+    description: "Signatures_jitter less than or equal to"
+  signatures_jitter__n:
+    required: false
+    type: array
+    description: "Signatures_jitter not equal to"
+  signatures_refresh:
+    required: false
+    type: array
+    description: "Signatures_refresh"
+  signatures_refresh__empty:
+    required: false
+    type: boolean
+    description: "Signatures_refresh is empty/null (boolean)"
+  signatures_refresh__gt:
+    required: false
+    type: array
+    description: "Signatures_refresh greater than"
+  signatures_refresh__gte:
+    required: false
+    type: array
+    description: "Signatures_refresh greater than or equal to"
+  signatures_refresh__lt:
+    required: false
+    type: array
+    description: "Signatures_refresh less than"
+  signatures_refresh__lte:
+    required: false
+    type: array
+    description: "Signatures_refresh less than or equal to"
+  signatures_refresh__n:
+    required: false
+    type: array
+    description: "Signatures_refresh not equal to"
+  signatures_validity:
+    required: false
+    type: array
+    description: "Signatures_validity"
+  signatures_validity__empty:
+    required: false
+    type: boolean
+    description: "Signatures_validity is empty/null (boolean)"
+  signatures_validity__gt:
+    required: false
+    type: array
+    description: "Signatures_validity greater than"
+  signatures_validity__gte:
+    required: false
+    type: array
+    description: "Signatures_validity greater than or equal to"
+  signatures_validity__lt:
+    required: false
+    type: array
+    description: "Signatures_validity less than"
+  signatures_validity__lte:
+    required: false
+    type: array
+    description: "Signatures_validity less than or equal to"
+  signatures_validity__n:
+    required: false
+    type: array
+    description: "Signatures_validity not equal to"
+  signatures_validity_dnskey:
+    required: false
+    type: array
+    description: "Signatures_validity_dnskey"
+  signatures_validity_dnskey__empty:
+    required: false
+    type: boolean
+    description: "Signatures_validity_dnskey is empty/null (boolean)"
+  signatures_validity_dnskey__gt:
+    required: false
+    type: array
+    description: "Signatures_validity_dnskey greater than"
+  signatures_validity_dnskey__gte:
+    required: false
+    type: array
+    description: "Signatures_validity_dnskey greater than or equal to"
+  signatures_validity_dnskey__lt:
+    required: false
+    type: array
+    description: "Signatures_validity_dnskey less than"
+  signatures_validity_dnskey__lte:
+    required: false
+    type: array
+    description: "Signatures_validity_dnskey less than or equal to"
+  signatures_validity_dnskey__n:
+    required: false
+    type: array
+    description: "Signatures_validity_dnskey not equal to"
+  status:
+    required: false
+    type: array
+    description: "Status"
+  status__empty:
+    required: false
+    type: boolean
+    description: "Status is empty/null (boolean)"
+  status__ic:
+    required: false
+    type: array
+    description: "Status contains (case-insensitive)"
+  status__ie:
+    required: false
+    type: array
+    description: "Status exact match (case-insensitive)"
+  status__iew:
+    required: false
+    type: array
+    description: "Status ends with (case-insensitive)"
+  status__isw:
+    required: false
+    type: array
+    description: "Status starts with (case-sensitive)"
+  status__n:
+    required: false
+    type: array
+    description: "Status not equal to"
+  status__nic:
+    required: false
+    type: array
+    description: "Status does not contain (case-insensitive)"
+  status__nie:
+    required: false
+    type: array
+    description: "Status inverse exact match (case-insensitive)"
+  status__niew:
+    required: false
+    type: array
+    description: "Status does not end with (case-insensitive)"
+  status__nisw:
+    required: false
+    type: array
+    description: "Status does not start with (case-sensitive)"
+  tag:
+    required: false
+    type: array
+    description: "Tag"
+  tag__n:
+    required: false
+    type: array
+    description: "Tag not equal to"
+  tag_id:
+    required: false
+    type: array
+    description: "Tag_id"
+  tag_id__n:
+    required: false
+    type: array
+    description: "Tag_id not equal to"
+  tenant:
+    required: false
+    type: array
+    description: "Tenant (slug)"
+  tenant__n:
+    required: false
+    type: array
+    description: "Tenant not equal to"
+  tenant_group:
+    required: false
+    type: array
+    description: "Tenant_group"
+  tenant_group__n:
+    required: false
+    type: array
+    description: "Tenant_group not equal to"
+  tenant_group_id:
+    required: false
+    type: array
+    description: "Tenant_group_id"
+  tenant_group_id__n:
+    required: false
+    type: array
+    description: "Tenant_group_id not equal to"
+  tenant_id:
+    required: false
+    type: array
+    description: "Tenant (ID)"
+  tenant_id__n:
+    required: false
+    type: array
+    description: "Tenant_id not equal to"
+  updated_by_request:
+    required: false
+    type: string
+    description: "Updated_by_request"
+  use_nsec3:
+    required: false
+    type: boolean
+    description: "Use_nsec3"
+  zone:
+    required: false
+    type: array
+    description: "Zones"
+  zone__n:
+    required: false
+    type: array
+    description: "Zone not equal to"
+  zone_id:
+    required: false
+    type: array
+    description: "Zone IDs"
+  zone_id__n:
+    required: false
+    type: array
+    description: "Zone_id not equal to"
+  zone_propagation_delay:
+    required: false
+    type: array
+    description: "Zone_propagation_delay"
+  zone_propagation_delay__empty:
+    required: false
+    type: boolean
+    description: "Zone_propagation_delay is empty/null (boolean)"
+  zone_propagation_delay__gt:
+    required: false
+    type: array
+    description: "Zone_propagation_delay greater than"
+  zone_propagation_delay__gte:
+    required: false
+    type: array
+    description: "Zone_propagation_delay greater than or equal to"
+  zone_propagation_delay__lt:
+    required: false
+    type: array
+    description: "Zone_propagation_delay less than"
+  zone_propagation_delay__lte:
+    required: false
+    type: array
+    description: "Zone_propagation_delay less than or equal to"
+  zone_propagation_delay__n:
+    required: false
+    type: array
+    description: "Zone_propagation_delay not equal to"
+  zone_template:
+    required: false
+    type: array
+    description: "Zone Templates"
+  zone_template__n:
+    required: false
+    type: array
+    description: "Zone_template not equal to"
+  zone_template_id:
+    required: false
+    type: array
+    description: "Zone Template IDs"
+  zone_template_id__n:
+    required: false
+    type: array
+    description: "Zone_template_id not equal to"
+  save_in_key_store:
+    type: boolean
+    default: false
+    description: Save the result of the action as a json object in the st2 key store. Used when the expected result from Netbox is very large and the result will be piped to another action. You must also specify a save_in_key_store_keyname and an optional save_in_key_store_ttl.
+  save_in_key_store_key_name:
+    type: string
+    description: Name of the key to store the json result value in the st2 key store. Must be used with save_in_key_store and optionally save_in_key_store_ttl.
+  save_in_key_store_ttl:
+    type: integer
+    default: 60
+    description: TTL (seconds) of the saved json result in the st2 key store. Defaults to 60 seconds. Must be used with save_in_key_store and save_in_key_store_key_name.
+runner_type: python-script

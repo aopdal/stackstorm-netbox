@@ -181,11 +181,12 @@ def get_actions(spec):
     # process deferred detail get endpoints
     for detailed_get in deferred_detail_gets:
         list_action = actions.get(detailed_get)
+        print(f'Processing deferred action {detailed_get} ...')
         if list_action is None:
-            raise Exception(
-                "Unable to find list action for deferred GET endpoint {}".format(detailed_get)
-            )
-
+#            raise Exception(
+#                "Unable to find list action for deferred GET endpoint {}".format(detailed_get)
+#            )
+            print(f'Warning: Unable to find list action for deferred GET endpoint {detailed_get}')
     return actions
 
 

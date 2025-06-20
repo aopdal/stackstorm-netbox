@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.0
+# NetBox API version: 4.3
 description: "Put a circuit termination object."
 enabled: true
 entry_point: run.py
@@ -24,15 +24,15 @@ parameters:
   term_side:
     required: false
     type: string
-    description: "Termination"
-  site:
+    description: "Termination side"
+  termination_type:
     required: false
-    type: object
-    description: "Site"
-  provider_network:
+    type: string
+    description: "Termination type"
+  termination_id:
     required: false
-    type: object
-    description: "Provider network"
+    type: integer
+    description: "Termination id"
   port_speed:
     required: false
     type: integer

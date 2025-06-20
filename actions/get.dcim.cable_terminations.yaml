@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.0
+# NetBox API version: 4.3
 description: "Get a list of cable termination objects."
 enabled: true
 entry_point: run.py
@@ -30,10 +30,6 @@ parameters:
     type: string
     description: "* `A` - A
 * `B` - B"
-  cable_end__n:
-    required: false
-    type: string
-    description: "Cable_end not equal to"
   created:
     required: false
     type: array
