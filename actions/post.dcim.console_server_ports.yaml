@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.3
+# NetBox API version: 4.5
 description: "Post a list of console server port objects."
 enabled: true
 entry_point: run.py
@@ -21,69 +21,4 @@ parameters:
     default: false
     type: boolean
     description: Set action as failed when http return reponse status isn't 2xx.
-  device:
-    required: false
-    type: object
-    description: "Device"
-  module:
-    required: false
-    type: object
-    description: "Module"
-  name:
-    required: false
-    type: string
-    description: "Name"
-  label:
-    required: false
-    type: string
-    description: "Physical label"
-  type:
-    required: false
-    type: string
-    description: "Physical port type
-
-* `de-9` - DE-9
-* `db-25` - DB-25
-* `rj-11` - RJ-11
-* `rj-12` - RJ-12
-* `rj-45` - RJ-45
-* `mini-din-8` - Mini-DIN 8
-* `usb-a` - USB Type A
-* `usb-b` - USB Type B
-* `usb-c` - USB Type C
-* `usb-mini-a` - USB Mini A
-* `usb-mini-b` - USB Mini B
-* `usb-micro-a` - USB Micro A
-* `usb-micro-b` - USB Micro B
-* `usb-micro-ab` - USB Micro AB
-* `other` - Other"
-  speed:
-    required: false
-    type: integer
-    description: "Port speed in bits per second
-
-* `1200` - 1200 bps
-* `2400` - 2400 bps
-* `4800` - 4800 bps
-* `9600` - 9600 bps
-* `19200` - 19.2 kbps
-* `38400` - 38.4 kbps
-* `57600` - 57.6 kbps
-* `115200` - 115.2 kbps"
-  description:
-    required: false
-    type: string
-    description: "Description"
-  mark_connected:
-    required: false
-    type: boolean
-    description: "Treat as if a cable is connected"
-  tags:
-    required: false
-    type: array
-    description: "Array of tag strings"
-  custom_fields:
-    required: false
-    type: object
-    description: "Custom fields"
 runner_type: python-script

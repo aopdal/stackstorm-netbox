@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.3
+# NetBox API version: 4.5
 description: "Patch a front port template object."
 enabled: true
 entry_point: run.py
@@ -102,14 +102,14 @@ parameters:
     required: false
     type: string
     description: "Color"
-  rear_port:
-    required: false
-    type: object
-    description: "Rear port"
-  rear_port_position:
+  positions:
     required: false
     type: integer
-    description: "Rear port position"
+    description: "Positions"
+  rear_ports:
+    required: false
+    type: array
+    description: "Rear ports"
   description:
     required: false
     type: string

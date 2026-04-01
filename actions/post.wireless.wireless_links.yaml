@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.3
+# NetBox API version: 4.5
 description: "Post a list of wireless link objects."
 enabled: true
 entry_point: run.py
@@ -21,65 +21,4 @@ parameters:
     default: false
     type: boolean
     description: Set action as failed when http return reponse status isn't 2xx.
-  interface_a:
-    required: false
-    type: object
-    description: "Interface a"
-  interface_b:
-    required: false
-    type: object
-    description: "Interface b"
-  ssid:
-    required: false
-    type: string
-    description: "Ssid"
-  status:
-    required: false
-    type: string
-    description: "* `connected` - Connected
-* `planned` - Planned
-* `decommissioning` - Decommissioning"
-  tenant:
-    required: false
-    type: object
-    description: "Tenant"
-  auth_type:
-    required: false
-    type: string
-    description: "Authentication type"
-  auth_cipher:
-    required: false
-    type: string
-    description: "Authentication cipher"
-  auth_psk:
-    required: false
-    type: string
-    description: "Pre-shared key"
-  distance:
-    required: false
-    type: integer
-    description: "Distance"
-  distance_unit:
-    required: false
-    type: string
-    description: "* `km` - Kilometers
-* `m` - Meters
-* `mi` - Miles
-* `ft` - Feet"
-  description:
-    required: false
-    type: string
-    description: "Description"
-  comments:
-    required: false
-    type: string
-    description: "Comments"
-  tags:
-    required: false
-    type: array
-    description: "Array of tag strings"
-  custom_fields:
-    required: false
-    type: object
-    description: "Custom fields"
 runner_type: python-script

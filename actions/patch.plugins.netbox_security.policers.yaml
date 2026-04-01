@@ -1,0 +1,98 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 4.5
+description: "Patch a policer object."
+enabled: true
+entry_point: run.py
+name: patch.plugins.netbox_security.policers
+parameters:
+  endpoint_uri:
+    default: "/plugins/netbox-security/policers/{{ id }}/"
+    immutable: true
+    type: string
+  http_verb:
+    default: patch
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: true
+    immutable: true
+    type: boolean
+  fail_non_2xx:
+    default: false
+    type: boolean
+    description: Set action as failed when http return reponse status isn't 2xx.
+  name:
+    required: false
+    type: string
+    description: "Name"
+  description:
+    required: false
+    type: string
+    description: "Description"
+  tenant:
+    required: false
+    type: object
+    description: "Tenant"
+  logical_interface_policer:
+    required: false
+    type: boolean
+    description: "Logical interface policer"
+  physical_interface_policer:
+    required: false
+    type: boolean
+    description: "Physical interface policer"
+  bandwidth_limit:
+    required: false
+    type: integer
+    description: "Bandwidth limit"
+  bandwidth_percent:
+    required: false
+    type: integer
+    description: "Bandwidth percent"
+  burst_size_limit:
+    required: false
+    type: integer
+    description: "Burst size limit"
+  loss_priority:
+    required: false
+    type: string
+    description: "Packet&#39;s loss priority
+
+* `high` - High
+* `low` - Low
+* `medium-high` - Medium High
+* `medium-low` - Medium High"
+  forwarding_class:
+    required: false
+    type: string
+    description: "Classify packet to forwarding class
+
+* `assured-forwarding` - Assured Forwarding
+* `best-effort` - Best Effort
+* `expedited-forwarding` - Expedited Forwarding
+* `network-control` - Network Control"
+  discard:
+    required: false
+    type: boolean
+    description: "Discard"
+  out_of_profile:
+    required: false
+    type: boolean
+    description: "Out of profile"
+  comments:
+    required: false
+    type: string
+    description: "Comments"
+  tags:
+    required: false
+    type: array
+    description: "Array of tag strings"
+  custom_fields:
+    required: false
+    type: object
+    description: "Custom fields"
+  id:
+    required: true
+    type: integer
+    description: "ID of the object to patch."
+runner_type: python-script

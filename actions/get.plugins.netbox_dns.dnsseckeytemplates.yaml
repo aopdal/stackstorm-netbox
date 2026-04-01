@@ -1,0 +1,527 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 4.5
+description: "Get a list of DNSSEC Key Template objects."
+enabled: true
+entry_point: run.py
+name: get.plugins.netbox_dns.dnsseckeytemplates
+parameters:
+  endpoint_uri:
+    default: "/plugins/netbox-dns/dnsseckeytemplates/"
+    immutable: true
+    type: string
+  http_verb:
+    default: get
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: true
+    immutable: true
+    type: boolean
+  fail_non_2xx:
+    default: false
+    type: boolean
+    description: Set action as failed when http return reponse status isn't 2xx.
+  algorithm:
+    required: false
+    type: array
+    description: "Algorithm"
+  algorithm__empty:
+    required: false
+    type: boolean
+    description: "Algorithm is empty/null (boolean)"
+  algorithm__ic:
+    required: false
+    type: array
+    description: "Algorithm contains (case-insensitive)"
+  algorithm__ie:
+    required: false
+    type: array
+    description: "Algorithm exact match (case-insensitive)"
+  algorithm__iew:
+    required: false
+    type: array
+    description: "Algorithm ends with (case-insensitive)"
+  algorithm__iregex:
+    required: false
+    type: array
+    description: "Algorithm"
+  algorithm__isw:
+    required: false
+    type: array
+    description: "Algorithm starts with (case-sensitive)"
+  algorithm__n:
+    required: false
+    type: array
+    description: "Algorithm not equal to"
+  algorithm__nic:
+    required: false
+    type: array
+    description: "Algorithm does not contain (case-insensitive)"
+  algorithm__nie:
+    required: false
+    type: array
+    description: "Algorithm inverse exact match (case-insensitive)"
+  algorithm__niew:
+    required: false
+    type: array
+    description: "Algorithm does not end with (case-insensitive)"
+  algorithm__nisw:
+    required: false
+    type: array
+    description: "Algorithm does not start with (case-sensitive)"
+  algorithm__regex:
+    required: false
+    type: array
+    description: "Algorithm"
+  created:
+    required: false
+    type: array
+    description: "Created"
+  created__empty:
+    required: false
+    type: array
+    description: "Created is empty/null (boolean)"
+  created__gt:
+    required: false
+    type: array
+    description: "Created greater than"
+  created__gte:
+    required: false
+    type: array
+    description: "Created greater than or equal to"
+  created__lt:
+    required: false
+    type: array
+    description: "Created less than"
+  created__lte:
+    required: false
+    type: array
+    description: "Created less than or equal to"
+  created__n:
+    required: false
+    type: array
+    description: "Created not equal to"
+  created_by_request:
+    required: false
+    type: string
+    description: "Created_by_request"
+  description:
+    required: false
+    type: string
+    description: "Description"
+  description__empty:
+    required: false
+    type: boolean
+    description: "Description is empty/null (boolean)"
+  description__ic:
+    required: false
+    type: string
+    description: "Description contains (case-insensitive)"
+  description__ie:
+    required: false
+    type: string
+    description: "Description exact match (case-insensitive)"
+  description__iew:
+    required: false
+    type: string
+    description: "Description ends with (case-insensitive)"
+  description__iregex:
+    required: false
+    type: string
+    description: "Description"
+  description__isw:
+    required: false
+    type: string
+    description: "Description starts with (case-sensitive)"
+  description__n:
+    required: false
+    type: string
+    description: "Description not equal to"
+  description__nic:
+    required: false
+    type: string
+    description: "Description does not contain (case-insensitive)"
+  description__nie:
+    required: false
+    type: string
+    description: "Description inverse exact match (case-insensitive)"
+  description__niew:
+    required: false
+    type: string
+    description: "Description does not end with (case-insensitive)"
+  description__nisw:
+    required: false
+    type: string
+    description: "Description does not start with (case-sensitive)"
+  description__regex:
+    required: false
+    type: string
+    description: "Description"
+  id:
+    required: false
+    type: array
+    description: "Id"
+  id__empty:
+    required: false
+    type: boolean
+    description: "Id is empty/null (boolean)"
+  id__gt:
+    required: false
+    type: array
+    description: "Id greater than"
+  id__gte:
+    required: false
+    type: array
+    description: "Id greater than or equal to"
+  id__lt:
+    required: false
+    type: array
+    description: "Id less than"
+  id__lte:
+    required: false
+    type: array
+    description: "Id less than or equal to"
+  id__n:
+    required: false
+    type: array
+    description: "Id not equal to"
+  key_size:
+    required: false
+    type: array
+    description: "Key_size"
+  key_size__ic:
+    required: false
+    type: array
+    description: "Key_size contains (case-insensitive)"
+  key_size__ie:
+    required: false
+    type: array
+    description: "Key_size exact match (case-insensitive)"
+  key_size__iew:
+    required: false
+    type: array
+    description: "Key_size ends with (case-insensitive)"
+  key_size__iregex:
+    required: false
+    type: array
+    description: "Key_size"
+  key_size__isw:
+    required: false
+    type: array
+    description: "Key_size starts with (case-sensitive)"
+  key_size__n:
+    required: false
+    type: array
+    description: "Key_size not equal to"
+  key_size__nic:
+    required: false
+    type: array
+    description: "Key_size does not contain (case-insensitive)"
+  key_size__nie:
+    required: false
+    type: array
+    description: "Key_size inverse exact match (case-insensitive)"
+  key_size__niew:
+    required: false
+    type: array
+    description: "Key_size does not end with (case-insensitive)"
+  key_size__nisw:
+    required: false
+    type: array
+    description: "Key_size does not start with (case-sensitive)"
+  key_size__regex:
+    required: false
+    type: array
+    description: "Key_size"
+  last_updated:
+    required: false
+    type: array
+    description: "Last_updated"
+  last_updated__empty:
+    required: false
+    type: array
+    description: "Last_updated is empty/null (boolean)"
+  last_updated__gt:
+    required: false
+    type: array
+    description: "Last_updated greater than"
+  last_updated__gte:
+    required: false
+    type: array
+    description: "Last_updated greater than or equal to"
+  last_updated__lt:
+    required: false
+    type: array
+    description: "Last_updated less than"
+  last_updated__lte:
+    required: false
+    type: array
+    description: "Last_updated less than or equal to"
+  last_updated__n:
+    required: false
+    type: array
+    description: "Last_updated not equal to"
+  lifetime:
+    required: false
+    type: integer
+    description: "Lifetime"
+  lifetime__empty:
+    required: false
+    type: integer
+    description: "Lifetime is empty/null (boolean)"
+  lifetime__gt:
+    required: false
+    type: integer
+    description: "Lifetime greater than"
+  lifetime__gte:
+    required: false
+    type: integer
+    description: "Lifetime greater than or equal to"
+  lifetime__lt:
+    required: false
+    type: integer
+    description: "Lifetime less than"
+  lifetime__lte:
+    required: false
+    type: integer
+    description: "Lifetime less than or equal to"
+  lifetime__n:
+    required: false
+    type: integer
+    description: "Lifetime not equal to"
+  limit:
+    required: false
+    type: integer
+    description: "Number of results to return per page."
+  modified_by_request:
+    required: false
+    type: string
+    description: "Modified_by_request"
+  name:
+    required: false
+    type: string
+    description: "Name"
+  name__empty:
+    required: false
+    type: boolean
+    description: "Name is empty/null (boolean)"
+  name__ic:
+    required: false
+    type: string
+    description: "Name contains (case-insensitive)"
+  name__ie:
+    required: false
+    type: string
+    description: "Name exact match (case-insensitive)"
+  name__iew:
+    required: false
+    type: string
+    description: "Name ends with (case-insensitive)"
+  name__iregex:
+    required: false
+    type: string
+    description: "Name"
+  name__isw:
+    required: false
+    type: string
+    description: "Name starts with (case-sensitive)"
+  name__n:
+    required: false
+    type: string
+    description: "Name not equal to"
+  name__nic:
+    required: false
+    type: string
+    description: "Name does not contain (case-insensitive)"
+  name__nie:
+    required: false
+    type: string
+    description: "Name inverse exact match (case-insensitive)"
+  name__niew:
+    required: false
+    type: string
+    description: "Name does not end with (case-insensitive)"
+  name__nisw:
+    required: false
+    type: string
+    description: "Name does not start with (case-sensitive)"
+  name__regex:
+    required: false
+    type: string
+    description: "Name"
+  offset:
+    required: false
+    type: integer
+    description: "The initial index from which to return the results."
+  ordering:
+    required: false
+    type: string
+    description: "Which field to use when ordering the results."
+  owner:
+    required: false
+    type: array
+    description: "Owner (name)"
+  owner__n:
+    required: false
+    type: array
+    description: "Owner not equal to"
+  owner_group:
+    required: false
+    type: array
+    description: "Owner Group (name)"
+  owner_group__n:
+    required: false
+    type: array
+    description: "Owner_group not equal to"
+  owner_group_id:
+    required: false
+    type: array
+    description: "Owner Group (ID)"
+  owner_group_id__n:
+    required: false
+    type: array
+    description: "Owner_group_id not equal to"
+  owner_id:
+    required: false
+    type: array
+    description: "Owner (ID)"
+  owner_id__n:
+    required: false
+    type: array
+    description: "Owner_id not equal to"
+  policy:
+    required: false
+    type: array
+    description: "Policy"
+  policy__n:
+    required: false
+    type: array
+    description: "Policy not equal to"
+  policy_id:
+    required: false
+    type: array
+    description: "Policy_id"
+  policy_id__n:
+    required: false
+    type: array
+    description: "Policy_id not equal to"
+  q:
+    required: false
+    type: string
+    description: "Search"
+  tag:
+    required: false
+    type: array
+    description: "Tag"
+  tag__n:
+    required: false
+    type: array
+    description: "Tag not equal to"
+  tag_id:
+    required: false
+    type: array
+    description: "Tag_id"
+  tag_id__n:
+    required: false
+    type: array
+    description: "Tag_id not equal to"
+  tenant:
+    required: false
+    type: array
+    description: "Tenant (slug)"
+  tenant__n:
+    required: false
+    type: array
+    description: "Tenant not equal to"
+  tenant_group:
+    required: false
+    type: array
+    description: "Tenant_group"
+  tenant_group__n:
+    required: false
+    type: array
+    description: "Tenant_group not equal to"
+  tenant_group_id:
+    required: false
+    type: array
+    description: "Tenant_group_id"
+  tenant_group_id__n:
+    required: false
+    type: array
+    description: "Tenant_group_id not equal to"
+  tenant_id:
+    required: false
+    type: array
+    description: "Tenant (ID)"
+  tenant_id__n:
+    required: false
+    type: array
+    description: "Tenant_id not equal to"
+  type:
+    required: false
+    type: array
+    description: "Type"
+  type__empty:
+    required: false
+    type: boolean
+    description: "Type is empty/null (boolean)"
+  type__ic:
+    required: false
+    type: array
+    description: "Type contains (case-insensitive)"
+  type__ie:
+    required: false
+    type: array
+    description: "Type exact match (case-insensitive)"
+  type__iew:
+    required: false
+    type: array
+    description: "Type ends with (case-insensitive)"
+  type__iregex:
+    required: false
+    type: array
+    description: "Type"
+  type__isw:
+    required: false
+    type: array
+    description: "Type starts with (case-sensitive)"
+  type__n:
+    required: false
+    type: array
+    description: "Type not equal to"
+  type__nic:
+    required: false
+    type: array
+    description: "Type does not contain (case-insensitive)"
+  type__nie:
+    required: false
+    type: array
+    description: "Type inverse exact match (case-insensitive)"
+  type__niew:
+    required: false
+    type: array
+    description: "Type does not end with (case-insensitive)"
+  type__nisw:
+    required: false
+    type: array
+    description: "Type does not start with (case-sensitive)"
+  type__regex:
+    required: false
+    type: array
+    description: "Type"
+  updated_by_request:
+    required: false
+    type: string
+    description: "Updated_by_request"
+  save_in_key_store:
+    type: boolean
+    default: false
+    description: Save the result of the action as a json object in the st2 key store. Used when the expected result from Netbox is very large and the result will be piped to another action. You must also specify a save_in_key_store_keyname and an optional save_in_key_store_ttl.
+  save_in_key_store_key_name:
+    type: string
+    description: Name of the key to store the json result value in the st2 key store. Must be used with save_in_key_store and optionally save_in_key_store_ttl.
+  save_in_key_store_ttl:
+    type: integer
+    default: 60
+    description: TTL (seconds) of the saved json result in the st2 key store. Defaults to 60 seconds. Must be used with save_in_key_store and save_in_key_store_key_name.
+runner_type: python-script

@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.3
+# NetBox API version: 4.5
 description: "Post a list of module bay template objects."
 enabled: true
 entry_point: run.py
@@ -21,28 +21,4 @@ parameters:
     default: false
     type: boolean
     description: Set action as failed when http return reponse status isn't 2xx.
-  device_type:
-    required: false
-    type: object
-    description: "Device type"
-  module_type:
-    required: false
-    type: object
-    description: "Module type"
-  name:
-    required: false
-    type: string
-    description: "{module} is accepted as a substitution for the module bay position when attached to a module type."
-  label:
-    required: false
-    type: string
-    description: "Physical label"
-  position:
-    required: false
-    type: string
-    description: "Identifier to reference when renaming installed components"
-  description:
-    required: false
-    type: string
-    description: "Description"
 runner_type: python-script

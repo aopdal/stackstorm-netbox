@@ -1,0 +1,78 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 4.5
+description: "Put a DNSSEC Key Template object."
+enabled: true
+entry_point: run.py
+name: put.plugins.netbox_dns.dnsseckeytemplates
+parameters:
+  endpoint_uri:
+    default: "/plugins/netbox-dns/dnsseckeytemplates/{{ id }}/"
+    immutable: true
+    type: string
+  http_verb:
+    default: put
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: true
+    immutable: true
+    type: boolean
+  fail_non_2xx:
+    default: false
+    type: boolean
+    description: Set action as failed when http return reponse status isn't 2xx.
+  name:
+    required: false
+    type: string
+    description: "Name"
+  description:
+    required: false
+    type: string
+    description: "Description"
+  comments:
+    required: false
+    type: string
+    description: "Comments"
+  tags:
+    required: false
+    type: array
+    description: "Array of tag strings"
+  type:
+    required: false
+    type: string
+    description: "* `CSK` - CSK
+* `KSK` - KSK
+* `ZSK` - ZSK"
+  lifetime:
+    required: false
+    type: integer
+    description: "Lifetime"
+  algorithm:
+    required: false
+    type: string
+    description: "* `RSASHA256` - RSASHA256 (8)
+* `ECDSAP256SHA256` - ECDSAP256SHA256 (13)
+* `ECDSAP384SHA384` - ECDSAP384SHA384 (14)
+* `ED25519` - ED25519 (15)
+* `ED448` - ED448 (16)"
+  key_size:
+    required: false
+    type: integer
+    description: "* `512` - 512
+* `1024` - 1024
+* `2048` - 2048
+* `3072` - 3072
+* `4096` - 4096"
+  custom_fields:
+    required: false
+    type: object
+    description: "Custom fields"
+  tenant:
+    required: false
+    type: object
+    description: "Tenant"
+  id:
+    required: true
+    type: integer
+    description: "ID of the object to put."
+runner_type: python-script

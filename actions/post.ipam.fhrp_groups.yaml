@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.3
+# NetBox API version: 4.5
 description: "Post a list of FHRP group objects."
 enabled: true
 entry_point: run.py
@@ -21,46 +21,4 @@ parameters:
     default: false
     type: boolean
     description: Set action as failed when http return reponse status isn't 2xx.
-  name:
-    required: false
-    type: string
-    description: "Name"
-  protocol:
-    required: false
-    type: string
-    description: "* `vrrp2` - VRRPv2
-* `vrrp3` - VRRPv3
-* `carp` - CARP
-* `clusterxl` - ClusterXL
-* `hsrp` - HSRP
-* `glbp` - GLBP
-* `other` - Other"
-  group_id:
-    required: false
-    type: integer
-    description: "Group id"
-  auth_type:
-    required: false
-    type: string
-    description: "Authentication type"
-  auth_key:
-    required: false
-    type: string
-    description: "Authentication key"
-  description:
-    required: false
-    type: string
-    description: "Description"
-  comments:
-    required: false
-    type: string
-    description: "Comments"
-  tags:
-    required: false
-    type: array
-    description: "Array of tag strings"
-  custom_fields:
-    required: false
-    type: object
-    description: "Custom fields"
 runner_type: python-script

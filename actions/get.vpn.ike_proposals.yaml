@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.3
+# NetBox API version: 4.5
 description: "Get a list of IKE proposal objects."
 enabled: true
 entry_point: run.py
@@ -41,6 +41,10 @@ parameters:
     required: false
     type: array
     description: "Authentication_algorithm ends with (case-insensitive)"
+  authentication_algorithm__iregex:
+    required: false
+    type: array
+    description: "Authentication_algorithm"
   authentication_algorithm__isw:
     required: false
     type: array
@@ -65,6 +69,10 @@ parameters:
     required: false
     type: array
     description: "Authentication_algorithm does not start with (case-sensitive)"
+  authentication_algorithm__regex:
+    required: false
+    type: array
+    description: "Authentication_algorithm"
   authentication_method:
     required: false
     type: array
@@ -85,6 +93,10 @@ parameters:
     required: false
     type: array
     description: "Authentication_method ends with (case-insensitive)"
+  authentication_method__iregex:
+    required: false
+    type: array
+    description: "Authentication_method"
   authentication_method__isw:
     required: false
     type: array
@@ -109,6 +121,10 @@ parameters:
     required: false
     type: array
     description: "Authentication_method does not start with (case-sensitive)"
+  authentication_method__regex:
+    required: false
+    type: array
+    description: "Authentication_method"
   created:
     required: false
     type: array
@@ -161,6 +177,10 @@ parameters:
     required: false
     type: array
     description: "Description ends with (case-insensitive)"
+  description__iregex:
+    required: false
+    type: array
+    description: "Description"
   description__isw:
     required: false
     type: array
@@ -185,6 +205,10 @@ parameters:
     required: false
     type: array
     description: "Description does not start with (case-sensitive)"
+  description__regex:
+    required: false
+    type: array
+    description: "Description"
   encryption_algorithm:
     required: false
     type: array
@@ -205,6 +229,10 @@ parameters:
     required: false
     type: array
     description: "Encryption_algorithm ends with (case-insensitive)"
+  encryption_algorithm__iregex:
+    required: false
+    type: array
+    description: "Encryption_algorithm"
   encryption_algorithm__isw:
     required: false
     type: array
@@ -229,6 +257,10 @@ parameters:
     required: false
     type: array
     description: "Encryption_algorithm does not start with (case-sensitive)"
+  encryption_algorithm__regex:
+    required: false
+    type: array
+    description: "Encryption_algorithm"
   group:
     required: false
     type: array
@@ -245,6 +277,10 @@ parameters:
     required: false
     type: array
     description: "Group ends with (case-insensitive)"
+  group__iregex:
+    required: false
+    type: array
+    description: "Diffie-Hellman group ID"
   group__isw:
     required: false
     type: array
@@ -269,6 +305,10 @@ parameters:
     required: false
     type: array
     description: "Group does not start with (case-sensitive)"
+  group__regex:
+    required: false
+    type: array
+    description: "Diffie-Hellman group ID"
   id:
     required: false
     type: array
@@ -369,6 +409,10 @@ parameters:
     required: false
     type: array
     description: "Name ends with (case-insensitive)"
+  name__iregex:
+    required: false
+    type: array
+    description: "Name"
   name__isw:
     required: false
     type: array
@@ -393,6 +437,10 @@ parameters:
     required: false
     type: array
     description: "Name does not start with (case-sensitive)"
+  name__regex:
+    required: false
+    type: array
+    description: "Name"
   offset:
     required: false
     type: integer
@@ -401,6 +449,38 @@ parameters:
     required: false
     type: string
     description: "Which field to use when ordering the results."
+  owner:
+    required: false
+    type: array
+    description: "Owner (name)"
+  owner__n:
+    required: false
+    type: array
+    description: "Owner not equal to"
+  owner_group:
+    required: false
+    type: array
+    description: "Owner Group (name)"
+  owner_group__n:
+    required: false
+    type: array
+    description: "Owner_group not equal to"
+  owner_group_id:
+    required: false
+    type: array
+    description: "Owner Group (ID)"
+  owner_group_id__n:
+    required: false
+    type: array
+    description: "Owner_group_id not equal to"
+  owner_id:
+    required: false
+    type: array
+    description: "Owner (ID)"
+  owner_id__n:
+    required: false
+    type: array
+    description: "Owner_id not equal to"
   q:
     required: false
     type: string

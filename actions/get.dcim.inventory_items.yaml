@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.3
+# NetBox API version: 4.5
 description: "Get a list of inventory item objects."
 enabled: true
 entry_point: run.py
@@ -41,6 +41,10 @@ parameters:
     required: false
     type: array
     description: "Asset_tag ends with (case-insensitive)"
+  asset_tag__iregex:
+    required: false
+    type: array
+    description: "Asset_tag"
   asset_tag__isw:
     required: false
     type: array
@@ -65,6 +69,10 @@ parameters:
     required: false
     type: array
     description: "Asset_tag does not start with (case-sensitive)"
+  asset_tag__regex:
+    required: false
+    type: array
+    description: "Asset_tag"
   component_id:
     required: false
     type: array
@@ -95,11 +103,11 @@ parameters:
     description: "Component_id not equal to"
   component_type:
     required: false
-    type: string
+    type: array
     description: "Component_type"
   component_type__n:
     required: false
-    type: string
+    type: array
     description: "Component_type not equal to"
   created:
     required: false
@@ -153,6 +161,10 @@ parameters:
     required: false
     type: array
     description: "Description ends with (case-insensitive)"
+  description__iregex:
+    required: false
+    type: array
+    description: "Description"
   description__isw:
     required: false
     type: array
@@ -177,6 +189,10 @@ parameters:
     required: false
     type: array
     description: "Description does not start with (case-sensitive)"
+  description__regex:
+    required: false
+    type: array
+    description: "Description"
   device:
     required: false
     type: array
@@ -229,6 +245,10 @@ parameters:
     required: false
     type: array
     description: "Device_status ends with (case-insensitive)"
+  device_status__iregex:
+    required: false
+    type: array
+    description: "Device_status"
   device_status__isw:
     required: false
     type: array
@@ -253,6 +273,10 @@ parameters:
     required: false
     type: array
     description: "Device_status does not start with (case-sensitive)"
+  device_status__regex:
+    required: false
+    type: array
+    description: "Device_status"
   device_type:
     required: false
     type: array
@@ -321,6 +345,10 @@ parameters:
     required: false
     type: array
     description: "Label ends with (case-insensitive)"
+  label__iregex:
+    required: false
+    type: array
+    description: "Label"
   label__isw:
     required: false
     type: array
@@ -345,6 +373,10 @@ parameters:
     required: false
     type: array
     description: "Label does not start with (case-sensitive)"
+  label__regex:
+    required: false
+    type: array
+    description: "Label"
   last_updated:
     required: false
     type: array
@@ -433,6 +465,10 @@ parameters:
     required: false
     type: array
     description: "Name ends with (case-insensitive)"
+  name__iregex:
+    required: false
+    type: array
+    description: "Name"
   name__isw:
     required: false
     type: array
@@ -457,6 +493,10 @@ parameters:
     required: false
     type: array
     description: "Name does not start with (case-sensitive)"
+  name__regex:
+    required: false
+    type: array
+    description: "Name"
   offset:
     required: false
     type: integer
@@ -465,6 +505,38 @@ parameters:
     required: false
     type: string
     description: "Which field to use when ordering the results."
+  owner:
+    required: false
+    type: array
+    description: "Owner (name)"
+  owner__n:
+    required: false
+    type: array
+    description: "Owner not equal to"
+  owner_group:
+    required: false
+    type: array
+    description: "Owner Group (name)"
+  owner_group__n:
+    required: false
+    type: array
+    description: "Owner_group not equal to"
+  owner_group_id:
+    required: false
+    type: array
+    description: "Owner Group (ID)"
+  owner_group_id__n:
+    required: false
+    type: array
+    description: "Owner_group_id not equal to"
+  owner_id:
+    required: false
+    type: array
+    description: "Owner (ID)"
+  owner_id__n:
+    required: false
+    type: array
+    description: "Owner_id not equal to"
   parent_id:
     required: false
     type: array
@@ -493,6 +565,10 @@ parameters:
     required: false
     type: array
     description: "Part_id ends with (case-insensitive)"
+  part_id__iregex:
+    required: false
+    type: array
+    description: "Part_id"
   part_id__isw:
     required: false
     type: array
@@ -517,6 +593,10 @@ parameters:
     required: false
     type: array
     description: "Part_id does not start with (case-sensitive)"
+  part_id__regex:
+    required: false
+    type: array
+    description: "Part_id"
   q:
     required: false
     type: string
@@ -589,6 +669,10 @@ parameters:
     required: false
     type: array
     description: "Serial ends with (case-insensitive)"
+  serial__iregex:
+    required: false
+    type: array
+    description: "Serial"
   serial__isw:
     required: false
     type: array
@@ -613,6 +697,10 @@ parameters:
     required: false
     type: array
     description: "Serial does not start with (case-sensitive)"
+  serial__regex:
+    required: false
+    type: array
+    description: "Serial"
   site:
     required: false
     type: array
@@ -665,6 +753,10 @@ parameters:
     required: false
     type: array
     description: "Status ends with (case-insensitive)"
+  status__iregex:
+    required: false
+    type: array
+    description: "Status"
   status__isw:
     required: false
     type: array
@@ -689,6 +781,10 @@ parameters:
     required: false
     type: array
     description: "Status does not start with (case-sensitive)"
+  status__regex:
+    required: false
+    type: array
+    description: "Status"
   tag:
     required: false
     type: array
@@ -705,6 +801,22 @@ parameters:
     required: false
     type: array
     description: "Tag_id not equal to"
+  tenant:
+    required: false
+    type: array
+    description: "Tenant (slug)"
+  tenant__n:
+    required: false
+    type: array
+    description: "Tenant not equal to"
+  tenant_id:
+    required: false
+    type: array
+    description: "Tenant (ID)"
+  tenant_id__n:
+    required: false
+    type: array
+    description: "Tenant_id not equal to"
   updated_by_request:
     required: false
     type: string

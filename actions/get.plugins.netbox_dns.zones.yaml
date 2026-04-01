@@ -1,0 +1,931 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 4.5
+description: "Get a list of Zone objects."
+enabled: true
+entry_point: run.py
+name: get.plugins.netbox_dns.zones
+parameters:
+  endpoint_uri:
+    default: "/plugins/netbox-dns/zones/"
+    immutable: true
+    type: string
+  http_verb:
+    default: get
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: true
+    immutable: true
+    type: boolean
+  fail_non_2xx:
+    default: false
+    type: boolean
+    description: Set action as failed when http return reponse status isn't 2xx.
+  active:
+    required: false
+    type: boolean
+    description: "Active"
+  admin_c:
+    required: false
+    type: array
+    description: "Admin_c"
+  admin_c__n:
+    required: false
+    type: array
+    description: "Admin_c not equal to"
+  admin_c_id:
+    required: false
+    type: array
+    description: "Admin_c_id"
+  admin_c_id__n:
+    required: false
+    type: array
+    description: "Admin_c_id not equal to"
+  arpa_network:
+    required: false
+    type: array
+    description: "Arpa_network"
+  billing_c:
+    required: false
+    type: array
+    description: "Billing_c"
+  billing_c__n:
+    required: false
+    type: array
+    description: "Billing_c not equal to"
+  billing_c_id:
+    required: false
+    type: array
+    description: "Billing_c_id"
+  billing_c_id__n:
+    required: false
+    type: array
+    description: "Billing_c_id not equal to"
+  created:
+    required: false
+    type: array
+    description: "Created"
+  created__empty:
+    required: false
+    type: array
+    description: "Created is empty/null (boolean)"
+  created__gt:
+    required: false
+    type: array
+    description: "Created greater than"
+  created__gte:
+    required: false
+    type: array
+    description: "Created greater than or equal to"
+  created__lt:
+    required: false
+    type: array
+    description: "Created less than"
+  created__lte:
+    required: false
+    type: array
+    description: "Created less than or equal to"
+  created__n:
+    required: false
+    type: array
+    description: "Created not equal to"
+  created_by_request:
+    required: false
+    type: string
+    description: "Created_by_request"
+  default_ttl:
+    required: false
+    type: integer
+    description: "Default_ttl"
+  default_ttl__empty:
+    required: false
+    type: integer
+    description: "Default_ttl is empty/null (boolean)"
+  default_ttl__gt:
+    required: false
+    type: integer
+    description: "Default_ttl greater than"
+  default_ttl__gte:
+    required: false
+    type: integer
+    description: "Default_ttl greater than or equal to"
+  default_ttl__lt:
+    required: false
+    type: integer
+    description: "Default_ttl less than"
+  default_ttl__lte:
+    required: false
+    type: integer
+    description: "Default_ttl less than or equal to"
+  default_ttl__n:
+    required: false
+    type: integer
+    description: "Default_ttl not equal to"
+  description:
+    required: false
+    type: string
+    description: "Description"
+  description__empty:
+    required: false
+    type: boolean
+    description: "Description is empty/null (boolean)"
+  description__ic:
+    required: false
+    type: string
+    description: "Description contains (case-insensitive)"
+  description__ie:
+    required: false
+    type: string
+    description: "Description exact match (case-insensitive)"
+  description__iew:
+    required: false
+    type: string
+    description: "Description ends with (case-insensitive)"
+  description__iregex:
+    required: false
+    type: string
+    description: "Description"
+  description__isw:
+    required: false
+    type: string
+    description: "Description starts with (case-sensitive)"
+  description__n:
+    required: false
+    type: string
+    description: "Description not equal to"
+  description__nic:
+    required: false
+    type: string
+    description: "Description does not contain (case-insensitive)"
+  description__nie:
+    required: false
+    type: string
+    description: "Description inverse exact match (case-insensitive)"
+  description__niew:
+    required: false
+    type: string
+    description: "Description does not end with (case-insensitive)"
+  description__nisw:
+    required: false
+    type: string
+    description: "Description does not start with (case-sensitive)"
+  description__regex:
+    required: false
+    type: string
+    description: "Description"
+  dnssec_policy:
+    required: false
+    type: array
+    description: "Dnssec_policy"
+  dnssec_policy__n:
+    required: false
+    type: array
+    description: "Dnssec_policy not equal to"
+  dnssec_policy_id:
+    required: false
+    type: array
+    description: "Dnssec_policy_id"
+  dnssec_policy_id__n:
+    required: false
+    type: array
+    description: "Dnssec_policy_id not equal to"
+  domain_status:
+    required: false
+    type: array
+    description: "Domain_status"
+  domain_status__empty:
+    required: false
+    type: boolean
+    description: "Domain_status is empty/null (boolean)"
+  domain_status__ic:
+    required: false
+    type: array
+    description: "Domain_status contains (case-insensitive)"
+  domain_status__ie:
+    required: false
+    type: array
+    description: "Domain_status exact match (case-insensitive)"
+  domain_status__iew:
+    required: false
+    type: array
+    description: "Domain_status ends with (case-insensitive)"
+  domain_status__iregex:
+    required: false
+    type: array
+    description: "Domain_status"
+  domain_status__isw:
+    required: false
+    type: array
+    description: "Domain_status starts with (case-sensitive)"
+  domain_status__n:
+    required: false
+    type: array
+    description: "Domain_status not equal to"
+  domain_status__nic:
+    required: false
+    type: array
+    description: "Domain_status does not contain (case-insensitive)"
+  domain_status__nie:
+    required: false
+    type: array
+    description: "Domain_status inverse exact match (case-insensitive)"
+  domain_status__niew:
+    required: false
+    type: array
+    description: "Domain_status does not end with (case-insensitive)"
+  domain_status__nisw:
+    required: false
+    type: array
+    description: "Domain_status does not start with (case-sensitive)"
+  domain_status__regex:
+    required: false
+    type: array
+    description: "Domain_status"
+  expiration_date_after:
+    required: false
+    type: string
+    description: "Expiration_date_after"
+  expiration_date_before:
+    required: false
+    type: string
+    description: "Expiration_date_before"
+  id:
+    required: false
+    type: array
+    description: "Id"
+  id__empty:
+    required: false
+    type: boolean
+    description: "Id is empty/null (boolean)"
+  id__gt:
+    required: false
+    type: array
+    description: "Id greater than"
+  id__gte:
+    required: false
+    type: array
+    description: "Id greater than or equal to"
+  id__lt:
+    required: false
+    type: array
+    description: "Id less than"
+  id__lte:
+    required: false
+    type: array
+    description: "Id less than or equal to"
+  id__n:
+    required: false
+    type: array
+    description: "Id not equal to"
+  inline_signing:
+    required: false
+    type: boolean
+    description: "Inline_signing"
+  last_updated:
+    required: false
+    type: array
+    description: "Last_updated"
+  last_updated__empty:
+    required: false
+    type: array
+    description: "Last_updated is empty/null (boolean)"
+  last_updated__gt:
+    required: false
+    type: array
+    description: "Last_updated greater than"
+  last_updated__gte:
+    required: false
+    type: array
+    description: "Last_updated greater than or equal to"
+  last_updated__lt:
+    required: false
+    type: array
+    description: "Last_updated less than"
+  last_updated__lte:
+    required: false
+    type: array
+    description: "Last_updated less than or equal to"
+  last_updated__n:
+    required: false
+    type: array
+    description: "Last_updated not equal to"
+  limit:
+    required: false
+    type: integer
+    description: "Number of results to return per page."
+  modified_by_request:
+    required: false
+    type: string
+    description: "Modified_by_request"
+  name:
+    required: false
+    type: string
+    description: "Name"
+  name__empty:
+    required: false
+    type: boolean
+    description: "Name is empty/null (boolean)"
+  name__ic:
+    required: false
+    type: string
+    description: "Name contains (case-insensitive)"
+  name__ie:
+    required: false
+    type: string
+    description: "Name exact match (case-insensitive)"
+  name__iew:
+    required: false
+    type: string
+    description: "Name ends with (case-insensitive)"
+  name__iregex:
+    required: false
+    type: string
+    description: "Name"
+  name__isw:
+    required: false
+    type: string
+    description: "Name starts with (case-sensitive)"
+  name__n:
+    required: false
+    type: string
+    description: "Name not equal to"
+  name__nic:
+    required: false
+    type: string
+    description: "Name does not contain (case-insensitive)"
+  name__nie:
+    required: false
+    type: string
+    description: "Name inverse exact match (case-insensitive)"
+  name__niew:
+    required: false
+    type: string
+    description: "Name does not end with (case-insensitive)"
+  name__nisw:
+    required: false
+    type: string
+    description: "Name does not start with (case-sensitive)"
+  name__regex:
+    required: false
+    type: string
+    description: "Name"
+  nameserver:
+    required: false
+    type: array
+    description: "Nameserver"
+  nameserver__n:
+    required: false
+    type: array
+    description: "Nameserver not equal to"
+  nameserver_id:
+    required: false
+    type: array
+    description: "Nameserver_id"
+  nameserver_id__n:
+    required: false
+    type: array
+    description: "Nameserver_id not equal to"
+  offset:
+    required: false
+    type: integer
+    description: "The initial index from which to return the results."
+  ordering:
+    required: false
+    type: string
+    description: "Which field to use when ordering the results."
+  owner:
+    required: false
+    type: array
+    description: "Owner (name)"
+  owner__n:
+    required: false
+    type: array
+    description: "Owner not equal to"
+  owner_group:
+    required: false
+    type: array
+    description: "Owner Group (name)"
+  owner_group__n:
+    required: false
+    type: array
+    description: "Owner_group not equal to"
+  owner_group_id:
+    required: false
+    type: array
+    description: "Owner Group (ID)"
+  owner_group_id__n:
+    required: false
+    type: array
+    description: "Owner_group_id not equal to"
+  owner_id:
+    required: false
+    type: array
+    description: "Owner (ID)"
+  owner_id__n:
+    required: false
+    type: array
+    description: "Owner_id not equal to"
+  parental_agents:
+    required: false
+    type: array
+    description: "Parental_agents"
+  q:
+    required: false
+    type: string
+    description: "Search"
+  registrant:
+    required: false
+    type: array
+    description: "Registrant"
+  registrant__n:
+    required: false
+    type: array
+    description: "Registrant not equal to"
+  registrant_id:
+    required: false
+    type: array
+    description: "Registrant_id"
+  registrant_id__n:
+    required: false
+    type: array
+    description: "Registrant_id not equal to"
+  registrar:
+    required: false
+    type: array
+    description: "Registrar"
+  registrar__n:
+    required: false
+    type: array
+    description: "Registrar not equal to"
+  registrar_id:
+    required: false
+    type: array
+    description: "Registrar_id"
+  registrar_id__n:
+    required: false
+    type: array
+    description: "Registrar_id not equal to"
+  registry_domain_id:
+    required: false
+    type: string
+    description: "Registry_domain_id"
+  registry_domain_id__empty:
+    required: false
+    type: boolean
+    description: "Registry_domain_id is empty/null (boolean)"
+  registry_domain_id__ic:
+    required: false
+    type: string
+    description: "Registry_domain_id contains (case-insensitive)"
+  registry_domain_id__ie:
+    required: false
+    type: string
+    description: "Registry_domain_id exact match (case-insensitive)"
+  registry_domain_id__iew:
+    required: false
+    type: string
+    description: "Registry_domain_id ends with (case-insensitive)"
+  registry_domain_id__iregex:
+    required: false
+    type: string
+    description: "Registry_domain_id"
+  registry_domain_id__isw:
+    required: false
+    type: string
+    description: "Registry_domain_id starts with (case-sensitive)"
+  registry_domain_id__n:
+    required: false
+    type: string
+    description: "Registry_domain_id not equal to"
+  registry_domain_id__nic:
+    required: false
+    type: string
+    description: "Registry_domain_id does not contain (case-insensitive)"
+  registry_domain_id__nie:
+    required: false
+    type: string
+    description: "Registry_domain_id inverse exact match (case-insensitive)"
+  registry_domain_id__niew:
+    required: false
+    type: string
+    description: "Registry_domain_id does not end with (case-insensitive)"
+  registry_domain_id__nisw:
+    required: false
+    type: string
+    description: "Registry_domain_id does not start with (case-sensitive)"
+  registry_domain_id__regex:
+    required: false
+    type: string
+    description: "Registry_domain_id"
+  rfc2317_parent_managed:
+    required: false
+    type: boolean
+    description: "Rfc2317_parent_managed"
+  rfc2317_parent_zone:
+    required: false
+    type: array
+    description: "Rfc2317_parent_zone"
+  rfc2317_parent_zone__n:
+    required: false
+    type: array
+    description: "Rfc2317_parent_zone not equal to"
+  rfc2317_parent_zone_id:
+    required: false
+    type: array
+    description: "Rfc2317_parent_zone_id"
+  rfc2317_parent_zone_id__n:
+    required: false
+    type: array
+    description: "Rfc2317_parent_zone_id not equal to"
+  rfc2317_prefix:
+    required: false
+    type: array
+    description: "Rfc2317_prefix"
+  soa_expire:
+    required: false
+    type: integer
+    description: "Soa_expire"
+  soa_expire__empty:
+    required: false
+    type: integer
+    description: "Soa_expire is empty/null (boolean)"
+  soa_expire__gt:
+    required: false
+    type: integer
+    description: "Soa_expire greater than"
+  soa_expire__gte:
+    required: false
+    type: integer
+    description: "Soa_expire greater than or equal to"
+  soa_expire__lt:
+    required: false
+    type: integer
+    description: "Soa_expire less than"
+  soa_expire__lte:
+    required: false
+    type: integer
+    description: "Soa_expire less than or equal to"
+  soa_expire__n:
+    required: false
+    type: integer
+    description: "Soa_expire not equal to"
+  soa_minimum:
+    required: false
+    type: integer
+    description: "Soa_minimum"
+  soa_minimum__empty:
+    required: false
+    type: integer
+    description: "Soa_minimum is empty/null (boolean)"
+  soa_minimum__gt:
+    required: false
+    type: integer
+    description: "Soa_minimum greater than"
+  soa_minimum__gte:
+    required: false
+    type: integer
+    description: "Soa_minimum greater than or equal to"
+  soa_minimum__lt:
+    required: false
+    type: integer
+    description: "Soa_minimum less than"
+  soa_minimum__lte:
+    required: false
+    type: integer
+    description: "Soa_minimum less than or equal to"
+  soa_minimum__n:
+    required: false
+    type: integer
+    description: "Soa_minimum not equal to"
+  soa_mname:
+    required: false
+    type: array
+    description: "Soa_mname"
+  soa_mname__n:
+    required: false
+    type: array
+    description: "Soa_mname not equal to"
+  soa_mname_id:
+    required: false
+    type: array
+    description: "Soa_mname_id"
+  soa_mname_id__n:
+    required: false
+    type: array
+    description: "Soa_mname_id not equal to"
+  soa_refresh:
+    required: false
+    type: integer
+    description: "Soa_refresh"
+  soa_refresh__empty:
+    required: false
+    type: integer
+    description: "Soa_refresh is empty/null (boolean)"
+  soa_refresh__gt:
+    required: false
+    type: integer
+    description: "Soa_refresh greater than"
+  soa_refresh__gte:
+    required: false
+    type: integer
+    description: "Soa_refresh greater than or equal to"
+  soa_refresh__lt:
+    required: false
+    type: integer
+    description: "Soa_refresh less than"
+  soa_refresh__lte:
+    required: false
+    type: integer
+    description: "Soa_refresh less than or equal to"
+  soa_refresh__n:
+    required: false
+    type: integer
+    description: "Soa_refresh not equal to"
+  soa_retry:
+    required: false
+    type: integer
+    description: "Soa_retry"
+  soa_retry__empty:
+    required: false
+    type: integer
+    description: "Soa_retry is empty/null (boolean)"
+  soa_retry__gt:
+    required: false
+    type: integer
+    description: "Soa_retry greater than"
+  soa_retry__gte:
+    required: false
+    type: integer
+    description: "Soa_retry greater than or equal to"
+  soa_retry__lt:
+    required: false
+    type: integer
+    description: "Soa_retry less than"
+  soa_retry__lte:
+    required: false
+    type: integer
+    description: "Soa_retry less than or equal to"
+  soa_retry__n:
+    required: false
+    type: integer
+    description: "Soa_retry not equal to"
+  soa_rname:
+    required: false
+    type: string
+    description: "Soa_rname"
+  soa_rname__empty:
+    required: false
+    type: boolean
+    description: "Soa_rname is empty/null (boolean)"
+  soa_rname__ic:
+    required: false
+    type: string
+    description: "Soa_rname contains (case-insensitive)"
+  soa_rname__ie:
+    required: false
+    type: string
+    description: "Soa_rname exact match (case-insensitive)"
+  soa_rname__iew:
+    required: false
+    type: string
+    description: "Soa_rname ends with (case-insensitive)"
+  soa_rname__iregex:
+    required: false
+    type: string
+    description: "Soa_rname"
+  soa_rname__isw:
+    required: false
+    type: string
+    description: "Soa_rname starts with (case-sensitive)"
+  soa_rname__n:
+    required: false
+    type: string
+    description: "Soa_rname not equal to"
+  soa_rname__nic:
+    required: false
+    type: string
+    description: "Soa_rname does not contain (case-insensitive)"
+  soa_rname__nie:
+    required: false
+    type: string
+    description: "Soa_rname inverse exact match (case-insensitive)"
+  soa_rname__niew:
+    required: false
+    type: string
+    description: "Soa_rname does not end with (case-insensitive)"
+  soa_rname__nisw:
+    required: false
+    type: string
+    description: "Soa_rname does not start with (case-sensitive)"
+  soa_rname__regex:
+    required: false
+    type: string
+    description: "Soa_rname"
+  soa_serial:
+    required: false
+    type: integer
+    description: "Soa_serial"
+  soa_serial__empty:
+    required: false
+    type: integer
+    description: "Soa_serial is empty/null (boolean)"
+  soa_serial__gt:
+    required: false
+    type: integer
+    description: "Soa_serial greater than"
+  soa_serial__gte:
+    required: false
+    type: integer
+    description: "Soa_serial greater than or equal to"
+  soa_serial__lt:
+    required: false
+    type: integer
+    description: "Soa_serial less than"
+  soa_serial__lte:
+    required: false
+    type: integer
+    description: "Soa_serial less than or equal to"
+  soa_serial__n:
+    required: false
+    type: integer
+    description: "Soa_serial not equal to"
+  soa_serial_auto:
+    required: false
+    type: boolean
+    description: "Soa_serial_auto"
+  soa_ttl:
+    required: false
+    type: integer
+    description: "Soa_ttl"
+  soa_ttl__empty:
+    required: false
+    type: integer
+    description: "Soa_ttl is empty/null (boolean)"
+  soa_ttl__gt:
+    required: false
+    type: integer
+    description: "Soa_ttl greater than"
+  soa_ttl__gte:
+    required: false
+    type: integer
+    description: "Soa_ttl greater than or equal to"
+  soa_ttl__lt:
+    required: false
+    type: integer
+    description: "Soa_ttl less than"
+  soa_ttl__lte:
+    required: false
+    type: integer
+    description: "Soa_ttl less than or equal to"
+  soa_ttl__n:
+    required: false
+    type: integer
+    description: "Soa_ttl not equal to"
+  status:
+    required: false
+    type: array
+    description: "Status"
+  status__empty:
+    required: false
+    type: boolean
+    description: "Status is empty/null (boolean)"
+  status__ic:
+    required: false
+    type: array
+    description: "Status contains (case-insensitive)"
+  status__ie:
+    required: false
+    type: array
+    description: "Status exact match (case-insensitive)"
+  status__iew:
+    required: false
+    type: array
+    description: "Status ends with (case-insensitive)"
+  status__iregex:
+    required: false
+    type: array
+    description: "Status"
+  status__isw:
+    required: false
+    type: array
+    description: "Status starts with (case-sensitive)"
+  status__n:
+    required: false
+    type: array
+    description: "Status not equal to"
+  status__nic:
+    required: false
+    type: array
+    description: "Status does not contain (case-insensitive)"
+  status__nie:
+    required: false
+    type: array
+    description: "Status inverse exact match (case-insensitive)"
+  status__niew:
+    required: false
+    type: array
+    description: "Status does not end with (case-insensitive)"
+  status__nisw:
+    required: false
+    type: array
+    description: "Status does not start with (case-sensitive)"
+  status__regex:
+    required: false
+    type: array
+    description: "Status"
+  tag:
+    required: false
+    type: array
+    description: "Tag"
+  tag__n:
+    required: false
+    type: array
+    description: "Tag not equal to"
+  tag_id:
+    required: false
+    type: array
+    description: "Tag_id"
+  tag_id__n:
+    required: false
+    type: array
+    description: "Tag_id not equal to"
+  tech_c:
+    required: false
+    type: array
+    description: "Tech_c"
+  tech_c__n:
+    required: false
+    type: array
+    description: "Tech_c not equal to"
+  tech_c_id:
+    required: false
+    type: array
+    description: "Tech_c_id"
+  tech_c_id__n:
+    required: false
+    type: array
+    description: "Tech_c_id not equal to"
+  tenant:
+    required: false
+    type: array
+    description: "Tenant (slug)"
+  tenant__n:
+    required: false
+    type: array
+    description: "Tenant not equal to"
+  tenant_group:
+    required: false
+    type: array
+    description: "Tenant_group"
+  tenant_group__n:
+    required: false
+    type: array
+    description: "Tenant_group not equal to"
+  tenant_group_id:
+    required: false
+    type: array
+    description: "Tenant_group_id"
+  tenant_group_id__n:
+    required: false
+    type: array
+    description: "Tenant_group_id not equal to"
+  tenant_id:
+    required: false
+    type: array
+    description: "Tenant (ID)"
+  tenant_id__n:
+    required: false
+    type: array
+    description: "Tenant_id not equal to"
+  updated_by_request:
+    required: false
+    type: string
+    description: "Updated_by_request"
+  view:
+    required: false
+    type: array
+    description: "View"
+  view__n:
+    required: false
+    type: array
+    description: "View not equal to"
+  view_id:
+    required: false
+    type: array
+    description: "View_id"
+  view_id__n:
+    required: false
+    type: array
+    description: "View_id not equal to"
+  save_in_key_store:
+    type: boolean
+    default: false
+    description: Save the result of the action as a json object in the st2 key store. Used when the expected result from Netbox is very large and the result will be piped to another action. You must also specify a save_in_key_store_keyname and an optional save_in_key_store_ttl.
+  save_in_key_store_key_name:
+    type: string
+    description: Name of the key to store the json result value in the st2 key store. Must be used with save_in_key_store and optionally save_in_key_store_ttl.
+  save_in_key_store_ttl:
+    type: integer
+    default: 60
+    description: TTL (seconds) of the saved json result in the st2 key store. Defaults to 60 seconds. Must be used with save_in_key_store and save_in_key_store_key_name.
+runner_type: python-script

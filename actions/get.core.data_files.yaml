@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.3
+# NetBox API version: 4.5
 description: "Get a list of data file objects."
 enabled: true
 entry_point: run.py
@@ -73,6 +73,10 @@ parameters:
     required: false
     type: array
     description: "Hash ends with (case-insensitive)"
+  hash__iregex:
+    required: false
+    type: array
+    description: "Hash"
   hash__isw:
     required: false
     type: array
@@ -97,6 +101,10 @@ parameters:
     required: false
     type: array
     description: "Hash does not start with (case-sensitive)"
+  hash__regex:
+    required: false
+    type: array
+    description: "Hash"
   id:
     required: false
     type: array
@@ -189,6 +197,10 @@ parameters:
     required: false
     type: array
     description: "Path ends with (case-insensitive)"
+  path__iregex:
+    required: false
+    type: array
+    description: "Path"
   path__isw:
     required: false
     type: array
@@ -213,6 +225,10 @@ parameters:
     required: false
     type: array
     description: "Path does not start with (case-sensitive)"
+  path__regex:
+    required: false
+    type: array
+    description: "Path"
   q:
     required: false
     type: string

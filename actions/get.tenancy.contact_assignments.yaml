@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.3
+# NetBox API version: 4.5
 description: "Get a list of contact assignment objects."
 enabled: true
 entry_point: run.py
@@ -171,11 +171,11 @@ parameters:
     description: "Object_id not equal to"
   object_type:
     required: false
-    type: string
+    type: array
     description: "Object_type"
   object_type__n:
     required: false
-    type: string
+    type: array
     description: "Object_type not equal to"
   object_type_id:
     required: false
@@ -200,6 +200,54 @@ parameters:
 * `secondary` - Secondary
 * `tertiary` - Tertiary
 * `inactive` - Inactive"
+  priority__empty:
+    required: false
+    type: boolean
+    description: "Priority is empty/null (boolean)"
+  priority__ic:
+    required: false
+    type: array
+    description: "Priority contains (case-insensitive)"
+  priority__ie:
+    required: false
+    type: array
+    description: "Priority exact match (case-insensitive)"
+  priority__iew:
+    required: false
+    type: array
+    description: "Priority ends with (case-insensitive)"
+  priority__iregex:
+    required: false
+    type: array
+    description: "Priority"
+  priority__isw:
+    required: false
+    type: array
+    description: "Priority starts with (case-sensitive)"
+  priority__n:
+    required: false
+    type: string
+    description: "Priority not equal to"
+  priority__nic:
+    required: false
+    type: array
+    description: "Priority does not contain (case-insensitive)"
+  priority__nie:
+    required: false
+    type: array
+    description: "Priority inverse exact match (case-insensitive)"
+  priority__niew:
+    required: false
+    type: array
+    description: "Priority does not end with (case-insensitive)"
+  priority__nisw:
+    required: false
+    type: array
+    description: "Priority does not start with (case-sensitive)"
+  priority__regex:
+    required: false
+    type: array
+    description: "Priority"
   q:
     required: false
     type: string

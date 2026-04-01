@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.3
+# NetBox API version: 4.5
 description: "Get a list of user objects."
 enabled: true
 entry_point: run.py
@@ -69,6 +69,10 @@ parameters:
     required: false
     type: array
     description: "Email ends with (case-insensitive)"
+  email__iregex:
+    required: false
+    type: array
+    description: "Email"
   email__isw:
     required: false
     type: array
@@ -93,6 +97,10 @@ parameters:
     required: false
     type: array
     description: "Email does not start with (case-sensitive)"
+  email__regex:
+    required: false
+    type: array
+    description: "Email"
   first_name:
     required: false
     type: array
@@ -113,6 +121,10 @@ parameters:
     required: false
     type: array
     description: "First_name ends with (case-insensitive)"
+  first_name__iregex:
+    required: false
+    type: array
+    description: "First_name"
   first_name__isw:
     required: false
     type: array
@@ -137,6 +149,10 @@ parameters:
     required: false
     type: array
     description: "First_name does not start with (case-sensitive)"
+  first_name__regex:
+    required: false
+    type: array
+    description: "First_name"
   group:
     required: false
     type: array
@@ -185,10 +201,6 @@ parameters:
     required: false
     type: boolean
     description: "Is_active"
-  is_staff:
-    required: false
-    type: boolean
-    description: "Is_staff"
   is_superuser:
     required: false
     type: boolean
@@ -241,6 +253,10 @@ parameters:
     required: false
     type: array
     description: "Last_name ends with (case-insensitive)"
+  last_name__iregex:
+    required: false
+    type: array
+    description: "Last_name"
   last_name__isw:
     required: false
     type: array
@@ -265,6 +281,10 @@ parameters:
     required: false
     type: array
     description: "Last_name does not start with (case-sensitive)"
+  last_name__regex:
+    required: false
+    type: array
+    description: "Last_name"
   limit:
     required: false
     type: integer
@@ -285,6 +305,22 @@ parameters:
     required: false
     type: string
     description: "Which field to use when ordering the results."
+  owner:
+    required: false
+    type: array
+    description: "Owner (name)"
+  owner__n:
+    required: false
+    type: array
+    description: "Owner not equal to"
+  owner_id:
+    required: false
+    type: array
+    description: "Owner (ID)"
+  owner_id__n:
+    required: false
+    type: array
+    description: "Owner_id not equal to"
   permission_id:
     required: false
     type: array
@@ -317,6 +353,10 @@ parameters:
     required: false
     type: array
     description: "Username ends with (case-insensitive)"
+  username__iregex:
+    required: false
+    type: array
+    description: "Username"
   username__isw:
     required: false
     type: array
@@ -341,6 +381,10 @@ parameters:
     required: false
     type: array
     description: "Username does not start with (case-sensitive)"
+  username__regex:
+    required: false
+    type: array
+    description: "Username"
   save_in_key_store:
     type: boolean
     default: false

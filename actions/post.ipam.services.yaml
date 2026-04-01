@@ -1,6 +1,6 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.3
-description: "Post a list of service objects."
+# NetBox API version: 4.5
+description: "Post a list of application service objects."
 enabled: true
 entry_point: run.py
 name: post.ipam.services
@@ -21,46 +21,4 @@ parameters:
     default: false
     type: boolean
     description: Set action as failed when http return reponse status isn't 2xx.
-  parent_object_type:
-    required: false
-    type: string
-    description: "Parent object type"
-  parent_object_id:
-    required: false
-    type: integer
-    description: "Parent object id"
-  name:
-    required: false
-    type: string
-    description: "Name"
-  protocol:
-    required: false
-    type: string
-    description: "* `tcp` - TCP
-* `udp` - UDP
-* `sctp` - SCTP"
-  ports:
-    required: false
-    type: array
-    description: "Port numbers"
-  ipaddresses:
-    required: false
-    type: array
-    description: "Ipaddresses"
-  description:
-    required: false
-    type: string
-    description: "Description"
-  comments:
-    required: false
-    type: string
-    description: "Comments"
-  tags:
-    required: false
-    type: array
-    description: "Array of tag strings"
-  custom_fields:
-    required: false
-    type: object
-    description: "Custom fields"
 runner_type: python-script

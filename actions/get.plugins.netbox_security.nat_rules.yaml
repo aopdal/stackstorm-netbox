@@ -1,0 +1,749 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 4.5
+description: "Get a list of nat rule objects."
+enabled: true
+entry_point: run.py
+name: get.plugins.netbox_security.nat_rules
+parameters:
+  endpoint_uri:
+    default: "/plugins/netbox-security/nat-rules/"
+    immutable: true
+    type: string
+  http_verb:
+    default: get
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: true
+    immutable: true
+    type: boolean
+  fail_non_2xx:
+    default: false
+    type: boolean
+    description: Set action as failed when http return reponse status isn't 2xx.
+  created:
+    required: false
+    type: array
+    description: "Created"
+  created__empty:
+    required: false
+    type: array
+    description: "Created is empty/null (boolean)"
+  created__gt:
+    required: false
+    type: array
+    description: "Created greater than"
+  created__gte:
+    required: false
+    type: array
+    description: "Created greater than or equal to"
+  created__lt:
+    required: false
+    type: array
+    description: "Created less than"
+  created__lte:
+    required: false
+    type: array
+    description: "Created less than or equal to"
+  created__n:
+    required: false
+    type: array
+    description: "Created not equal to"
+  created_by_request:
+    required: false
+    type: string
+    description: "Created_by_request"
+  custom_interface:
+    required: false
+    type: string
+    description: "* `interface` - Interface
+* `off` - Off
+* `None` - None"
+  custom_interface__empty:
+    required: false
+    type: boolean
+    description: "Custom_interface is empty/null (boolean)"
+  custom_interface__ic:
+    required: false
+    type: array
+    description: "Custom_interface contains (case-insensitive)"
+  custom_interface__ie:
+    required: false
+    type: array
+    description: "Custom_interface exact match (case-insensitive)"
+  custom_interface__iew:
+    required: false
+    type: array
+    description: "Custom_interface ends with (case-insensitive)"
+  custom_interface__iregex:
+    required: false
+    type: array
+    description: "Custom_interface"
+  custom_interface__isw:
+    required: false
+    type: array
+    description: "Custom_interface starts with (case-sensitive)"
+  custom_interface__n:
+    required: false
+    type: string
+    description: "Custom_interface not equal to"
+  custom_interface__nic:
+    required: false
+    type: array
+    description: "Custom_interface does not contain (case-insensitive)"
+  custom_interface__nie:
+    required: false
+    type: array
+    description: "Custom_interface inverse exact match (case-insensitive)"
+  custom_interface__niew:
+    required: false
+    type: array
+    description: "Custom_interface does not end with (case-insensitive)"
+  custom_interface__nisw:
+    required: false
+    type: array
+    description: "Custom_interface does not start with (case-sensitive)"
+  custom_interface__regex:
+    required: false
+    type: array
+    description: "Custom_interface"
+  description:
+    required: false
+    type: array
+    description: "Description"
+  description__empty:
+    required: false
+    type: boolean
+    description: "Description is empty/null (boolean)"
+  description__ic:
+    required: false
+    type: array
+    description: "Description contains (case-insensitive)"
+  description__ie:
+    required: false
+    type: array
+    description: "Description exact match (case-insensitive)"
+  description__iew:
+    required: false
+    type: array
+    description: "Description ends with (case-insensitive)"
+  description__iregex:
+    required: false
+    type: array
+    description: "Description"
+  description__isw:
+    required: false
+    type: array
+    description: "Description starts with (case-sensitive)"
+  description__n:
+    required: false
+    type: array
+    description: "Description not equal to"
+  description__nic:
+    required: false
+    type: array
+    description: "Description does not contain (case-insensitive)"
+  description__nie:
+    required: false
+    type: array
+    description: "Description inverse exact match (case-insensitive)"
+  description__niew:
+    required: false
+    type: array
+    description: "Description does not end with (case-insensitive)"
+  description__nisw:
+    required: false
+    type: array
+    description: "Description does not start with (case-sensitive)"
+  description__regex:
+    required: false
+    type: array
+    description: "Description"
+  destination_address:
+    required: false
+    type: array
+    description: "Destination Address (Address)"
+  destination_address__n:
+    required: false
+    type: array
+    description: "Destination_address not equal to"
+  destination_address_id:
+    required: false
+    type: array
+    description: "Destination Address (ID)"
+  destination_address_id__n:
+    required: false
+    type: array
+    description: "Destination_address_id not equal to"
+  destination_pool:
+    required: false
+    type: array
+    description: "Destination Pool (Name)"
+  destination_pool__n:
+    required: false
+    type: array
+    description: "Destination_pool not equal to"
+  destination_pool_id:
+    required: false
+    type: array
+    description: "Destination Pool (ID)"
+  destination_pool_id__n:
+    required: false
+    type: array
+    description: "Destination_pool_id not equal to"
+  destination_ports:
+    required: false
+    type: integer
+    description: "Destination_ports"
+  destination_ports__empty:
+    required: false
+    type: integer
+    description: "Destination_ports is empty/null (boolean)"
+  destination_ports__gt:
+    required: false
+    type: integer
+    description: "Destination_ports greater than"
+  destination_ports__gte:
+    required: false
+    type: integer
+    description: "Destination_ports greater than or equal to"
+  destination_ports__lt:
+    required: false
+    type: integer
+    description: "Destination_ports less than"
+  destination_ports__lte:
+    required: false
+    type: integer
+    description: "Destination_ports less than or equal to"
+  destination_ports__n:
+    required: false
+    type: integer
+    description: "Destination_ports not equal to"
+  destination_prefix:
+    required: false
+    type: array
+    description: "Destination Prefix (Prefix)"
+  destination_prefix__n:
+    required: false
+    type: array
+    description: "Destination_prefix not equal to"
+  destination_prefix_id:
+    required: false
+    type: array
+    description: "Destination Prefix (ID)"
+  destination_prefix_id__n:
+    required: false
+    type: array
+    description: "Destination_prefix_id not equal to"
+  destination_range:
+    required: false
+    type: array
+    description: "Destination Range (Start Address)"
+  destination_range__n:
+    required: false
+    type: array
+    description: "Destination_range not equal to"
+  destination_range_id:
+    required: false
+    type: array
+    description: "Destination Range (ID)"
+  destination_range_id__n:
+    required: false
+    type: array
+    description: "Destination_range_id not equal to"
+  destination_type:
+    required: false
+    type: array
+    description: "Destination_type"
+  destination_type__empty:
+    required: false
+    type: boolean
+    description: "Destination_type is empty/null (boolean)"
+  destination_type__ic:
+    required: false
+    type: array
+    description: "Destination_type contains (case-insensitive)"
+  destination_type__ie:
+    required: false
+    type: array
+    description: "Destination_type exact match (case-insensitive)"
+  destination_type__iew:
+    required: false
+    type: array
+    description: "Destination_type ends with (case-insensitive)"
+  destination_type__iregex:
+    required: false
+    type: array
+    description: "Destination_type"
+  destination_type__isw:
+    required: false
+    type: array
+    description: "Destination_type starts with (case-sensitive)"
+  destination_type__n:
+    required: false
+    type: array
+    description: "Destination_type not equal to"
+  destination_type__nic:
+    required: false
+    type: array
+    description: "Destination_type does not contain (case-insensitive)"
+  destination_type__nie:
+    required: false
+    type: array
+    description: "Destination_type inverse exact match (case-insensitive)"
+  destination_type__niew:
+    required: false
+    type: array
+    description: "Destination_type does not end with (case-insensitive)"
+  destination_type__nisw:
+    required: false
+    type: array
+    description: "Destination_type does not start with (case-sensitive)"
+  destination_type__regex:
+    required: false
+    type: array
+    description: "Destination_type"
+  id:
+    required: false
+    type: array
+    description: "Id"
+  id__empty:
+    required: false
+    type: boolean
+    description: "Id is empty/null (boolean)"
+  id__gt:
+    required: false
+    type: array
+    description: "Id greater than"
+  id__gte:
+    required: false
+    type: array
+    description: "Id greater than or equal to"
+  id__lt:
+    required: false
+    type: array
+    description: "Id less than"
+  id__lte:
+    required: false
+    type: array
+    description: "Id less than or equal to"
+  id__n:
+    required: false
+    type: array
+    description: "Id not equal to"
+  ip_address_id:
+    required: false
+    type: array
+    description: "Source Address (ID)"
+  ip_address_id__n:
+    required: false
+    type: array
+    description: "Ip_address_id not equal to"
+  ip_range_id:
+    required: false
+    type: array
+    description: "Source Range (ID)"
+  ip_range_id__n:
+    required: false
+    type: array
+    description: "Ip_range_id not equal to"
+  last_updated:
+    required: false
+    type: array
+    description: "Last_updated"
+  last_updated__empty:
+    required: false
+    type: array
+    description: "Last_updated is empty/null (boolean)"
+  last_updated__gt:
+    required: false
+    type: array
+    description: "Last_updated greater than"
+  last_updated__gte:
+    required: false
+    type: array
+    description: "Last_updated greater than or equal to"
+  last_updated__lt:
+    required: false
+    type: array
+    description: "Last_updated less than"
+  last_updated__lte:
+    required: false
+    type: array
+    description: "Last_updated less than or equal to"
+  last_updated__n:
+    required: false
+    type: array
+    description: "Last_updated not equal to"
+  limit:
+    required: false
+    type: integer
+    description: "Number of results to return per page."
+  modified_by_request:
+    required: false
+    type: string
+    description: "Modified_by_request"
+  name:
+    required: false
+    type: array
+    description: "Name"
+  name__empty:
+    required: false
+    type: boolean
+    description: "Name is empty/null (boolean)"
+  name__ic:
+    required: false
+    type: array
+    description: "Name contains (case-insensitive)"
+  name__ie:
+    required: false
+    type: array
+    description: "Name exact match (case-insensitive)"
+  name__iew:
+    required: false
+    type: array
+    description: "Name ends with (case-insensitive)"
+  name__iregex:
+    required: false
+    type: array
+    description: "Name"
+  name__isw:
+    required: false
+    type: array
+    description: "Name starts with (case-sensitive)"
+  name__n:
+    required: false
+    type: array
+    description: "Name not equal to"
+  name__nic:
+    required: false
+    type: array
+    description: "Name does not contain (case-insensitive)"
+  name__nie:
+    required: false
+    type: array
+    description: "Name inverse exact match (case-insensitive)"
+  name__niew:
+    required: false
+    type: array
+    description: "Name does not end with (case-insensitive)"
+  name__nisw:
+    required: false
+    type: array
+    description: "Name does not start with (case-sensitive)"
+  name__regex:
+    required: false
+    type: array
+    description: "Name"
+  offset:
+    required: false
+    type: integer
+    description: "The initial index from which to return the results."
+  ordering:
+    required: false
+    type: string
+    description: "Which field to use when ordering the results."
+  owner:
+    required: false
+    type: array
+    description: "Owner (name)"
+  owner__n:
+    required: false
+    type: array
+    description: "Owner not equal to"
+  owner_group:
+    required: false
+    type: array
+    description: "Owner Group (name)"
+  owner_group__n:
+    required: false
+    type: array
+    description: "Owner_group not equal to"
+  owner_group_id:
+    required: false
+    type: array
+    description: "Owner Group (ID)"
+  owner_group_id__n:
+    required: false
+    type: array
+    description: "Owner_group_id not equal to"
+  owner_id:
+    required: false
+    type: array
+    description: "Owner (ID)"
+  owner_id__n:
+    required: false
+    type: array
+    description: "Owner_id not equal to"
+  pool:
+    required: false
+    type: array
+    description: "NAT Pool (Name)"
+  pool__n:
+    required: false
+    type: array
+    description: "Pool not equal to"
+  pool_id:
+    required: false
+    type: array
+    description: "NAT Pool (ID)"
+  pool_id__n:
+    required: false
+    type: array
+    description: "Pool_id not equal to"
+  prefix_id:
+    required: false
+    type: array
+    description: "Source Prefix (ID)"
+  prefix_id__n:
+    required: false
+    type: array
+    description: "Prefix_id not equal to"
+  q:
+    required: false
+    type: string
+    description: "Search"
+  rule_set:
+    required: false
+    type: array
+    description: "Rule Set (Name)"
+  rule_set__n:
+    required: false
+    type: array
+    description: "Rule_set not equal to"
+  rule_set_id:
+    required: false
+    type: array
+    description: "Rule Set (ID)"
+  rule_set_id__n:
+    required: false
+    type: array
+    description: "Rule_set_id not equal to"
+  source_address:
+    required: false
+    type: array
+    description: "Source Address (Address)"
+  source_address__n:
+    required: false
+    type: array
+    description: "Source_address not equal to"
+  source_address_id:
+    required: false
+    type: array
+    description: "Source Address (ID)"
+  source_address_id__n:
+    required: false
+    type: array
+    description: "Source_address_id not equal to"
+  source_pool:
+    required: false
+    type: array
+    description: "Source Pool (Name)"
+  source_pool__n:
+    required: false
+    type: array
+    description: "Source_pool not equal to"
+  source_pool_id:
+    required: false
+    type: array
+    description: "Source Pool (ID)"
+  source_pool_id__n:
+    required: false
+    type: array
+    description: "Source_pool_id not equal to"
+  source_ports:
+    required: false
+    type: integer
+    description: "Source_ports"
+  source_ports__empty:
+    required: false
+    type: integer
+    description: "Source_ports is empty/null (boolean)"
+  source_ports__gt:
+    required: false
+    type: integer
+    description: "Source_ports greater than"
+  source_ports__gte:
+    required: false
+    type: integer
+    description: "Source_ports greater than or equal to"
+  source_ports__lt:
+    required: false
+    type: integer
+    description: "Source_ports less than"
+  source_ports__lte:
+    required: false
+    type: integer
+    description: "Source_ports less than or equal to"
+  source_ports__n:
+    required: false
+    type: integer
+    description: "Source_ports not equal to"
+  source_prefix:
+    required: false
+    type: array
+    description: "Source Prefix (Prefix)"
+  source_prefix__n:
+    required: false
+    type: array
+    description: "Source_prefix not equal to"
+  source_prefix_id:
+    required: false
+    type: array
+    description: "Source Prefix (ID)"
+  source_prefix_id__n:
+    required: false
+    type: array
+    description: "Source_prefix_id not equal to"
+  source_range:
+    required: false
+    type: array
+    description: "Source Range (Start Address)"
+  source_range__n:
+    required: false
+    type: array
+    description: "Source_range not equal to"
+  source_range_id:
+    required: false
+    type: array
+    description: "Source Range (ID)"
+  source_range_id__n:
+    required: false
+    type: array
+    description: "Source_range_id not equal to"
+  source_type:
+    required: false
+    type: array
+    description: "Source_type"
+  source_type__empty:
+    required: false
+    type: boolean
+    description: "Source_type is empty/null (boolean)"
+  source_type__ic:
+    required: false
+    type: array
+    description: "Source_type contains (case-insensitive)"
+  source_type__ie:
+    required: false
+    type: array
+    description: "Source_type exact match (case-insensitive)"
+  source_type__iew:
+    required: false
+    type: array
+    description: "Source_type ends with (case-insensitive)"
+  source_type__iregex:
+    required: false
+    type: array
+    description: "Source_type"
+  source_type__isw:
+    required: false
+    type: array
+    description: "Source_type starts with (case-sensitive)"
+  source_type__n:
+    required: false
+    type: array
+    description: "Source_type not equal to"
+  source_type__nic:
+    required: false
+    type: array
+    description: "Source_type does not contain (case-insensitive)"
+  source_type__nie:
+    required: false
+    type: array
+    description: "Source_type inverse exact match (case-insensitive)"
+  source_type__niew:
+    required: false
+    type: array
+    description: "Source_type does not end with (case-insensitive)"
+  source_type__nisw:
+    required: false
+    type: array
+    description: "Source_type does not start with (case-sensitive)"
+  source_type__regex:
+    required: false
+    type: array
+    description: "Source_type"
+  status:
+    required: false
+    type: array
+    description: "Status"
+  status__empty:
+    required: false
+    type: boolean
+    description: "Status is empty/null (boolean)"
+  status__ic:
+    required: false
+    type: array
+    description: "Status contains (case-insensitive)"
+  status__ie:
+    required: false
+    type: array
+    description: "Status exact match (case-insensitive)"
+  status__iew:
+    required: false
+    type: array
+    description: "Status ends with (case-insensitive)"
+  status__iregex:
+    required: false
+    type: array
+    description: "Status"
+  status__isw:
+    required: false
+    type: array
+    description: "Status starts with (case-sensitive)"
+  status__n:
+    required: false
+    type: array
+    description: "Status not equal to"
+  status__nic:
+    required: false
+    type: array
+    description: "Status does not contain (case-insensitive)"
+  status__nie:
+    required: false
+    type: array
+    description: "Status inverse exact match (case-insensitive)"
+  status__niew:
+    required: false
+    type: array
+    description: "Status does not end with (case-insensitive)"
+  status__nisw:
+    required: false
+    type: array
+    description: "Status does not start with (case-sensitive)"
+  status__regex:
+    required: false
+    type: array
+    description: "Status"
+  tag:
+    required: false
+    type: array
+    description: "Tag"
+  tag__n:
+    required: false
+    type: array
+    description: "Tag not equal to"
+  tag_id:
+    required: false
+    type: array
+    description: "Tag_id"
+  tag_id__n:
+    required: false
+    type: array
+    description: "Tag_id not equal to"
+  updated_by_request:
+    required: false
+    type: string
+    description: "Updated_by_request"
+  save_in_key_store:
+    type: boolean
+    default: false
+    description: Save the result of the action as a json object in the st2 key store. Used when the expected result from Netbox is very large and the result will be piped to another action. You must also specify a save_in_key_store_keyname and an optional save_in_key_store_ttl.
+  save_in_key_store_key_name:
+    type: string
+    description: Name of the key to store the json result value in the st2 key store. Must be used with save_in_key_store and optionally save_in_key_store_ttl.
+  save_in_key_store_ttl:
+    type: integer
+    default: 60
+    description: TTL (seconds) of the saved json result in the st2 key store. Defaults to 60 seconds. Must be used with save_in_key_store and save_in_key_store_key_name.
+runner_type: python-script

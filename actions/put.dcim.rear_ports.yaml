@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.3
+# NetBox API version: 4.5
 description: "Put a rear port object."
 enabled: true
 entry_point: run.py
@@ -105,7 +105,11 @@ parameters:
   positions:
     required: false
     type: integer
-    description: "Number of front ports which may be mapped"
+    description: "Positions"
+  front_ports:
+    required: false
+    type: array
+    description: "Front ports"
   description:
     required: false
     type: string
@@ -114,6 +118,10 @@ parameters:
     required: false
     type: boolean
     description: "Treat as if a cable is connected"
+  owner:
+    required: false
+    type: object
+    description: "Owner"
   tags:
     required: false
     type: array

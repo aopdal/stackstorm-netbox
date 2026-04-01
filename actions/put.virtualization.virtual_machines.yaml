@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.3
+# NetBox API version: 4.5
 description: "Put a virtual machine object."
 enabled: true
 entry_point: run.py
@@ -35,6 +35,12 @@ parameters:
 * `failed` - Failed
 * `decommissioning` - Decommissioning
 * `paused` - Paused"
+  start_on_boot:
+    required: false
+    type: string
+    description: "* `on` - On
+* `off` - Off
+* `laststate` - Last State"
   site:
     required: false
     type: object
@@ -87,6 +93,10 @@ parameters:
     required: false
     type: string
     description: "Description"
+  owner:
+    required: false
+    type: object
+    description: "Owner"
   comments:
     required: false
     type: string

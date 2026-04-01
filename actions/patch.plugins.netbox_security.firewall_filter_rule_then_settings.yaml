@@ -1,0 +1,60 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 4.5
+description: "Patch a Firewall Filter Rule Setting object."
+enabled: true
+entry_point: run.py
+name: patch.plugins.netbox_security.firewall_filter_rule_then_settings
+parameters:
+  endpoint_uri:
+    default: "/plugins/netbox-security/firewall-filter-rule-then-settings/{{ id }}/"
+    immutable: true
+    type: string
+  http_verb:
+    default: patch
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: true
+    immutable: true
+    type: boolean
+  fail_non_2xx:
+    default: false
+    type: boolean
+    description: Set action as failed when http return reponse status isn't 2xx.
+  assigned_object_type:
+    required: false
+    type: integer
+    description: "Assigned object type"
+  assigned_object_id:
+    required: false
+    type: integer
+    description: "Assigned object id"
+  key:
+    required: false
+    type: string
+    description: "* `accept` - Accept
+* `count` - Count
+* `discard` - Discard
+* `log` - Log
+* `next` - Next
+* `policier` - Policer
+* `reject` - Reject
+* `sample` - Sample
+* `syslog` - Syslog"
+  value:
+    required: false
+    type: string
+    description: "Value"
+  description:
+    required: false
+    type: string
+    description: "Description"
+  comments:
+    required: false
+    type: string
+    description: "Comments"
+  id:
+    required: true
+    type: integer
+    description: "ID of the object to patch."
+runner_type: python-script

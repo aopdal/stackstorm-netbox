@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.3
+# NetBox API version: 4.5
 description: "Get a list of interface objects."
 enabled: true
 entry_point: run.py
@@ -29,11 +29,87 @@ parameters:
     required: false
     type: array
     description: "Bridge_id not equal to"
+  cable_connector:
+    required: false
+    type: array
+    description: "Cable_connector"
+  cable_connector__empty:
+    required: false
+    type: boolean
+    description: "Cable_connector is empty/null (boolean)"
+  cable_connector__gt:
+    required: false
+    type: array
+    description: "Cable_connector greater than"
+  cable_connector__gte:
+    required: false
+    type: array
+    description: "Cable_connector greater than or equal to"
+  cable_connector__lt:
+    required: false
+    type: array
+    description: "Cable_connector less than"
+  cable_connector__lte:
+    required: false
+    type: array
+    description: "Cable_connector less than or equal to"
+  cable_connector__n:
+    required: false
+    type: array
+    description: "Cable_connector not equal to"
   cable_end:
     required: false
     type: string
     description: "* `A` - A
 * `B` - B"
+  cable_end__empty:
+    required: false
+    type: boolean
+    description: "Cable_end is empty/null (boolean)"
+  cable_end__ic:
+    required: false
+    type: array
+    description: "Cable_end contains (case-insensitive)"
+  cable_end__ie:
+    required: false
+    type: array
+    description: "Cable_end exact match (case-insensitive)"
+  cable_end__iew:
+    required: false
+    type: array
+    description: "Cable_end ends with (case-insensitive)"
+  cable_end__iregex:
+    required: false
+    type: array
+    description: "Cable_end"
+  cable_end__isw:
+    required: false
+    type: array
+    description: "Cable_end starts with (case-sensitive)"
+  cable_end__n:
+    required: false
+    type: string
+    description: "Cable_end not equal to"
+  cable_end__nic:
+    required: false
+    type: array
+    description: "Cable_end does not contain (case-insensitive)"
+  cable_end__nie:
+    required: false
+    type: array
+    description: "Cable_end inverse exact match (case-insensitive)"
+  cable_end__niew:
+    required: false
+    type: array
+    description: "Cable_end does not end with (case-insensitive)"
+  cable_end__nisw:
+    required: false
+    type: array
+    description: "Cable_end does not start with (case-sensitive)"
+  cable_end__regex:
+    required: false
+    type: array
+    description: "Cable_end"
   cable_id:
     required: false
     type: array
@@ -102,6 +178,10 @@ parameters:
     required: false
     type: array
     description: "Description ends with (case-insensitive)"
+  description__iregex:
+    required: false
+    type: array
+    description: "Description"
   description__isw:
     required: false
     type: array
@@ -126,6 +206,10 @@ parameters:
     required: false
     type: array
     description: "Description does not start with (case-sensitive)"
+  description__regex:
+    required: false
+    type: array
+    description: "Description"
   device:
     required: false
     type: array
@@ -178,6 +262,10 @@ parameters:
     required: false
     type: array
     description: "Device_status ends with (case-insensitive)"
+  device_status__iregex:
+    required: false
+    type: array
+    description: "Device_status"
   device_status__isw:
     required: false
     type: array
@@ -202,6 +290,10 @@ parameters:
     required: false
     type: array
     description: "Device_status does not start with (case-sensitive)"
+  device_status__regex:
+    required: false
+    type: array
+    description: "Device_status"
   device_type:
     required: false
     type: array
@@ -238,6 +330,10 @@ parameters:
     required: false
     type: array
     description: "Duplex ends with (case-insensitive)"
+  duplex__iregex:
+    required: false
+    type: array
+    description: "Duplex"
   duplex__isw:
     required: false
     type: array
@@ -262,6 +358,10 @@ parameters:
     required: false
     type: array
     description: "Duplex does not start with (case-sensitive)"
+  duplex__regex:
+    required: false
+    type: array
+    description: "Duplex"
   enabled:
     required: false
     type: boolean
@@ -334,6 +434,10 @@ parameters:
     required: false
     type: array
     description: "Label ends with (case-insensitive)"
+  label__iregex:
+    required: false
+    type: array
+    description: "Label"
   label__isw:
     required: false
     type: array
@@ -358,6 +462,10 @@ parameters:
     required: false
     type: array
     description: "Label does not start with (case-sensitive)"
+  label__regex:
+    required: false
+    type: array
+    description: "Label"
   lag_id:
     required: false
     type: array
@@ -430,6 +538,10 @@ parameters:
     required: false
     type: array
     description: "Mac_address ends with (case-insensitive)"
+  mac_address__iregex:
+    required: false
+    type: array
+    description: "Mac_address"
   mac_address__isw:
     required: false
     type: array
@@ -454,6 +566,10 @@ parameters:
     required: false
     type: array
     description: "Mac_address does not start with (case-sensitive)"
+  mac_address__regex:
+    required: false
+    type: array
+    description: "Mac_address"
   mark_connected:
     required: false
     type: boolean
@@ -482,6 +598,10 @@ parameters:
     required: false
     type: array
     description: "Mode ends with (case-insensitive)"
+  mode__iregex:
+    required: false
+    type: array
+    description: "802.1Q Mode"
   mode__isw:
     required: false
     type: array
@@ -506,6 +626,10 @@ parameters:
     required: false
     type: array
     description: "Mode does not start with (case-sensitive)"
+  mode__regex:
+    required: false
+    type: array
+    description: "802.1Q Mode"
   modified_by_request:
     required: false
     type: string
@@ -566,6 +690,10 @@ parameters:
     required: false
     type: array
     description: "Name ends with (case-insensitive)"
+  name__iregex:
+    required: false
+    type: array
+    description: "Name"
   name__isw:
     required: false
     type: array
@@ -590,6 +718,10 @@ parameters:
     required: false
     type: array
     description: "Name does not start with (case-sensitive)"
+  name__regex:
+    required: false
+    type: array
+    description: "Name"
   occupied:
     required: false
     type: boolean
@@ -602,6 +734,38 @@ parameters:
     required: false
     type: string
     description: "Which field to use when ordering the results."
+  owner:
+    required: false
+    type: array
+    description: "Owner (name)"
+  owner__n:
+    required: false
+    type: array
+    description: "Owner not equal to"
+  owner_group:
+    required: false
+    type: array
+    description: "Owner Group (name)"
+  owner_group__n:
+    required: false
+    type: array
+    description: "Owner_group not equal to"
+  owner_group_id:
+    required: false
+    type: array
+    description: "Owner Group (ID)"
+  owner_group_id__n:
+    required: false
+    type: array
+    description: "Owner_group_id not equal to"
+  owner_id:
+    required: false
+    type: array
+    description: "Owner (ID)"
+  owner_id__n:
+    required: false
+    type: array
+    description: "Owner_id not equal to"
   parent_id:
     required: false
     type: array
@@ -630,6 +794,10 @@ parameters:
     required: false
     type: array
     description: "Poe_mode ends with (case-insensitive)"
+  poe_mode__iregex:
+    required: false
+    type: array
+    description: "Poe_mode"
   poe_mode__isw:
     required: false
     type: array
@@ -654,6 +822,10 @@ parameters:
     required: false
     type: array
     description: "Poe_mode does not start with (case-sensitive)"
+  poe_mode__regex:
+    required: false
+    type: array
+    description: "Poe_mode"
   poe_type:
     required: false
     type: array
@@ -674,6 +846,10 @@ parameters:
     required: false
     type: array
     description: "Poe_type ends with (case-insensitive)"
+  poe_type__iregex:
+    required: false
+    type: array
+    description: "Poe_type"
   poe_type__isw:
     required: false
     type: array
@@ -698,6 +874,10 @@ parameters:
     required: false
     type: array
     description: "Poe_type does not start with (case-sensitive)"
+  poe_type__regex:
+    required: false
+    type: array
+    description: "Poe_type"
   primary_mac_address:
     required: false
     type: array
@@ -770,6 +950,10 @@ parameters:
     required: false
     type: array
     description: "Rf_channel ends with (case-insensitive)"
+  rf_channel__iregex:
+    required: false
+    type: array
+    description: "Rf_channel"
   rf_channel__isw:
     required: false
     type: array
@@ -794,6 +978,10 @@ parameters:
     required: false
     type: array
     description: "Rf_channel does not start with (case-sensitive)"
+  rf_channel__regex:
+    required: false
+    type: array
+    description: "Rf_channel"
   rf_channel_frequency:
     required: false
     type: array
@@ -870,6 +1058,10 @@ parameters:
     required: false
     type: array
     description: "Rf_role ends with (case-insensitive)"
+  rf_role__iregex:
+    required: false
+    type: array
+    description: "Rf_role"
   rf_role__isw:
     required: false
     type: array
@@ -894,6 +1086,10 @@ parameters:
     required: false
     type: array
     description: "Rf_role does not start with (case-sensitive)"
+  rf_role__regex:
+    required: false
+    type: array
+    description: "Rf_role"
   site:
     required: false
     type: array
@@ -970,6 +1166,22 @@ parameters:
     required: false
     type: array
     description: "Tag_id not equal to"
+  tenant:
+    required: false
+    type: array
+    description: "Tenant (slug)"
+  tenant__n:
+    required: false
+    type: array
+    description: "Tenant not equal to"
+  tenant_id:
+    required: false
+    type: array
+    description: "Tenant (ID)"
+  tenant_id__n:
+    required: false
+    type: array
+    description: "Tenant_id not equal to"
   tx_power:
     required: false
     type: array
@@ -1018,6 +1230,10 @@ parameters:
     required: false
     type: array
     description: "Type ends with (case-insensitive)"
+  type__iregex:
+    required: false
+    type: array
+    description: "Type"
   type__isw:
     required: false
     type: array
@@ -1042,6 +1258,10 @@ parameters:
     required: false
     type: array
     description: "Type does not start with (case-sensitive)"
+  type__regex:
+    required: false
+    type: array
+    description: "Type"
   updated_by_request:
     required: false
     type: string
@@ -1094,6 +1314,14 @@ parameters:
     required: false
     type: array
     description: "Virtual_chassis_member_id"
+  virtual_chassis_member_or_master:
+    required: false
+    type: array
+    description: "Virtual_chassis_member_or_master"
+  virtual_chassis_member_or_master_id:
+    required: false
+    type: array
+    description: "Virtual_chassis_member_or_master_id"
   virtual_circuit_id:
     required: false
     type: array
@@ -1182,6 +1410,10 @@ parameters:
     required: false
     type: array
     description: "Wwn ends with (case-insensitive)"
+  wwn__iregex:
+    required: false
+    type: array
+    description: "Wwn"
   wwn__isw:
     required: false
     type: array
@@ -1206,6 +1438,10 @@ parameters:
     required: false
     type: array
     description: "Wwn does not start with (case-sensitive)"
+  wwn__regex:
+    required: false
+    type: array
+    description: "Wwn"
   save_in_key_store:
     type: boolean
     default: false

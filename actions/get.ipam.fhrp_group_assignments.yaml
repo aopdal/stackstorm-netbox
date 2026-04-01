@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.3
+# NetBox API version: 4.5
 description: "Get a list of FHRP group assignment objects."
 enabled: true
 entry_point: run.py
@@ -127,11 +127,11 @@ parameters:
     description: "Interface_id not equal to"
   interface_type:
     required: false
-    type: string
+    type: array
     description: "Interface_type"
   interface_type__n:
     required: false
-    type: string
+    type: array
     description: "Interface_type not equal to"
   last_updated:
     required: false

@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.3
+# NetBox API version: 4.5
 description: "Post a list of cable objects."
 enabled: true
 entry_point: run.py
@@ -21,86 +21,4 @@ parameters:
     default: false
     type: boolean
     description: Set action as failed when http return reponse status isn't 2xx.
-  type:
-    required: false
-    type: string
-    description: "* `cat3` - CAT3
-* `cat5` - CAT5
-* `cat5e` - CAT5e
-* `cat6` - CAT6
-* `cat6a` - CAT6a
-* `cat7` - CAT7
-* `cat7a` - CAT7a
-* `cat8` - CAT8
-* `dac-active` - Direct Attach Copper (Active)
-* `dac-passive` - Direct Attach Copper (Passive)
-* `mrj21-trunk` - MRJ21 Trunk
-* `coaxial` - Coaxial
-* `mmf` - Multimode Fiber
-* `mmf-om1` - Multimode Fiber (OM1)
-* `mmf-om2` - Multimode Fiber (OM2)
-* `mmf-om3` - Multimode Fiber (OM3)
-* `mmf-om4` - Multimode Fiber (OM4)
-* `mmf-om5` - Multimode Fiber (OM5)
-* `smf` - Singlemode Fiber
-* `smf-os1` - Singlemode Fiber (OS1)
-* `smf-os2` - Singlemode Fiber (OS2)
-* `aoc` - Active Optical Cabling (AOC)
-* `usb` - USB
-* `power` - Power"
-  a_terminations:
-    required: false
-    type: array
-    description: "A terminations"
-  b_terminations:
-    required: false
-    type: array
-    description: "B terminations"
-  status:
-    required: false
-    type: string
-    description: "* `connected` - Connected
-* `planned` - Planned
-* `decommissioning` - Decommissioning"
-  tenant:
-    required: false
-    type: object
-    description: "Tenant"
-  label:
-    required: false
-    type: string
-    description: "Label"
-  color:
-    required: false
-    type: string
-    description: "Color"
-  length:
-    required: false
-    type: integer
-    description: "Length"
-  length_unit:
-    required: false
-    type: string
-    description: "* `km` - Kilometers
-* `m` - Meters
-* `cm` - Centimeters
-* `mi` - Miles
-* `ft` - Feet
-* `in` - Inches"
-  description:
-    required: false
-    type: string
-    description: "Description"
-  comments:
-    required: false
-    type: string
-    description: "Comments"
-  tags:
-    required: false
-    type: array
-    description: "Array of tag strings"
-  custom_fields:
-    required: false
-    type: object
-    description: "Custom fields"
 runner_type: python-script

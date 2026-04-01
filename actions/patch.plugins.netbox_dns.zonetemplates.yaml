@@ -1,0 +1,96 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 4.5
+description: "Patch a Zone Template object."
+enabled: true
+entry_point: run.py
+name: patch.plugins.netbox_dns.zonetemplates
+parameters:
+  endpoint_uri:
+    default: "/plugins/netbox-dns/zonetemplates/{{ id }}/"
+    immutable: true
+    type: string
+  http_verb:
+    default: patch
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: true
+    immutable: true
+    type: boolean
+  fail_non_2xx:
+    default: false
+    type: boolean
+    description: Set action as failed when http return reponse status isn't 2xx.
+  name:
+    required: false
+    type: string
+    description: "Template Name"
+  description:
+    required: false
+    type: string
+    description: "Description"
+  comments:
+    required: false
+    type: string
+    description: "Comments"
+  tags:
+    required: false
+    type: array
+    description: "Array of tag strings"
+  nameservers:
+    required: false
+    type: array
+    description: "Nameservers for the zone"
+  soa_mname:
+    required: false
+    type: object
+    description: "Primary nameserver for the zone"
+  soa_rname:
+    required: false
+    type: string
+    description: "Soa rname"
+  dnssec_policy:
+    required: false
+    type: object
+    description: "DNSSEC policy assigned to the zone template"
+  parental_agents:
+    required: false
+    type: array
+    description: "Parental agents"
+  registrar:
+    required: false
+    type: object
+    description: "Registrar the domain is registered with"
+  registrant:
+    required: false
+    type: object
+    description: "Registrant of the domain"
+  tech_c:
+    required: false
+    type: object
+    description: "Technical contact for the domain"
+  admin_c:
+    required: false
+    type: object
+    description: "Administrative contact for the domain"
+  billing_c:
+    required: false
+    type: object
+    description: "Billing contact for the domain"
+  custom_fields:
+    required: false
+    type: object
+    description: "Custom fields"
+  tenant:
+    required: false
+    type: object
+    description: "Tenant"
+  record_templates:
+    required: false
+    type: array
+    description: "Record templates assigned to the zone template"
+  id:
+    required: true
+    type: integer
+    description: "ID of the object to patch."
+runner_type: python-script

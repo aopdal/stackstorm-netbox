@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.3
+# NetBox API version: 4.5
 description: "Retrieve a list of recent changes."
 enabled: true
 entry_point: run.py
@@ -27,6 +27,54 @@ parameters:
     description: "* `create` - Created
 * `update` - Updated
 * `delete` - Deleted"
+  action__empty:
+    required: false
+    type: boolean
+    description: "Action is empty/null (boolean)"
+  action__ic:
+    required: false
+    type: array
+    description: "Action contains (case-insensitive)"
+  action__ie:
+    required: false
+    type: array
+    description: "Action exact match (case-insensitive)"
+  action__iew:
+    required: false
+    type: array
+    description: "Action ends with (case-insensitive)"
+  action__iregex:
+    required: false
+    type: array
+    description: "Action"
+  action__isw:
+    required: false
+    type: array
+    description: "Action starts with (case-sensitive)"
+  action__n:
+    required: false
+    type: string
+    description: "Action not equal to"
+  action__nic:
+    required: false
+    type: array
+    description: "Action does not contain (case-insensitive)"
+  action__nie:
+    required: false
+    type: array
+    description: "Action inverse exact match (case-insensitive)"
+  action__niew:
+    required: false
+    type: array
+    description: "Action does not end with (case-insensitive)"
+  action__nisw:
+    required: false
+    type: array
+    description: "Action does not start with (case-sensitive)"
+  action__regex:
+    required: false
+    type: array
+    description: "Action"
   changed_object_id:
     required: false
     type: array
@@ -57,11 +105,11 @@ parameters:
     description: "Changed_object_id not equal to"
   changed_object_type:
     required: false
-    type: string
+    type: array
     description: "Changed_object_type"
   changed_object_type__n:
     required: false
-    type: string
+    type: array
     description: "Changed_object_type not equal to"
   changed_object_type_id:
     required: false
@@ -123,6 +171,10 @@ parameters:
     required: false
     type: array
     description: "Object_repr ends with (case-insensitive)"
+  object_repr__iregex:
+    required: false
+    type: array
+    description: "Object_repr"
   object_repr__isw:
     required: false
     type: array
@@ -147,6 +199,10 @@ parameters:
     required: false
     type: array
     description: "Object_repr does not start with (case-sensitive)"
+  object_repr__regex:
+    required: false
+    type: array
+    description: "Object_repr"
   offset:
     required: false
     type: integer
@@ -189,11 +245,11 @@ parameters:
     description: "Related_object_id not equal to"
   related_object_type:
     required: false
-    type: integer
+    type: array
     description: "Related_object_type"
   related_object_type__n:
     required: false
-    type: integer
+    type: array
     description: "Related_object_type not equal to"
   request_id:
     required: false
@@ -243,6 +299,10 @@ parameters:
     required: false
     type: array
     description: "User_name ends with (case-insensitive)"
+  user_name__iregex:
+    required: false
+    type: array
+    description: "User_name"
   user_name__isw:
     required: false
     type: array
@@ -267,6 +327,10 @@ parameters:
     required: false
     type: array
     description: "User_name does not start with (case-sensitive)"
+  user_name__regex:
+    required: false
+    type: array
+    description: "User_name"
   save_in_key_store:
     type: boolean
     default: false

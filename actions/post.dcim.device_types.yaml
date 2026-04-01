@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.3
+# NetBox API version: 4.5
 description: "Post a list of device type objects."
 enabled: true
 entry_point: run.py
@@ -21,88 +21,4 @@ parameters:
     default: false
     type: boolean
     description: Set action as failed when http return reponse status isn't 2xx.
-  manufacturer:
-    required: false
-    type: object
-    description: "Manufacturer"
-  default_platform:
-    required: false
-    type: object
-    description: "Default platform"
-  model:
-    required: false
-    type: string
-    description: "Model"
-  slug:
-    required: false
-    type: string
-    description: "Slug"
-  part_number:
-    required: false
-    type: string
-    description: "Discrete part number (optional)"
-  u_height:
-    required: false
-    type: integer
-    description: "Position (U)"
-  exclude_from_utilization:
-    required: false
-    type: boolean
-    description: "Devices of this type are excluded when calculating rack utilization."
-  is_full_depth:
-    required: false
-    type: boolean
-    description: "Device consumes both front and rear rack faces."
-  subdevice_role:
-    required: false
-    type: string
-    description: "Parent/child status"
-  airflow:
-    required: false
-    type: string
-    description: "* `front-to-rear` - Front to rear
-* `rear-to-front` - Rear to front
-* `left-to-right` - Left to right
-* `right-to-left` - Right to left
-* `side-to-rear` - Side to rear
-* `rear-to-side` - Rear to side
-* `bottom-to-top` - Bottom to top
-* `top-to-bottom` - Top to bottom
-* `passive` - Passive
-* `mixed` - Mixed"
-  weight:
-    required: false
-    type: integer
-    description: "Weight"
-  weight_unit:
-    required: false
-    type: string
-    description: "* `kg` - Kilograms
-* `g` - Grams
-* `lb` - Pounds
-* `oz` - Ounces"
-  front_image:
-    required: false
-    type: string
-    description: "Front image"
-  rear_image:
-    required: false
-    type: string
-    description: "Rear image"
-  description:
-    required: false
-    type: string
-    description: "Description"
-  comments:
-    required: false
-    type: string
-    description: "Comments"
-  tags:
-    required: false
-    type: array
-    description: "Array of tag strings"
-  custom_fields:
-    required: false
-    type: object
-    description: "Custom fields"
 runner_type: python-script

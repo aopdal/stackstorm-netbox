@@ -1,0 +1,535 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 4.5
+description: "Get a list of policer objects."
+enabled: true
+entry_point: run.py
+name: get.plugins.netbox_security.policers
+parameters:
+  endpoint_uri:
+    default: "/plugins/netbox-security/policers/"
+    immutable: true
+    type: string
+  http_verb:
+    default: get
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: true
+    immutable: true
+    type: boolean
+  fail_non_2xx:
+    default: false
+    type: boolean
+    description: Set action as failed when http return reponse status isn't 2xx.
+  bandwidth_limit:
+    required: false
+    type: array
+    description: "Bandwidth_limit"
+  bandwidth_limit__empty:
+    required: false
+    type: boolean
+    description: "Bandwidth_limit is empty/null (boolean)"
+  bandwidth_limit__gt:
+    required: false
+    type: array
+    description: "Bandwidth_limit greater than"
+  bandwidth_limit__gte:
+    required: false
+    type: array
+    description: "Bandwidth_limit greater than or equal to"
+  bandwidth_limit__lt:
+    required: false
+    type: array
+    description: "Bandwidth_limit less than"
+  bandwidth_limit__lte:
+    required: false
+    type: array
+    description: "Bandwidth_limit less than or equal to"
+  bandwidth_limit__n:
+    required: false
+    type: array
+    description: "Bandwidth_limit not equal to"
+  bandwidth_percent:
+    required: false
+    type: array
+    description: "Bandwidth_percent"
+  bandwidth_percent__empty:
+    required: false
+    type: boolean
+    description: "Bandwidth_percent is empty/null (boolean)"
+  bandwidth_percent__gt:
+    required: false
+    type: array
+    description: "Bandwidth_percent greater than"
+  bandwidth_percent__gte:
+    required: false
+    type: array
+    description: "Bandwidth_percent greater than or equal to"
+  bandwidth_percent__lt:
+    required: false
+    type: array
+    description: "Bandwidth_percent less than"
+  bandwidth_percent__lte:
+    required: false
+    type: array
+    description: "Bandwidth_percent less than or equal to"
+  bandwidth_percent__n:
+    required: false
+    type: array
+    description: "Bandwidth_percent not equal to"
+  burst_size_limit:
+    required: false
+    type: array
+    description: "Burst_size_limit"
+  burst_size_limit__empty:
+    required: false
+    type: boolean
+    description: "Burst_size_limit is empty/null (boolean)"
+  burst_size_limit__gt:
+    required: false
+    type: array
+    description: "Burst_size_limit greater than"
+  burst_size_limit__gte:
+    required: false
+    type: array
+    description: "Burst_size_limit greater than or equal to"
+  burst_size_limit__lt:
+    required: false
+    type: array
+    description: "Burst_size_limit less than"
+  burst_size_limit__lte:
+    required: false
+    type: array
+    description: "Burst_size_limit less than or equal to"
+  burst_size_limit__n:
+    required: false
+    type: array
+    description: "Burst_size_limit not equal to"
+  created:
+    required: false
+    type: array
+    description: "Created"
+  created__empty:
+    required: false
+    type: array
+    description: "Created is empty/null (boolean)"
+  created__gt:
+    required: false
+    type: array
+    description: "Created greater than"
+  created__gte:
+    required: false
+    type: array
+    description: "Created greater than or equal to"
+  created__lt:
+    required: false
+    type: array
+    description: "Created less than"
+  created__lte:
+    required: false
+    type: array
+    description: "Created less than or equal to"
+  created__n:
+    required: false
+    type: array
+    description: "Created not equal to"
+  created_by_request:
+    required: false
+    type: string
+    description: "Created_by_request"
+  description:
+    required: false
+    type: array
+    description: "Description"
+  description__empty:
+    required: false
+    type: boolean
+    description: "Description is empty/null (boolean)"
+  description__ic:
+    required: false
+    type: array
+    description: "Description contains (case-insensitive)"
+  description__ie:
+    required: false
+    type: array
+    description: "Description exact match (case-insensitive)"
+  description__iew:
+    required: false
+    type: array
+    description: "Description ends with (case-insensitive)"
+  description__iregex:
+    required: false
+    type: array
+    description: "Description"
+  description__isw:
+    required: false
+    type: array
+    description: "Description starts with (case-sensitive)"
+  description__n:
+    required: false
+    type: array
+    description: "Description not equal to"
+  description__nic:
+    required: false
+    type: array
+    description: "Description does not contain (case-insensitive)"
+  description__nie:
+    required: false
+    type: array
+    description: "Description inverse exact match (case-insensitive)"
+  description__niew:
+    required: false
+    type: array
+    description: "Description does not end with (case-insensitive)"
+  description__nisw:
+    required: false
+    type: array
+    description: "Description does not start with (case-sensitive)"
+  description__regex:
+    required: false
+    type: array
+    description: "Description"
+  discard:
+    required: false
+    type: boolean
+    description: "Discard"
+  forwarding_class:
+    required: false
+    type: array
+    description: "Classify packet to forwarding class"
+  forwarding_class__empty:
+    required: false
+    type: boolean
+    description: "Forwarding_class is empty/null (boolean)"
+  forwarding_class__ic:
+    required: false
+    type: array
+    description: "Forwarding_class contains (case-insensitive)"
+  forwarding_class__ie:
+    required: false
+    type: array
+    description: "Forwarding_class exact match (case-insensitive)"
+  forwarding_class__iew:
+    required: false
+    type: array
+    description: "Forwarding_class ends with (case-insensitive)"
+  forwarding_class__iregex:
+    required: false
+    type: array
+    description: "Classify packet to forwarding class"
+  forwarding_class__isw:
+    required: false
+    type: array
+    description: "Forwarding_class starts with (case-sensitive)"
+  forwarding_class__n:
+    required: false
+    type: array
+    description: "Forwarding_class not equal to"
+  forwarding_class__nic:
+    required: false
+    type: array
+    description: "Forwarding_class does not contain (case-insensitive)"
+  forwarding_class__nie:
+    required: false
+    type: array
+    description: "Forwarding_class inverse exact match (case-insensitive)"
+  forwarding_class__niew:
+    required: false
+    type: array
+    description: "Forwarding_class does not end with (case-insensitive)"
+  forwarding_class__nisw:
+    required: false
+    type: array
+    description: "Forwarding_class does not start with (case-sensitive)"
+  forwarding_class__regex:
+    required: false
+    type: array
+    description: "Classify packet to forwarding class"
+  id:
+    required: false
+    type: array
+    description: "Id"
+  id__empty:
+    required: false
+    type: boolean
+    description: "Id is empty/null (boolean)"
+  id__gt:
+    required: false
+    type: array
+    description: "Id greater than"
+  id__gte:
+    required: false
+    type: array
+    description: "Id greater than or equal to"
+  id__lt:
+    required: false
+    type: array
+    description: "Id less than"
+  id__lte:
+    required: false
+    type: array
+    description: "Id less than or equal to"
+  id__n:
+    required: false
+    type: array
+    description: "Id not equal to"
+  last_updated:
+    required: false
+    type: array
+    description: "Last_updated"
+  last_updated__empty:
+    required: false
+    type: array
+    description: "Last_updated is empty/null (boolean)"
+  last_updated__gt:
+    required: false
+    type: array
+    description: "Last_updated greater than"
+  last_updated__gte:
+    required: false
+    type: array
+    description: "Last_updated greater than or equal to"
+  last_updated__lt:
+    required: false
+    type: array
+    description: "Last_updated less than"
+  last_updated__lte:
+    required: false
+    type: array
+    description: "Last_updated less than or equal to"
+  last_updated__n:
+    required: false
+    type: array
+    description: "Last_updated not equal to"
+  limit:
+    required: false
+    type: integer
+    description: "Number of results to return per page."
+  logical_interface_policer:
+    required: false
+    type: boolean
+    description: "Logical_interface_policer"
+  loss_priority:
+    required: false
+    type: array
+    description: "Packet&#39;s loss priority"
+  loss_priority__empty:
+    required: false
+    type: boolean
+    description: "Loss_priority is empty/null (boolean)"
+  loss_priority__ic:
+    required: false
+    type: array
+    description: "Loss_priority contains (case-insensitive)"
+  loss_priority__ie:
+    required: false
+    type: array
+    description: "Loss_priority exact match (case-insensitive)"
+  loss_priority__iew:
+    required: false
+    type: array
+    description: "Loss_priority ends with (case-insensitive)"
+  loss_priority__iregex:
+    required: false
+    type: array
+    description: "Packet&#39;s loss priority"
+  loss_priority__isw:
+    required: false
+    type: array
+    description: "Loss_priority starts with (case-sensitive)"
+  loss_priority__n:
+    required: false
+    type: array
+    description: "Loss_priority not equal to"
+  loss_priority__nic:
+    required: false
+    type: array
+    description: "Loss_priority does not contain (case-insensitive)"
+  loss_priority__nie:
+    required: false
+    type: array
+    description: "Loss_priority inverse exact match (case-insensitive)"
+  loss_priority__niew:
+    required: false
+    type: array
+    description: "Loss_priority does not end with (case-insensitive)"
+  loss_priority__nisw:
+    required: false
+    type: array
+    description: "Loss_priority does not start with (case-sensitive)"
+  loss_priority__regex:
+    required: false
+    type: array
+    description: "Packet&#39;s loss priority"
+  modified_by_request:
+    required: false
+    type: string
+    description: "Modified_by_request"
+  name:
+    required: false
+    type: array
+    description: "Name"
+  name__empty:
+    required: false
+    type: boolean
+    description: "Name is empty/null (boolean)"
+  name__ic:
+    required: false
+    type: array
+    description: "Name contains (case-insensitive)"
+  name__ie:
+    required: false
+    type: array
+    description: "Name exact match (case-insensitive)"
+  name__iew:
+    required: false
+    type: array
+    description: "Name ends with (case-insensitive)"
+  name__iregex:
+    required: false
+    type: array
+    description: "Name"
+  name__isw:
+    required: false
+    type: array
+    description: "Name starts with (case-sensitive)"
+  name__n:
+    required: false
+    type: array
+    description: "Name not equal to"
+  name__nic:
+    required: false
+    type: array
+    description: "Name does not contain (case-insensitive)"
+  name__nie:
+    required: false
+    type: array
+    description: "Name inverse exact match (case-insensitive)"
+  name__niew:
+    required: false
+    type: array
+    description: "Name does not end with (case-insensitive)"
+  name__nisw:
+    required: false
+    type: array
+    description: "Name does not start with (case-sensitive)"
+  name__regex:
+    required: false
+    type: array
+    description: "Name"
+  offset:
+    required: false
+    type: integer
+    description: "The initial index from which to return the results."
+  ordering:
+    required: false
+    type: string
+    description: "Which field to use when ordering the results."
+  out_of_profile:
+    required: false
+    type: boolean
+    description: "Out_of_profile"
+  owner:
+    required: false
+    type: array
+    description: "Owner (name)"
+  owner__n:
+    required: false
+    type: array
+    description: "Owner not equal to"
+  owner_group:
+    required: false
+    type: array
+    description: "Owner Group (name)"
+  owner_group__n:
+    required: false
+    type: array
+    description: "Owner_group not equal to"
+  owner_group_id:
+    required: false
+    type: array
+    description: "Owner Group (ID)"
+  owner_group_id__n:
+    required: false
+    type: array
+    description: "Owner_group_id not equal to"
+  owner_id:
+    required: false
+    type: array
+    description: "Owner (ID)"
+  owner_id__n:
+    required: false
+    type: array
+    description: "Owner_id not equal to"
+  physical_interface_policer:
+    required: false
+    type: boolean
+    description: "Physical_interface_policer"
+  q:
+    required: false
+    type: string
+    description: "Search"
+  tag:
+    required: false
+    type: array
+    description: "Tag"
+  tag__n:
+    required: false
+    type: array
+    description: "Tag not equal to"
+  tag_id:
+    required: false
+    type: array
+    description: "Tag_id"
+  tag_id__n:
+    required: false
+    type: array
+    description: "Tag_id not equal to"
+  tenant:
+    required: false
+    type: array
+    description: "Tenant (slug)"
+  tenant__n:
+    required: false
+    type: array
+    description: "Tenant not equal to"
+  tenant_group:
+    required: false
+    type: array
+    description: "Tenant_group"
+  tenant_group__n:
+    required: false
+    type: array
+    description: "Tenant_group not equal to"
+  tenant_group_id:
+    required: false
+    type: array
+    description: "Tenant_group_id"
+  tenant_group_id__n:
+    required: false
+    type: array
+    description: "Tenant_group_id not equal to"
+  tenant_id:
+    required: false
+    type: array
+    description: "Tenant (ID)"
+  tenant_id__n:
+    required: false
+    type: array
+    description: "Tenant_id not equal to"
+  updated_by_request:
+    required: false
+    type: string
+    description: "Updated_by_request"
+  save_in_key_store:
+    type: boolean
+    default: false
+    description: Save the result of the action as a json object in the st2 key store. Used when the expected result from Netbox is very large and the result will be piped to another action. You must also specify a save_in_key_store_keyname and an optional save_in_key_store_ttl.
+  save_in_key_store_key_name:
+    type: string
+    description: Name of the key to store the json result value in the st2 key store. Must be used with save_in_key_store and optionally save_in_key_store_ttl.
+  save_in_key_store_ttl:
+    type: integer
+    default: 60
+    description: TTL (seconds) of the saved json result in the st2 key store. Defaults to 60 seconds. Must be used with save_in_key_store and save_in_key_store_key_name.
+runner_type: python-script
