@@ -150,7 +150,7 @@ def get_actions(spec):
                 elif path.endswith("/{{ id }}/"):
                     # defer these until we have processed everything else to ensure the list
                     # endpoints are present for lookup
-                    deferred_detail_gets.append(action_name)
+                    deferred_detail_gets.append((action_name, action))
                 elif "{{ id }}" in path and not path.endswith("{{ id }}"):
                     action["parameters"].append(
                         {
@@ -179,12 +179,21 @@ def get_actions(spec):
                     actions[action_name] = action
 
     # process deferred detail get endpoints
-    for detailed_get in deferred_detail_gets:
+    for detailed_get, detail_action in deferred_detail_gets:
         list_action = actions.get(detailed_get)
         if list_action is None:
-            raise Exception(
-                "Unable to find list action for deferred GET endpoint {}".format(detailed_get)
+            # No list endpoint exists — add the detail endpoint as a standalone action
+            print(f"Warning: no list action found for {detailed_get}, adding as detail-only action")
+            detail_action["parameters"].append(
+                {
+                    "name": "id",
+                    "required": True,
+                    "description": "ID of the object.",
+                    "type": "integer",
+                }
             )
+            detail_action["get_detail_route_eligible"] = False
+            actions[detailed_get] = detail_action
 
     return actions
 
