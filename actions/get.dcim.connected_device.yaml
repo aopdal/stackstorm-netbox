@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.3
+# NetBox API version: 4.6
 description: "This endpoint allows a user to determine what device (if any) is connected to a given peer device and peer
 interface. This is useful in a situation where a device boots with no configuration, but can detect its neighbors
 via a protocol such as LLDP. Two query parameters must be included in the request:
@@ -26,6 +26,18 @@ parameters:
     default: false
     type: boolean
     description: Set action as failed when http return reponse status isn't 2xx.
+  brief:
+    required: false
+    type: boolean
+    description: "Return only brief fields for each object."
+  fields:
+    required: false
+    type: string
+    description: "Comma-separated list of fields to include in the response. Example: `fields=id,name`."
+  omit:
+    required: false
+    type: string
+    description: "Comma-separated list of fields to exclude from the response. Example: `omit=description,tags`."
   peer_device:
     required: false
     type: string

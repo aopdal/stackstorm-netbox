@@ -1,0 +1,137 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 4.6
+description: "Put a DNSSEC Policy object."
+enabled: true
+entry_point: run.py
+name: put.plugins.netbox_dns.dnssecpolicies
+parameters:
+  endpoint_uri:
+    default: "/plugins/netbox-dns/dnssecpolicies/{{ id }}/"
+    immutable: true
+    type: string
+  http_verb:
+    default: put
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: true
+    immutable: true
+    type: boolean
+  fail_non_2xx:
+    default: false
+    type: boolean
+    description: Set action as failed when http return reponse status isn't 2xx.
+  name:
+    required: false
+    type: string
+    description: "Name"
+  description:
+    required: false
+    type: string
+    description: "Description"
+  comments:
+    required: false
+    type: string
+    description: "Comments"
+  tags:
+    required: false
+    type: array
+    description: "Array of tag strings"
+  status:
+    required: false
+    type: string
+    description: "* `active` - Active
+* `inactive` - Inactive"
+  inline_signing:
+    required: false
+    type: boolean
+    description: "Use inline signing"
+  key_templates:
+    required: false
+    type: array
+    description: "Key templates assigned to the policy"
+  dnskey_ttl:
+    required: false
+    type: integer
+    description: "Dnskey ttl"
+  purge_keys:
+    required: false
+    type: integer
+    description: "Purge keys"
+  publish_safety:
+    required: false
+    type: integer
+    description: "Publish safety"
+  retire_safety:
+    required: false
+    type: integer
+    description: "Retire safety"
+  signatures_jitter:
+    required: false
+    type: integer
+    description: "Signatures jitter"
+  signatures_refresh:
+    required: false
+    type: integer
+    description: "Signatures refresh"
+  signatures_validity:
+    required: false
+    type: integer
+    description: "Signatures validity"
+  signatures_validity_dnskey:
+    required: false
+    type: integer
+    description: "Signatures validity dnskey"
+  max_zone_ttl:
+    required: false
+    type: integer
+    description: "Max zone ttl"
+  zone_propagation_delay:
+    required: false
+    type: integer
+    description: "Zone propagation delay"
+  create_cdnskey:
+    required: false
+    type: boolean
+    description: "Create cdnskey"
+  cds_digest_types:
+    required: false
+    type: array
+    description: "Cds digest types"
+  parent_ds_ttl:
+    required: false
+    type: integer
+    description: "Parent ds ttl"
+  parent_propagation_delay:
+    required: false
+    type: integer
+    description: "Parent propagation delay"
+  use_nsec3:
+    required: false
+    type: boolean
+    description: "Use nsec3"
+  nsec3_iterations:
+    required: false
+    type: integer
+    description: "Nsec3 iterations"
+  nsec3_opt_out:
+    required: false
+    type: boolean
+    description: "Nsec3 opt out"
+  nsec3_salt_size:
+    required: false
+    type: integer
+    description: "Nsec3 salt size"
+  custom_fields:
+    required: false
+    type: object
+    description: "Custom fields"
+  tenant:
+    required: false
+    type: object
+    description: "Tenant"
+  id:
+    required: true
+    type: integer
+    description: "ID of the object to put."
+runner_type: python-script

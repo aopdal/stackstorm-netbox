@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.3
+# NetBox API version: 4.6
 description: "Post a list of circuit objects."
 enabled: true
 entry_point: run.py
@@ -21,76 +21,4 @@ parameters:
     default: false
     type: boolean
     description: Set action as failed when http return reponse status isn't 2xx.
-  cid:
-    required: false
-    type: string
-    description: "Circuit ID"
-  provider:
-    required: false
-    type: object
-    description: "Provider"
-  provider_account:
-    required: false
-    type: object
-    description: "Provider account"
-  type:
-    required: false
-    type: object
-    description: "Type"
-  status:
-    required: false
-    type: string
-    description: "* `planned` - Planned
-* `provisioning` - Provisioning
-* `active` - Active
-* `offline` - Offline
-* `deprovisioning` - Deprovisioning
-* `decommissioned` - Decommissioned"
-  tenant:
-    required: false
-    type: object
-    description: "Tenant"
-  install_date:
-    required: false
-    type: string
-    description: "Installed"
-  termination_date:
-    required: false
-    type: string
-    description: "Terminates"
-  commit_rate:
-    required: false
-    type: integer
-    description: "Commit rate (Kbps)"
-  description:
-    required: false
-    type: string
-    description: "Description"
-  distance:
-    required: false
-    type: integer
-    description: "Distance"
-  distance_unit:
-    required: false
-    type: string
-    description: "* `km` - Kilometers
-* `m` - Meters
-* `mi` - Miles
-* `ft` - Feet"
-  comments:
-    required: false
-    type: string
-    description: "Comments"
-  tags:
-    required: false
-    type: array
-    description: "Array of tag strings"
-  custom_fields:
-    required: false
-    type: object
-    description: "Custom fields"
-  assignments:
-    required: false
-    type: array
-    description: "Assignments"
 runner_type: python-script

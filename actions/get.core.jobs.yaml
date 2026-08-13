@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.3
+# NetBox API version: 4.6
 description: "Retrieve a list of job results"
 enabled: true
 entry_point: run.py
@@ -21,6 +21,10 @@ parameters:
     default: false
     type: boolean
     description: Set action as failed when http return reponse status isn't 2xx.
+  brief:
+    required: false
+    type: boolean
+    description: "Return only brief fields for each object."
   completed:
     required: false
     type: string
@@ -45,6 +49,10 @@ parameters:
     required: false
     type: string
     description: "Created"
+  fields:
+    required: false
+    type: string
+    description: "Comma-separated list of fields to include in the response. Example: `fields=id,name`."
   id:
     required: false
     type: array
@@ -129,6 +137,10 @@ parameters:
     required: false
     type: array
     description: "Name ends with (case-insensitive)"
+  name__iregex:
+    required: false
+    type: array
+    description: "Name"
   name__isw:
     required: false
     type: array
@@ -153,6 +165,62 @@ parameters:
     required: false
     type: array
     description: "Name does not start with (case-sensitive)"
+  name__regex:
+    required: false
+    type: array
+    description: "Name"
+  notifications:
+    required: false
+    type: array
+    description: "Notifications"
+  notifications__empty:
+    required: false
+    type: boolean
+    description: "Notifications is empty/null (boolean)"
+  notifications__ic:
+    required: false
+    type: array
+    description: "Notifications contains (case-insensitive)"
+  notifications__ie:
+    required: false
+    type: array
+    description: "Notifications exact match (case-insensitive)"
+  notifications__iew:
+    required: false
+    type: array
+    description: "Notifications ends with (case-insensitive)"
+  notifications__iregex:
+    required: false
+    type: array
+    description: "Notifications"
+  notifications__isw:
+    required: false
+    type: array
+    description: "Notifications starts with (case-sensitive)"
+  notifications__n:
+    required: false
+    type: array
+    description: "Notifications not equal to"
+  notifications__nic:
+    required: false
+    type: array
+    description: "Notifications does not contain (case-insensitive)"
+  notifications__nie:
+    required: false
+    type: array
+    description: "Notifications inverse exact match (case-insensitive)"
+  notifications__niew:
+    required: false
+    type: array
+    description: "Notifications does not end with (case-insensitive)"
+  notifications__nisw:
+    required: false
+    type: array
+    description: "Notifications does not start with (case-sensitive)"
+  notifications__regex:
+    required: false
+    type: array
+    description: "Notifications"
   object_id:
     required: false
     type: array
@@ -183,16 +251,28 @@ parameters:
     description: "Object_id not equal to"
   object_type:
     required: false
-    type: integer
+    type: array
     description: "Object_type"
   object_type__n:
     required: false
-    type: integer
+    type: array
     description: "Object_type not equal to"
+  object_type_id:
+    required: false
+    type: array
+    description: "Object_type_id"
+  object_type_id__n:
+    required: false
+    type: array
+    description: "Object_type_id not equal to"
   offset:
     required: false
     type: integer
     description: "The initial index from which to return the results."
+  omit:
+    required: false
+    type: string
+    description: "Comma-separated list of fields to exclude from the response. Example: `omit=description,tags`."
   ordering:
     required: false
     type: string
@@ -201,6 +281,58 @@ parameters:
     required: false
     type: string
     description: "Search"
+  queue_name:
+    required: false
+    type: string
+    description: "Queue_name"
+  queue_name__empty:
+    required: false
+    type: boolean
+    description: "Queue_name is empty/null (boolean)"
+  queue_name__ic:
+    required: false
+    type: string
+    description: "Queue_name contains (case-insensitive)"
+  queue_name__ie:
+    required: false
+    type: string
+    description: "Queue_name exact match (case-insensitive)"
+  queue_name__iew:
+    required: false
+    type: string
+    description: "Queue_name ends with (case-insensitive)"
+  queue_name__iregex:
+    required: false
+    type: string
+    description: "Queue_name"
+  queue_name__isw:
+    required: false
+    type: string
+    description: "Queue_name starts with (case-sensitive)"
+  queue_name__n:
+    required: false
+    type: string
+    description: "Queue_name not equal to"
+  queue_name__nic:
+    required: false
+    type: string
+    description: "Queue_name does not contain (case-insensitive)"
+  queue_name__nie:
+    required: false
+    type: string
+    description: "Queue_name inverse exact match (case-insensitive)"
+  queue_name__niew:
+    required: false
+    type: string
+    description: "Queue_name does not end with (case-insensitive)"
+  queue_name__nisw:
+    required: false
+    type: string
+    description: "Queue_name does not start with (case-sensitive)"
+  queue_name__regex:
+    required: false
+    type: string
+    description: "Queue_name"
   scheduled:
     required: false
     type: string
@@ -213,6 +345,10 @@ parameters:
     required: false
     type: string
     description: "Scheduled"
+  start:
+    required: false
+    type: integer
+    description: "Cursor-based pagination: return results with pk &gt;= start, ordered by pk. Mutually exclusive with offset."
   started:
     required: false
     type: string
@@ -245,6 +381,10 @@ parameters:
     required: false
     type: array
     description: "Status ends with (case-insensitive)"
+  status__iregex:
+    required: false
+    type: array
+    description: "Status"
   status__isw:
     required: false
     type: array
@@ -269,14 +409,26 @@ parameters:
     required: false
     type: array
     description: "Status does not start with (case-sensitive)"
+  status__regex:
+    required: false
+    type: array
+    description: "Status"
   user:
     required: false
-    type: integer
-    description: "User"
+    type: array
+    description: "User name"
   user__n:
     required: false
-    type: integer
+    type: array
     description: "User not equal to"
+  user_id:
+    required: false
+    type: array
+    description: "User (ID)"
+  user_id__n:
+    required: false
+    type: array
+    description: "User_id not equal to"
   save_in_key_store:
     type: boolean
     default: false

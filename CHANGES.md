@@ -1,5 +1,9 @@
 # Change Log
 
+## 4.6.8
+
+- Updated spec as per 4.6.8
+
 ## 3.4.4
 
 - Add action parameter fail_non_2xx to allow the user to indicate if the

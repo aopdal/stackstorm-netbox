@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.3
+# NetBox API version: 4.6
 description: "Post a list of IP range objects."
 enabled: true
 entry_point: run.py
@@ -21,56 +21,4 @@ parameters:
     default: false
     type: boolean
     description: Set action as failed when http return reponse status isn't 2xx.
-  start_address:
-    required: false
-    type: string
-    description: "Start address"
-  end_address:
-    required: false
-    type: string
-    description: "End address"
-  vrf:
-    required: false
-    type: object
-    description: "Vrf"
-  tenant:
-    required: false
-    type: object
-    description: "Tenant"
-  status:
-    required: false
-    type: string
-    description: "Operational status of this range
-
-* `active` - Active
-* `reserved` - Reserved
-* `deprecated` - Deprecated"
-  role:
-    required: false
-    type: object
-    description: "Role"
-  description:
-    required: false
-    type: string
-    description: "Description"
-  comments:
-    required: false
-    type: string
-    description: "Comments"
-  tags:
-    required: false
-    type: array
-    description: "Array of tag strings"
-  custom_fields:
-    required: false
-    type: object
-    description: "Custom fields"
-  mark_populated:
-    required: false
-    type: boolean
-    description: "Prevent the creation of IP addresses within this range"
-  mark_utilized:
-    required: false
-    type: boolean
-    description: "Report space as 100% utilized"
 runner_type: python-script

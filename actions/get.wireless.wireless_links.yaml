@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.3
+# NetBox API version: 4.6
 description: "Get a list of wireless link objects."
 enabled: true
 entry_point: run.py
@@ -41,6 +41,10 @@ parameters:
     required: false
     type: array
     description: "Auth_cipher ends with (case-insensitive)"
+  auth_cipher__iregex:
+    required: false
+    type: array
+    description: "Auth_cipher"
   auth_cipher__isw:
     required: false
     type: array
@@ -65,6 +69,10 @@ parameters:
     required: false
     type: array
     description: "Auth_cipher does not start with (case-sensitive)"
+  auth_cipher__regex:
+    required: false
+    type: array
+    description: "Auth_cipher"
   auth_psk:
     required: false
     type: array
@@ -85,6 +93,10 @@ parameters:
     required: false
     type: array
     description: "Auth_psk ends with (case-insensitive)"
+  auth_psk__iregex:
+    required: false
+    type: array
+    description: "Auth_psk"
   auth_psk__isw:
     required: false
     type: array
@@ -109,6 +121,10 @@ parameters:
     required: false
     type: array
     description: "Auth_psk does not start with (case-sensitive)"
+  auth_psk__regex:
+    required: false
+    type: array
+    description: "Auth_psk"
   auth_type:
     required: false
     type: array
@@ -129,6 +145,10 @@ parameters:
     required: false
     type: array
     description: "Auth_type ends with (case-insensitive)"
+  auth_type__iregex:
+    required: false
+    type: array
+    description: "Auth_type"
   auth_type__isw:
     required: false
     type: array
@@ -153,6 +173,14 @@ parameters:
     required: false
     type: array
     description: "Auth_type does not start with (case-sensitive)"
+  auth_type__regex:
+    required: false
+    type: array
+    description: "Auth_type"
+  brief:
+    required: false
+    type: boolean
+    description: "Return only brief fields for each object."
   created:
     required: false
     type: array
@@ -205,6 +233,10 @@ parameters:
     required: false
     type: array
     description: "Description ends with (case-insensitive)"
+  description__iregex:
+    required: false
+    type: array
+    description: "Description"
   description__isw:
     required: false
     type: array
@@ -229,6 +261,10 @@ parameters:
     required: false
     type: array
     description: "Description does not start with (case-sensitive)"
+  description__regex:
+    required: false
+    type: array
+    description: "Description"
   distance:
     required: false
     type: array
@@ -264,6 +300,58 @@ parameters:
 * `m` - Meters
 * `mi` - Miles
 * `ft` - Feet"
+  distance_unit__empty:
+    required: false
+    type: boolean
+    description: "Distance_unit is empty/null (boolean)"
+  distance_unit__ic:
+    required: false
+    type: array
+    description: "Distance_unit contains (case-insensitive)"
+  distance_unit__ie:
+    required: false
+    type: array
+    description: "Distance_unit exact match (case-insensitive)"
+  distance_unit__iew:
+    required: false
+    type: array
+    description: "Distance_unit ends with (case-insensitive)"
+  distance_unit__iregex:
+    required: false
+    type: array
+    description: "Distance_unit"
+  distance_unit__isw:
+    required: false
+    type: array
+    description: "Distance_unit starts with (case-sensitive)"
+  distance_unit__n:
+    required: false
+    type: string
+    description: "Distance_unit not equal to"
+  distance_unit__nic:
+    required: false
+    type: array
+    description: "Distance_unit does not contain (case-insensitive)"
+  distance_unit__nie:
+    required: false
+    type: array
+    description: "Distance_unit inverse exact match (case-insensitive)"
+  distance_unit__niew:
+    required: false
+    type: array
+    description: "Distance_unit does not end with (case-insensitive)"
+  distance_unit__nisw:
+    required: false
+    type: array
+    description: "Distance_unit does not start with (case-sensitive)"
+  distance_unit__regex:
+    required: false
+    type: array
+    description: "Distance_unit"
+  fields:
+    required: false
+    type: string
+    description: "Comma-separated list of fields to include in the response. Example: `fields=id,name`."
   id:
     required: false
     type: array
@@ -348,10 +436,46 @@ parameters:
     required: false
     type: integer
     description: "The initial index from which to return the results."
+  omit:
+    required: false
+    type: string
+    description: "Comma-separated list of fields to exclude from the response. Example: `omit=description,tags`."
   ordering:
     required: false
     type: string
     description: "Which field to use when ordering the results."
+  owner:
+    required: false
+    type: array
+    description: "Owner (name)"
+  owner__n:
+    required: false
+    type: array
+    description: "Owner not equal to"
+  owner_group:
+    required: false
+    type: array
+    description: "Owner Group (name)"
+  owner_group__n:
+    required: false
+    type: array
+    description: "Owner_group not equal to"
+  owner_group_id:
+    required: false
+    type: array
+    description: "Owner Group (ID)"
+  owner_group_id__n:
+    required: false
+    type: array
+    description: "Owner_group_id not equal to"
+  owner_id:
+    required: false
+    type: array
+    description: "Owner (ID)"
+  owner_id__n:
+    required: false
+    type: array
+    description: "Owner_id not equal to"
   q:
     required: false
     type: string
@@ -376,6 +500,10 @@ parameters:
     required: false
     type: array
     description: "Ssid ends with (case-insensitive)"
+  ssid__iregex:
+    required: false
+    type: array
+    description: "Ssid"
   ssid__isw:
     required: false
     type: array
@@ -400,6 +528,14 @@ parameters:
     required: false
     type: array
     description: "Ssid does not start with (case-sensitive)"
+  ssid__regex:
+    required: false
+    type: array
+    description: "Ssid"
+  start:
+    required: false
+    type: integer
+    description: "Cursor-based pagination: return results with pk &gt;= start, ordered by pk. Mutually exclusive with offset."
   status:
     required: false
     type: array
@@ -420,6 +556,10 @@ parameters:
     required: false
     type: array
     description: "Status ends with (case-insensitive)"
+  status__iregex:
+    required: false
+    type: array
+    description: "Status"
   status__isw:
     required: false
     type: array
@@ -444,7 +584,15 @@ parameters:
     required: false
     type: array
     description: "Status does not start with (case-sensitive)"
+  status__regex:
+    required: false
+    type: array
+    description: "Status"
   tag:
+    required: false
+    type: array
+    description: "Tag"
+  tag__any:
     required: false
     type: array
     description: "Tag"
@@ -453,6 +601,10 @@ parameters:
     type: array
     description: "Tag not equal to"
   tag_id:
+    required: false
+    type: array
+    description: "Tag_id"
+  tag_id__any:
     required: false
     type: array
     description: "Tag_id"

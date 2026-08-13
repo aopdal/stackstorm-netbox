@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.3
+# NetBox API version: 4.6
 description: "Post a list of module type objects."
 enabled: true
 entry_point: run.py
@@ -21,60 +21,4 @@ parameters:
     default: false
     type: boolean
     description: Set action as failed when http return reponse status isn't 2xx.
-  profile:
-    required: false
-    type: object
-    description: "Profile"
-  manufacturer:
-    required: false
-    type: object
-    description: "Manufacturer"
-  model:
-    required: false
-    type: string
-    description: "Model"
-  part_number:
-    required: false
-    type: string
-    description: "Discrete part number (optional)"
-  airflow:
-    required: false
-    type: string
-    description: "* `front-to-rear` - Front to rear
-* `rear-to-front` - Rear to front
-* `left-to-right` - Left to right
-* `right-to-left` - Right to left
-* `side-to-rear` - Side to rear
-* `passive` - Passive"
-  weight:
-    required: false
-    type: integer
-    description: "Weight"
-  weight_unit:
-    required: false
-    type: string
-    description: "* `kg` - Kilograms
-* `g` - Grams
-* `lb` - Pounds
-* `oz` - Ounces"
-  description:
-    required: false
-    type: string
-    description: "Description"
-  attributes:
-    required: false
-    type: object
-    description: "Attributes"
-  comments:
-    required: false
-    type: string
-    description: "Comments"
-  tags:
-    required: false
-    type: array
-    description: "Array of tag strings"
-  custom_fields:
-    required: false
-    type: object
-    description: "Custom fields"
 runner_type: python-script

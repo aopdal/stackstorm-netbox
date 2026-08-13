@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.3
+# NetBox API version: 4.6
 description: "Get a list of Circuit group assignment objects."
 enabled: true
 entry_point: run.py
@@ -21,6 +21,10 @@ parameters:
     default: false
     type: boolean
     description: Set action as failed when http return reponse status isn't 2xx.
+  brief:
+    required: false
+    type: boolean
+    description: "Return only brief fields for each object."
   circuit:
     required: false
     type: array
@@ -61,6 +65,10 @@ parameters:
     required: false
     type: string
     description: "Created_by_request"
+  fields:
+    required: false
+    type: string
+    description: "Comma-separated list of fields to include in the response. Example: `fields=id,name`."
   group:
     required: false
     type: array
@@ -167,12 +175,20 @@ parameters:
     description: "Member_id not equal to"
   member_type:
     required: false
-    type: string
+    type: array
     description: "Member_type"
   member_type__n:
     required: false
-    type: string
+    type: array
     description: "Member_type not equal to"
+  member_type_id:
+    required: false
+    type: array
+    description: "Member_type_id"
+  member_type_id__n:
+    required: false
+    type: array
+    description: "Member_type_id not equal to"
   modified_by_request:
     required: false
     type: string
@@ -181,6 +197,10 @@ parameters:
     required: false
     type: integer
     description: "The initial index from which to return the results."
+  omit:
+    required: false
+    type: string
+    description: "Comma-separated list of fields to exclude from the response. Example: `omit=description,tags`."
   ordering:
     required: false
     type: string
@@ -192,6 +212,54 @@ parameters:
 * `secondary` - Secondary
 * `tertiary` - Tertiary
 * `inactive` - Inactive"
+  priority__empty:
+    required: false
+    type: boolean
+    description: "Priority is empty/null (boolean)"
+  priority__ic:
+    required: false
+    type: array
+    description: "Priority contains (case-insensitive)"
+  priority__ie:
+    required: false
+    type: array
+    description: "Priority exact match (case-insensitive)"
+  priority__iew:
+    required: false
+    type: array
+    description: "Priority ends with (case-insensitive)"
+  priority__iregex:
+    required: false
+    type: array
+    description: "Priority"
+  priority__isw:
+    required: false
+    type: array
+    description: "Priority starts with (case-sensitive)"
+  priority__n:
+    required: false
+    type: string
+    description: "Priority not equal to"
+  priority__nic:
+    required: false
+    type: array
+    description: "Priority does not contain (case-insensitive)"
+  priority__nie:
+    required: false
+    type: array
+    description: "Priority inverse exact match (case-insensitive)"
+  priority__niew:
+    required: false
+    type: array
+    description: "Priority does not end with (case-insensitive)"
+  priority__nisw:
+    required: false
+    type: array
+    description: "Priority does not start with (case-sensitive)"
+  priority__regex:
+    required: false
+    type: array
+    description: "Priority"
   provider:
     required: false
     type: array
@@ -204,7 +272,15 @@ parameters:
     required: false
     type: string
     description: "Search"
+  start:
+    required: false
+    type: integer
+    description: "Cursor-based pagination: return results with pk &gt;= start, ordered by pk. Mutually exclusive with offset."
   tag:
+    required: false
+    type: array
+    description: "Tag"
+  tag__any:
     required: false
     type: array
     description: "Tag"
@@ -213,6 +289,10 @@ parameters:
     type: array
     description: "Tag not equal to"
   tag_id:
+    required: false
+    type: array
+    description: "Tag_id"
+  tag_id__any:
     required: false
     type: array
     description: "Tag_id"

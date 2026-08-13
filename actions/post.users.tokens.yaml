@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.3
+# NetBox API version: 4.6
 description: "Post a list of token objects."
 enabled: true
 entry_point: run.py
@@ -21,28 +21,4 @@ parameters:
     default: false
     type: boolean
     description: Set action as failed when http return reponse status isn't 2xx.
-  user:
-    required: false
-    type: object
-    description: "User"
-  expires:
-    required: false
-    type: string
-    description: "Expires"
-  last_used:
-    required: false
-    type: string
-    description: "Last used"
-  key:
-    required: false
-    type: string
-    description: "Key"
-  write_enabled:
-    required: false
-    type: boolean
-    description: "Permit create/update/delete operations using this key"
-  description:
-    required: false
-    type: string
-    description: "Description"
 runner_type: python-script

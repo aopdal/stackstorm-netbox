@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.3
+# NetBox API version: 4.6
 description: "Post a list of virtual machine objects."
 enabled: true
 entry_point: run.py
@@ -21,90 +21,4 @@ parameters:
     default: false
     type: boolean
     description: Set action as failed when http return reponse status isn't 2xx.
-  name:
-    required: false
-    type: string
-    description: "Name"
-  status:
-    required: false
-    type: string
-    description: "* `offline` - Offline
-* `active` - Active
-* `planned` - Planned
-* `staged` - Staged
-* `failed` - Failed
-* `decommissioning` - Decommissioning
-* `paused` - Paused"
-  site:
-    required: false
-    type: object
-    description: "Site"
-  cluster:
-    required: false
-    type: object
-    description: "Cluster"
-  device:
-    required: false
-    type: object
-    description: "Device"
-  serial:
-    required: false
-    type: string
-    description: "Serial number"
-  role:
-    required: false
-    type: object
-    description: "Role"
-  tenant:
-    required: false
-    type: object
-    description: "Tenant"
-  platform:
-    required: false
-    type: object
-    description: "Platform"
-  primary_ip4:
-    required: false
-    type: object
-    description: "Primary ip4"
-  primary_ip6:
-    required: false
-    type: object
-    description: "Primary ip6"
-  vcpus:
-    required: false
-    type: integer
-    description: "Vcpus"
-  memory:
-    required: false
-    type: integer
-    description: "Memory (MB)"
-  disk:
-    required: false
-    type: integer
-    description: "Disk (MB)"
-  description:
-    required: false
-    type: string
-    description: "Description"
-  comments:
-    required: false
-    type: string
-    description: "Comments"
-  config_template:
-    required: false
-    type: object
-    description: "Config template"
-  local_context_data:
-    required: false
-    type: object
-    description: "Local config context data takes precedence over source contexts in the final rendered config context"
-  tags:
-    required: false
-    type: array
-    description: "Array of tag strings"
-  custom_fields:
-    required: false
-    type: object
-    description: "Custom fields"
 runner_type: python-script

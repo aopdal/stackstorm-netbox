@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.3
+# NetBox API version: 4.6
 description: "Post a list of interface objects."
 enabled: true
 entry_point: run.py
@@ -21,73 +21,4 @@ parameters:
     default: false
     type: boolean
     description: Set action as failed when http return reponse status isn't 2xx.
-  virtual_machine:
-    required: false
-    type: object
-    description: "Virtual machine"
-  name:
-    required: false
-    type: string
-    description: "Name"
-  enabled:
-    required: false
-    type: boolean
-    description: "Enabled"
-  parent:
-    required: false
-    type: integer
-    description: "Parent interface"
-  bridge:
-    required: false
-    type: integer
-    description: "Bridge interface"
-  mtu:
-    required: false
-    type: integer
-    description: "Mtu"
-  primary_mac_address:
-    required: false
-    type: object
-    description: "Primary mac address"
-  description:
-    required: false
-    type: string
-    description: "Description"
-  mode:
-    required: false
-    type: string
-    description: "IEEE 802.1Q tagging strategy
-
-* `access` - Access
-* `tagged` - Tagged
-* `tagged-all` - Tagged (All)
-* `q-in-q` - Q-in-Q (802.1ad)"
-  untagged_vlan:
-    required: false
-    type: object
-    description: "Untagged vlan"
-  tagged_vlans:
-    required: false
-    type: array
-    description: "Tagged vlans"
-  qinq_svlan:
-    required: false
-    type: object
-    description: "Qinq svlan"
-  vlan_translation_policy:
-    required: false
-    type: object
-    description: "Vlan translation policy"
-  vrf:
-    required: false
-    type: object
-    description: "Vrf"
-  tags:
-    required: false
-    type: array
-    description: "Array of tag strings"
-  custom_fields:
-    required: false
-    type: object
-    description: "Custom fields"
 runner_type: python-script

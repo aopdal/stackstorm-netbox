@@ -1,0 +1,164 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 4.6
+description: "Patch a Record object."
+enabled: true
+entry_point: run.py
+name: patch.plugins.netbox_dns.records
+parameters:
+  endpoint_uri:
+    default: "/plugins/netbox-dns/records/{{ id }}/"
+    immutable: true
+    type: string
+  http_verb:
+    default: patch
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: true
+    immutable: true
+    type: boolean
+  fail_non_2xx:
+    default: false
+    type: boolean
+    description: Set action as failed when http return reponse status isn't 2xx.
+  zone:
+    required: false
+    type: integer
+    description: "Zone"
+  type:
+    required: false
+    type: string
+    description: "* `A` - A
+* `A6` - A6
+* `AAAA` - AAAA
+* `AFSDB` - AFSDB
+* `AMTRELAY` - AMTRELAY
+* `APL` - APL
+* `AVC` - AVC
+* `CAA` - CAA
+* `CDNSKEY` - CDNSKEY
+* `CDS` - CDS
+* `CERT` - CERT
+* `CNAME` - CNAME
+* `CSYNC` - CSYNC
+* `DHCID` - DHCID
+* `DLV` - DLV
+* `DNAME` - DNAME
+* `DNSKEY` - DNSKEY
+* `DS` - DS
+* `DSYNC` - DSYNC
+* `EUI48` - EUI48
+* `EUI64` - EUI64
+* `GPOS` - GPOS
+* `HINFO` - HINFO
+* `HIP` - HIP
+* `HTTPS` - HTTPS
+* `IPSECKEY` - IPSECKEY
+* `ISDN` - ISDN
+* `KEY` - KEY
+* `KX` - KX
+* `L32` - L32
+* `L64` - L64
+* `LOC` - LOC
+* `LP` - LP
+* `MB` - MB
+* `MD` - MD
+* `MF` - MF
+* `MG` - MG
+* `MINFO` - MINFO
+* `MR` - MR
+* `MX` - MX
+* `NAPTR` - NAPTR
+* `NID` - NID
+* `NINFO` - NINFO
+* `NS` - NS
+* `NSAP` - NSAP
+* `NSAP_PTR` - NSAP_PTR
+* `NSEC` - NSEC
+* `NSEC3` - NSEC3
+* `NSEC3PARAM` - NSEC3PARAM
+* `NULL` - NULL
+* `NXT` - NXT
+* `OPENPGPKEY` - OPENPGPKEY
+* `PTR` - PTR
+* `PX` - PX
+* `RESINFO` - RESINFO
+* `RP` - RP
+* `RRSIG` - RRSIG
+* `RT` - RT
+* `SIG` - SIG
+* `SMIMEA` - SMIMEA
+* `SOA` - SOA
+* `SPF` - SPF
+* `SRV` - SRV
+* `SSHFP` - SSHFP
+* `SVCB` - SVCB
+* `TA` - TA
+* `TLSA` - TLSA
+* `TXT` - TXT
+* `TYPE0` - TYPE0
+* `UNSPEC` - UNSPEC
+* `URI` - URI
+* `WALLET` - WALLET
+* `WKS` - WKS
+* `X25` - X25
+* `ZONEMD` - ZONEMD"
+  name:
+    required: false
+    type: string
+    description: "Name"
+  description:
+    required: false
+    type: string
+    description: "Description"
+  comments:
+    required: false
+    type: string
+    description: "Comments"
+  tags:
+    required: false
+    type: array
+    description: "Array of tag strings"
+  fqdn:
+    required: false
+    type: string
+    description: "Fqdn"
+  value:
+    required: false
+    type: string
+    description: "Value"
+  status:
+    required: false
+    type: string
+    description: "* `active` - Active
+* `inactive` - Inactive
+* `expired` - Expired"
+  ttl:
+    required: false
+    type: integer
+    description: "Ttl"
+  managed:
+    required: false
+    type: boolean
+    description: "Managed"
+  disable_ptr:
+    required: false
+    type: boolean
+    description: "Disable PTR record creation"
+  custom_fields:
+    required: false
+    type: object
+    description: "Custom fields"
+  tenant:
+    required: false
+    type: object
+    description: "Tenant"
+  expiration_date:
+    required: false
+    type: string
+    description: "Expiration date"
+  id:
+    required: true
+    type: integer
+    description: "ID of the object to patch."
+runner_type: python-script

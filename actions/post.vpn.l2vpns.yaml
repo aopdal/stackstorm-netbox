@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.3
+# NetBox API version: 4.6
 description: "Post a list of L2VPN objects."
 enabled: true
 entry_point: run.py
@@ -21,67 +21,4 @@ parameters:
     default: false
     type: boolean
     description: Set action as failed when http return reponse status isn't 2xx.
-  identifier:
-    required: false
-    type: integer
-    description: "Identifier"
-  name:
-    required: false
-    type: string
-    description: "Name"
-  slug:
-    required: false
-    type: string
-    description: "Slug"
-  type:
-    required: false
-    type: string
-    description: "* `vpws` - VPWS
-* `vpls` - VPLS
-* `vxlan` - VXLAN
-* `vxlan-evpn` - VXLAN-EVPN
-* `mpls-evpn` - MPLS EVPN
-* `pbb-evpn` - PBB EVPN
-* `evpn-vpws` - EVPN VPWS
-* `epl` - EPL
-* `evpl` - EVPL
-* `ep-lan` - Ethernet Private LAN
-* `evp-lan` - Ethernet Virtual Private LAN
-* `ep-tree` - Ethernet Private Tree
-* `evp-tree` - Ethernet Virtual Private Tree
-* `spb` - SPB"
-  status:
-    required: false
-    type: string
-    description: "* `active` - Active
-* `planned` - Planned
-* `decommissioning` - Decommissioning"
-  import_targets:
-    required: false
-    type: array
-    description: "Import targets"
-  export_targets:
-    required: false
-    type: array
-    description: "Export targets"
-  description:
-    required: false
-    type: string
-    description: "Description"
-  comments:
-    required: false
-    type: string
-    description: "Comments"
-  tenant:
-    required: false
-    type: object
-    description: "Tenant"
-  tags:
-    required: false
-    type: array
-    description: "Array of tag strings"
-  custom_fields:
-    required: false
-    type: object
-    description: "Custom fields"
 runner_type: python-script

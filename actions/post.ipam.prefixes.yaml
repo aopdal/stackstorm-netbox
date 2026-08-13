@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.3
+# NetBox API version: 4.6
 description: "Post a list of prefix objects."
 enabled: true
 entry_point: run.py
@@ -21,65 +21,4 @@ parameters:
     default: false
     type: boolean
     description: Set action as failed when http return reponse status isn't 2xx.
-  prefix:
-    required: false
-    type: string
-    description: "Prefix"
-  vrf:
-    required: false
-    type: object
-    description: "Vrf"
-  scope_type:
-    required: false
-    type: string
-    description: "Scope type"
-  scope_id:
-    required: false
-    type: integer
-    description: "Scope id"
-  tenant:
-    required: false
-    type: object
-    description: "Tenant"
-  vlan:
-    required: false
-    type: object
-    description: "Vlan"
-  status:
-    required: false
-    type: string
-    description: "Operational status of this prefix
-
-* `container` - Container
-* `active` - Active
-* `reserved` - Reserved
-* `deprecated` - Deprecated"
-  role:
-    required: false
-    type: object
-    description: "Role"
-  is_pool:
-    required: false
-    type: boolean
-    description: "Is a pool"
-  mark_utilized:
-    required: false
-    type: boolean
-    description: "Treat as fully utilized"
-  description:
-    required: false
-    type: string
-    description: "Description"
-  comments:
-    required: false
-    type: string
-    description: "Comments"
-  tags:
-    required: false
-    type: array
-    description: "Array of tag strings"
-  custom_fields:
-    required: false
-    type: object
-    description: "Custom fields"
 runner_type: python-script

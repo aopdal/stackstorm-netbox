@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.3
+# NetBox API version: 4.6
 description: "Patch a front port template object."
 enabled: true
 entry_point: run.py
@@ -66,6 +66,10 @@ parameters:
 * `lc-pc` - LC/PC
 * `lc-upc` - LC/UPC
 * `lc-apc` - LC/APC
+* `mu` - MU
+* `mu-pc` - MU/PC
+* `mu-upc` - MU/UPC
+* `mu-apc` - MU/APC
 * `lsh` - LSH
 * `lsh-pc` - LSH/PC
 * `lsh-upc` - LSH/UPC
@@ -83,6 +87,7 @@ parameters:
 * `st` - ST
 * `cs` - CS
 * `sn` - SN
+* `mdc` - MDC
 * `sma-905` - SMA 905
 * `sma-906` - SMA 906
 * `urm-p2` - URM-P2
@@ -100,16 +105,16 @@ parameters:
 * `other` - Other"
   color:
     required: false
-    type: string
-    description: "Color"
-  rear_port:
-    required: false
     type: object
-    description: "Rear port"
-  rear_port_position:
+    description: "Color"
+  positions:
     required: false
     type: integer
-    description: "Rear port position"
+    description: "Positions"
+  rear_ports:
+    required: false
+    type: array
+    description: "Rear ports"
   description:
     required: false
     type: string
