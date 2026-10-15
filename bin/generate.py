@@ -11,6 +11,13 @@ import requests
 RUNNING_DIR_NAME = os.path.dirname(__file__)
 ACTIONS_DIR = os.path.join(RUNNING_DIR_NAME, "../actions")
 
+# Parameters owned by the StackStorm python-script runner. An action may not
+# redefine them, and their values are consumed by the runner instead of being
+# passed to run(), so NetBox fields with these names are prefixed and mapped
+# back to their original name in lib/action.py.
+RUNNER_RESERVED_PARAMETERS = ("content_version", "debug", "env", "log_level", "timeout")
+RESERVED_PARAMETER_PREFIX = "netbox_"
+
 
 def sanitize_parameters(parameters):
     for parameter in parameters:
@@ -74,6 +81,17 @@ def sanitize_parameters(parameters):
                 parameter["type"] = "integer"
 
         parameter["required"] = False
+
+    return rename_reserved_parameters(parameters)
+
+
+def rename_reserved_parameters(parameters):
+    """
+    Prefix parameters that collide with StackStorm runner parameters.
+    """
+    for parameter in parameters:
+        if parameter["name"] in RUNNER_RESERVED_PARAMETERS:
+            parameter["name"] = f"{RESERVED_PARAMETER_PREFIX}{parameter['name']}"
 
     return parameters
 

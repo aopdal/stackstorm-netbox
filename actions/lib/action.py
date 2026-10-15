@@ -4,6 +4,11 @@ from st2common.runners.base_action import Action
 
 __all__ = ["NetboxBaseAction"]
 
+# NetBox fields that collide with StackStorm runner parameters are exposed with
+# this prefix (see bin/generate.py) and renamed back before calling NetBox.
+RUNNER_RESERVED_PARAMETERS = ("content_version", "debug", "env", "log_level", "timeout")
+RESERVED_PARAMETER_PREFIX = "netbox_"
+
 
 class NetboxBaseAction(Action):
     """Base Action for all Netbox API based actions"""
@@ -26,6 +31,12 @@ class NetboxBaseAction(Action):
             "Accept": "application/json",
             "Content-Type": "application/json",
         }
+
+        # restore NetBox field names that were prefixed to avoid runner parameter clashes
+        for name in RUNNER_RESERVED_PARAMETERS:
+            prefixed = RESERVED_PARAMETER_PREFIX + name
+            if prefixed in kwargs:
+                kwargs[name] = kwargs.pop(prefixed)
 
         # transform `id__in` if present
         if kwargs.get("id__in"):

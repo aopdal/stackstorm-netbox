@@ -521,7 +521,7 @@ parameters:
     required: false
     type: array
     description: "Tag_id not equal to"
-  timeout:
+  netbox_timeout:
     required: false
     type: array
     description: "Timeout"

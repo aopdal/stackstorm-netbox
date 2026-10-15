@@ -3,6 +3,12 @@
 ## 4.7.2
 
 - Updated spec as per 4.7.2
+- NetBox fields that clash with StackStorm python-script runner parameters
+  (`timeout`, `debug`, `env`, `log_level`, `content_version`) are now exposed
+  with a `netbox_` prefix, e.g. `netbox_timeout` on the webhook actions and
+  `netbox_debug` on the config template actions. They are sent to NetBox under
+  their original name. This fixes pack registration failing on
+  `get.extras.webhooks`.
 
 ## 4.6.8
 

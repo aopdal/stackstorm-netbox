@@ -53,7 +53,7 @@ parameters:
     required: false
     type: boolean
     description: "Download file as attachment"
-  debug:
+  netbox_debug:
     required: false
     type: boolean
     description: "Enable verbose error output when rendering this template. Not recommended for production use."

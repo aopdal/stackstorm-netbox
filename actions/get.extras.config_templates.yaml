@@ -109,7 +109,7 @@ parameters:
     required: false
     type: array
     description: "Data_synced not equal to"
-  debug:
+  netbox_debug:
     required: false
     type: boolean
     description: "Debug"
