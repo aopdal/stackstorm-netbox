@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.6
+# NetBox API version: 4.7
 description: "Get a list of device objects."
 enabled: true
 entry_point: run.py
@@ -258,6 +258,117 @@ parameters:
     required: false
     type: array
     description: "Contact_role not equal to"
+  cooling_intake_count:
+    required: false
+    type: array
+    description: "Cooling_intake_count"
+  cooling_intake_count__empty:
+    required: false
+    type: boolean
+    description: "Cooling_intake_count is empty/null (boolean)"
+  cooling_intake_count__gt:
+    required: false
+    type: array
+    description: "Cooling_intake_count greater than"
+  cooling_intake_count__gte:
+    required: false
+    type: array
+    description: "Cooling_intake_count greater than or equal to"
+  cooling_intake_count__lt:
+    required: false
+    type: array
+    description: "Cooling_intake_count less than"
+  cooling_intake_count__lte:
+    required: false
+    type: array
+    description: "Cooling_intake_count less than or equal to"
+  cooling_intake_count__n:
+    required: false
+    type: array
+    description: "Cooling_intake_count not equal to"
+  cooling_method:
+    required: false
+    type: string
+    description: "* `air` - Air
+* `liquid` - Liquid
+* `hybrid` - Hybrid
+* `immersion` - Immersion"
+  cooling_method__empty:
+    required: false
+    type: boolean
+    description: "Cooling_method is empty/null (boolean)"
+  cooling_method__ic:
+    required: false
+    type: array
+    description: "Cooling_method contains (case-insensitive)"
+  cooling_method__ie:
+    required: false
+    type: array
+    description: "Cooling_method exact match (case-insensitive)"
+  cooling_method__iew:
+    required: false
+    type: array
+    description: "Cooling_method ends with (case-insensitive)"
+  cooling_method__iregex:
+    required: false
+    type: array
+    description: "Cooling_method"
+  cooling_method__isw:
+    required: false
+    type: array
+    description: "Cooling_method starts with (case-sensitive)"
+  cooling_method__n:
+    required: false
+    type: string
+    description: "Cooling_method not equal to"
+  cooling_method__nic:
+    required: false
+    type: array
+    description: "Cooling_method does not contain (case-insensitive)"
+  cooling_method__nie:
+    required: false
+    type: array
+    description: "Cooling_method inverse exact match (case-insensitive)"
+  cooling_method__niew:
+    required: false
+    type: array
+    description: "Cooling_method does not end with (case-insensitive)"
+  cooling_method__nisw:
+    required: false
+    type: array
+    description: "Cooling_method does not start with (case-sensitive)"
+  cooling_method__regex:
+    required: false
+    type: array
+    description: "Cooling_method"
+  cooling_outflow_count:
+    required: false
+    type: array
+    description: "Cooling_outflow_count"
+  cooling_outflow_count__empty:
+    required: false
+    type: boolean
+    description: "Cooling_outflow_count is empty/null (boolean)"
+  cooling_outflow_count__gt:
+    required: false
+    type: array
+    description: "Cooling_outflow_count greater than"
+  cooling_outflow_count__gte:
+    required: false
+    type: array
+    description: "Cooling_outflow_count greater than or equal to"
+  cooling_outflow_count__lt:
+    required: false
+    type: array
+    description: "Cooling_outflow_count less than"
+  cooling_outflow_count__lte:
+    required: false
+    type: array
+    description: "Cooling_outflow_count less than or equal to"
+  cooling_outflow_count__n:
+    required: false
+    type: array
+    description: "Cooling_outflow_count not equal to"
   created:
     required: false
     type: array

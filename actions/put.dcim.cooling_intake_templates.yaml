@@ -1,0 +1,78 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 4.7
+description: "Put a cooling intake template object."
+enabled: true
+entry_point: run.py
+name: put.dcim.cooling_intake_templates
+parameters:
+  endpoint_uri:
+    default: "/dcim/cooling-intake-templates/{{ id }}/"
+    immutable: true
+    type: string
+  http_verb:
+    default: put
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: true
+    immutable: true
+    type: boolean
+  fail_non_2xx:
+    default: false
+    type: boolean
+    description: Set action as failed when http return reponse status isn't 2xx.
+  device_type:
+    required: false
+    type: object
+    description: "Device type"
+  module_type:
+    required: false
+    type: object
+    description: "Module type"
+  name:
+    required: false
+    type: string
+    description: "{module} is accepted as a substitution for the module bay position when attached to a module type."
+  label:
+    required: false
+    type: string
+    description: "Physical label"
+  type:
+    required: false
+    type: string
+    description: "* `uqd` - UQD (Universal Quick Disconnect)
+* `uqdb` - UQDB (Universal Quick Disconnect, Blind-mate)
+* `qdc` - QDC (Quick Disconnect Coupling)
+* `camlock` - Camlock (cam-and-groove)
+* `npt` - NPT (threaded)
+* `bsp` - BSP (threaded)
+* `proprietary` - Proprietary"
+  diameter:
+    required: false
+    type: integer
+    description: "Diameter"
+  diameter_unit:
+    required: false
+    type: string
+    description: "* `mm` - Millimeters
+* `cm` - Centimeters
+* `in` - Inches"
+  max_flow:
+    required: false
+    type: integer
+    description: "Max flow"
+  max_flow_unit:
+    required: false
+    type: string
+    description: "* `lpm` - Liters per minute (L/min)
+* `m3ph` - Cubic meters per hour (m³/h)
+* `gpm` - Gallons per minute (GPM)"
+  description:
+    required: false
+    type: string
+    description: "Description"
+  id:
+    required: true
+    type: integer
+    description: "ID of the object to put."
+runner_type: python-script

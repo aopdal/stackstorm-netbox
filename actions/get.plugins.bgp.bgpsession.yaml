@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.6
+# NetBox API version: 4.7
 description: "Get a list of bgp session objects."
 enabled: true
 entry_point: run.py
@@ -33,6 +33,10 @@ parameters:
     required: false
     type: string
     description: "Remote Address"
+  by_remote_prefix:
+    required: false
+    type: string
+    description: "Remote Prefix"
   created:
     required: false
     type: array
@@ -437,6 +441,22 @@ parameters:
     required: false
     type: array
     description: "Remote_as_macro"
+  remote_prefix:
+    required: false
+    type: array
+    description: "Remote Prefix"
+  remote_prefix__n:
+    required: false
+    type: array
+    description: "Remote_prefix not equal to"
+  remote_prefix_id:
+    required: false
+    type: array
+    description: "Remote Prefix (ID)"
+  remote_prefix_id__n:
+    required: false
+    type: array
+    description: "Remote_prefix_id not equal to"
   site:
     required: false
     type: array

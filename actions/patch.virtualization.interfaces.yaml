@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.6
+# NetBox API version: 4.7
 description: "Patch a interface object."
 enabled: true
 entry_point: run.py
@@ -45,6 +45,10 @@ parameters:
     required: false
     type: integer
     description: "Mtu"
+  mac_address:
+    required: false
+    type: string
+    description: "Mac address"
   primary_mac_address:
     required: false
     type: object

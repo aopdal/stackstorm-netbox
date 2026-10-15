@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.6
+# NetBox API version: 4.7
 description: "Get a list of device type objects."
 enabled: true
 entry_point: run.py
@@ -150,6 +150,117 @@ parameters:
     required: false
     type: boolean
     description: "Has console server ports"
+  cooling_intake_template_count:
+    required: false
+    type: array
+    description: "Cooling_intake_template_count"
+  cooling_intake_template_count__empty:
+    required: false
+    type: boolean
+    description: "Cooling_intake_template_count is empty/null (boolean)"
+  cooling_intake_template_count__gt:
+    required: false
+    type: array
+    description: "Cooling_intake_template_count greater than"
+  cooling_intake_template_count__gte:
+    required: false
+    type: array
+    description: "Cooling_intake_template_count greater than or equal to"
+  cooling_intake_template_count__lt:
+    required: false
+    type: array
+    description: "Cooling_intake_template_count less than"
+  cooling_intake_template_count__lte:
+    required: false
+    type: array
+    description: "Cooling_intake_template_count less than or equal to"
+  cooling_intake_template_count__n:
+    required: false
+    type: array
+    description: "Cooling_intake_template_count not equal to"
+  cooling_method:
+    required: false
+    type: string
+    description: "* `air` - Air
+* `liquid` - Liquid
+* `hybrid` - Hybrid
+* `immersion` - Immersion"
+  cooling_method__empty:
+    required: false
+    type: boolean
+    description: "Cooling_method is empty/null (boolean)"
+  cooling_method__ic:
+    required: false
+    type: array
+    description: "Cooling_method contains (case-insensitive)"
+  cooling_method__ie:
+    required: false
+    type: array
+    description: "Cooling_method exact match (case-insensitive)"
+  cooling_method__iew:
+    required: false
+    type: array
+    description: "Cooling_method ends with (case-insensitive)"
+  cooling_method__iregex:
+    required: false
+    type: array
+    description: "Cooling_method"
+  cooling_method__isw:
+    required: false
+    type: array
+    description: "Cooling_method starts with (case-sensitive)"
+  cooling_method__n:
+    required: false
+    type: string
+    description: "Cooling_method not equal to"
+  cooling_method__nic:
+    required: false
+    type: array
+    description: "Cooling_method does not contain (case-insensitive)"
+  cooling_method__nie:
+    required: false
+    type: array
+    description: "Cooling_method inverse exact match (case-insensitive)"
+  cooling_method__niew:
+    required: false
+    type: array
+    description: "Cooling_method does not end with (case-insensitive)"
+  cooling_method__nisw:
+    required: false
+    type: array
+    description: "Cooling_method does not start with (case-sensitive)"
+  cooling_method__regex:
+    required: false
+    type: array
+    description: "Cooling_method"
+  cooling_outflow_template_count:
+    required: false
+    type: array
+    description: "Cooling_outflow_template_count"
+  cooling_outflow_template_count__empty:
+    required: false
+    type: boolean
+    description: "Cooling_outflow_template_count is empty/null (boolean)"
+  cooling_outflow_template_count__gt:
+    required: false
+    type: array
+    description: "Cooling_outflow_template_count greater than"
+  cooling_outflow_template_count__gte:
+    required: false
+    type: array
+    description: "Cooling_outflow_template_count greater than or equal to"
+  cooling_outflow_template_count__lt:
+    required: false
+    type: array
+    description: "Cooling_outflow_template_count less than"
+  cooling_outflow_template_count__lte:
+    required: false
+    type: array
+    description: "Cooling_outflow_template_count less than or equal to"
+  cooling_outflow_template_count__n:
+    required: false
+    type: array
+    description: "Cooling_outflow_template_count not equal to"
   created:
     required: false
     type: array
@@ -310,6 +421,34 @@ parameters:
     required: false
     type: array
     description: "Device_count not equal to"
+  end_of_life:
+    required: false
+    type: array
+    description: "End_of_life"
+  end_of_life__empty:
+    required: false
+    type: boolean
+    description: "End_of_life is empty/null (boolean)"
+  end_of_life__gt:
+    required: false
+    type: array
+    description: "End_of_life greater than"
+  end_of_life__gte:
+    required: false
+    type: array
+    description: "End_of_life greater than or equal to"
+  end_of_life__lt:
+    required: false
+    type: array
+    description: "End_of_life less than"
+  end_of_life__lte:
+    required: false
+    type: array
+    description: "End_of_life less than or equal to"
+  end_of_life__n:
+    required: false
+    type: array
+    description: "End_of_life not equal to"
   exclude_from_utilization:
     required: false
     type: boolean

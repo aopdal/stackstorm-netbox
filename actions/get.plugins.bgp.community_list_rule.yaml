@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.6
+# NetBox API version: 4.7
 description: "Get a list of community list rule objects."
 enabled: true
 entry_point: run.py
@@ -78,6 +78,58 @@ parameters:
     required: false
     type: boolean
     description: "Return only brief fields for each object."
+  community_custom:
+    required: false
+    type: array
+    description: "Community_custom"
+  community_custom__empty:
+    required: false
+    type: boolean
+    description: "Community_custom is empty/null (boolean)"
+  community_custom__ic:
+    required: false
+    type: array
+    description: "Community_custom contains (case-insensitive)"
+  community_custom__ie:
+    required: false
+    type: array
+    description: "Community_custom exact match (case-insensitive)"
+  community_custom__iew:
+    required: false
+    type: array
+    description: "Community_custom ends with (case-insensitive)"
+  community_custom__iregex:
+    required: false
+    type: array
+    description: "Community_custom"
+  community_custom__isw:
+    required: false
+    type: array
+    description: "Community_custom starts with (case-sensitive)"
+  community_custom__n:
+    required: false
+    type: array
+    description: "Community_custom not equal to"
+  community_custom__nic:
+    required: false
+    type: array
+    description: "Community_custom does not contain (case-insensitive)"
+  community_custom__nie:
+    required: false
+    type: array
+    description: "Community_custom inverse exact match (case-insensitive)"
+  community_custom__niew:
+    required: false
+    type: array
+    description: "Community_custom does not end with (case-insensitive)"
+  community_custom__nisw:
+    required: false
+    type: array
+    description: "Community_custom does not start with (case-sensitive)"
+  community_custom__regex:
+    required: false
+    type: array
+    description: "Community_custom"
   community_list:
     required: false
     type: integer

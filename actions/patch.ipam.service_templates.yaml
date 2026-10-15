@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.6
+# NetBox API version: 4.7
 description: "Patch a application service template object."
 enabled: true
 entry_point: run.py
@@ -25,16 +25,18 @@ parameters:
     required: false
     type: string
     description: "Name"
+  port_mappings:
+    required: false
+    type: array
+    description: "Port mappings"
   protocol:
     required: false
     type: string
-    description: "* `tcp` - TCP
-* `udp` - UDP
-* `sctp` - SCTP"
+    description: "Deprecated; use port_mappings. Reported only for single-protocol services."
   ports:
     required: false
     type: array
-    description: "Port numbers"
+    description: "Deprecated; use port_mappings. Reported only for single-protocol services."
   description:
     required: false
     type: string

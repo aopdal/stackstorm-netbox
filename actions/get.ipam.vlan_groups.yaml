@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.6
+# NetBox API version: 4.7
 description: "Get a list of VLAN group objects."
 enabled: true
 entry_point: run.py
@@ -27,11 +27,11 @@ parameters:
     description: "Return only brief fields for each object."
   cluster:
     required: false
-    type: integer
+    type: array
     description: "Cluster"
   cluster_group:
     required: false
-    type: integer
+    type: array
     description: "Cluster_group"
   contains_vid:
     required: false
@@ -187,7 +187,7 @@ parameters:
     description: "Number of results to return per page."
   location:
     required: false
-    type: integer
+    type: array
     description: "Location"
   modified_by_request:
     required: false
@@ -295,15 +295,15 @@ parameters:
     description: "Search"
   rack:
     required: false
-    type: integer
+    type: array
     description: "Rack"
   rack_group:
     required: false
-    type: integer
+    type: array
     description: "Rack_group"
   region:
     required: false
-    type: integer
+    type: array
     description: "Region"
   scope_id:
     required: false
@@ -343,11 +343,11 @@ parameters:
     description: "Scope_type not equal to"
   site:
     required: false
-    type: integer
+    type: array
     description: "Site"
   site_group:
     required: false
-    type: integer
+    type: array
     description: "Site_group"
   slug:
     required: false

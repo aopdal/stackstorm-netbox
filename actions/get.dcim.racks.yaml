@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.6
+# NetBox API version: 4.7
 description: "Get a list of rack objects."
 enabled: true
 entry_point: run.py
@@ -154,6 +154,86 @@ parameters:
     required: false
     type: array
     description: "Contact_role not equal to"
+  cooling_capability:
+    required: false
+    type: array
+    description: "Cooling_capability"
+  cooling_capability__empty:
+    required: false
+    type: boolean
+    description: "Cooling_capability is empty/null (boolean)"
+  cooling_capability__ic:
+    required: false
+    type: array
+    description: "Cooling_capability contains (case-insensitive)"
+  cooling_capability__ie:
+    required: false
+    type: array
+    description: "Cooling_capability exact match (case-insensitive)"
+  cooling_capability__iew:
+    required: false
+    type: array
+    description: "Cooling_capability ends with (case-insensitive)"
+  cooling_capability__iregex:
+    required: false
+    type: array
+    description: "Cooling_capability"
+  cooling_capability__isw:
+    required: false
+    type: array
+    description: "Cooling_capability starts with (case-sensitive)"
+  cooling_capability__n:
+    required: false
+    type: array
+    description: "Cooling_capability not equal to"
+  cooling_capability__nic:
+    required: false
+    type: array
+    description: "Cooling_capability does not contain (case-insensitive)"
+  cooling_capability__nie:
+    required: false
+    type: array
+    description: "Cooling_capability inverse exact match (case-insensitive)"
+  cooling_capability__niew:
+    required: false
+    type: array
+    description: "Cooling_capability does not end with (case-insensitive)"
+  cooling_capability__nisw:
+    required: false
+    type: array
+    description: "Cooling_capability does not start with (case-sensitive)"
+  cooling_capability__regex:
+    required: false
+    type: array
+    description: "Cooling_capability"
+  cooling_capacity:
+    required: false
+    type: array
+    description: "Cooling_capacity"
+  cooling_capacity__empty:
+    required: false
+    type: boolean
+    description: "Cooling_capacity is empty/null (boolean)"
+  cooling_capacity__gt:
+    required: false
+    type: array
+    description: "Cooling_capacity greater than"
+  cooling_capacity__gte:
+    required: false
+    type: array
+    description: "Cooling_capacity greater than or equal to"
+  cooling_capacity__lt:
+    required: false
+    type: array
+    description: "Cooling_capacity less than"
+  cooling_capacity__lte:
+    required: false
+    type: array
+    description: "Cooling_capacity less than or equal to"
+  cooling_capacity__n:
+    required: false
+    type: array
+    description: "Cooling_capacity not equal to"
   created:
     required: false
     type: array

@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.6
+# NetBox API version: 4.7
 description: "Get a list of Record objects."
 enabled: true
 entry_point: run.py
@@ -137,6 +137,22 @@ parameters:
     required: false
     type: boolean
     description: "Expired"
+  external_rfc2317_zone:
+    required: false
+    type: array
+    description: "External_rfc2317_zone"
+  external_rfc2317_zone__n:
+    required: false
+    type: array
+    description: "External_rfc2317_zone not equal to"
+  external_rfc2317_zone_id:
+    required: false
+    type: array
+    description: "External_rfc2317_zone_id"
+  external_rfc2317_zone_id__n:
+    required: false
+    type: array
+    description: "External_rfc2317_zone_id not equal to"
   fields:
     required: false
     type: string

@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.6
+# NetBox API version: 4.7
 description: "Retrieve a list of job results"
 enabled: true
 entry_point: run.py
@@ -49,6 +49,18 @@ parameters:
     required: false
     type: string
     description: "Created"
+  execution_time:
+    required: false
+    type: string
+    description: "Execution time"
+  execution_time__gte:
+    required: false
+    type: string
+    description: "Execution_time greater than or equal to"
+  execution_time__lte:
+    required: false
+    type: string
+    description: "Execution_time less than or equal to"
   fields:
     required: false
     type: string

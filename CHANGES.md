@@ -1,5 +1,9 @@
 # Change Log
 
+## 4.7.2
+
+- Updated spec as per 4.7.2
+
 ## 4.6.8
 
 - Updated spec as per 4.6.8

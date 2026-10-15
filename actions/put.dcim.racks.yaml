@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.6
+# NetBox API version: 4.7
 description: "Put a rack object."
 enabled: true
 entry_point: run.py
@@ -141,6 +141,16 @@ parameters:
     type: string
     description: "* `front-to-rear` - Front to rear
 * `rear-to-front` - Rear to front"
+  cooling_capability:
+    required: false
+    type: string
+    description: "* `air-only` - Air only
+* `hybrid` - Hybrid
+* `liquid-only` - Liquid only"
+  cooling_capacity:
+    required: false
+    type: integer
+    description: "Cooling capacity (kW)"
   description:
     required: false
     type: string

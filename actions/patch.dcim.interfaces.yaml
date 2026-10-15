@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.6
+# NetBox API version: 4.7
 description: "Patch a interface object."
 enabled: true
 entry_point: run.py
@@ -47,6 +47,7 @@ parameters:
     description: "* `virtual` - Virtual
 * `bridge` - Bridge
 * `lag` - Link Aggregation Group (LAG)
+* `channel` - Channel
 * `100base-fx` - 100BASE-FX (10/100ME)
 * `100base-lfx` - 100BASE-LFX (10/100ME)
 * `100base-tx` - 100BASE-TX (10/100ME)
@@ -158,6 +159,7 @@ parameters:
 * `100gbase-x-dsfp` - DSFP (100GE)
 * `100gbase-x-qsfp28` - QSFP28 (100GE)
 * `100gbase-x-qsfpdd` - QSFP-DD (100GE)
+* `100gbase-x-sfp112` - SFP112 (100GE)
 * `100gbase-x-sfpdd` - SFP-DD (100GE)
 * `200gbase-x-cfp2` - CFP2 (200GE)
 * `200gbase-x-qsfp56` - QSFP56 (200GE)
@@ -228,7 +230,19 @@ parameters:
 * `infiniband-edr` - EDR (25 Gbps)
 * `infiniband-hdr` - HDR (50 Gbps)
 * `infiniband-ndr` - NDR (100 Gbps)
-* `infiniband-xdr` - XDR (250 Gbps)
+* `infiniband-xdr` - XDR (200 Gbps)
+* `infiniband-hdr-2x` - HDR 2X (100 Gbps)
+* `infiniband-ndr-2x` - NDR 2X (200 Gbps)
+* `infiniband-xdr-2x` - XDR 2X (400 Gbps)
+* `infiniband-sdr-4x` - SDR 4X (8 Gbps)
+* `infiniband-ddr-4x` - DDR 4X (16 Gbps)
+* `infiniband-qdr-4x` - QDR 4X (32 Gbps)
+* `infiniband-fdr10-4x` - FDR10 4X (40 Gbps)
+* `infiniband-fdr-4x` - FDR 4X (56 Gbps)
+* `infiniband-edr-4x` - EDR 4X (100 Gbps)
+* `infiniband-hdr-4x` - HDR 4X (200 Gbps)
+* `infiniband-ndr-4x` - NDR 4X (400 Gbps)
+* `infiniband-xdr-4x` - XDR 4X (800 Gbps)
 * `t1` - T1 (1.544 Mbps)
 * `e1` - E1 (2.048 Mbps)
 * `t3` - T3 (45 Mbps)
@@ -259,7 +273,16 @@ parameters:
 * `extreme-summitstack-128` - Extreme SummitStack-128
 * `extreme-summitstack-256` - Extreme SummitStack-256
 * `extreme-summitstack-512` - Extreme SummitStack-512
+* `hpe-synergy-interconnect-link` - HPE Synergy Interconnect Link
 * `other` - Other"
+  channels:
+    required: false
+    type: integer
+    description: "The number of channels into which this interface is channelized"
+  channel_id:
+    required: false
+    type: integer
+    description: "The channel on the parent interface to which this subinterface is bound"
   enabled:
     required: false
     type: boolean
@@ -280,6 +303,10 @@ parameters:
     required: false
     type: integer
     description: "Mtu"
+  mac_address:
+    required: false
+    type: string
+    description: "Mac address"
   primary_mac_address:
     required: false
     type: object

@@ -1,0 +1,86 @@
+# This action was auto generated from the NetBox API Swagger Spec
+# NetBox API version: 4.7
+description: "Patch a cooling source object."
+enabled: true
+entry_point: run.py
+name: patch.dcim.cooling_sources
+parameters:
+  endpoint_uri:
+    default: "/dcim/cooling-sources/{{ id }}/"
+    immutable: true
+    type: string
+  http_verb:
+    default: patch
+    immutable: true
+    type: string
+  get_detail_route_eligible:
+    default: true
+    immutable: true
+    type: boolean
+  fail_non_2xx:
+    default: false
+    type: boolean
+    description: Set action as failed when http return reponse status isn't 2xx.
+  site:
+    required: false
+    type: object
+    description: "Site"
+  location:
+    required: false
+    type: object
+    description: "Location"
+  name:
+    required: false
+    type: string
+    description: "Name"
+  type:
+    required: false
+    type: string
+    description: "* `chiller` - Chiller
+* `cooling-tower` - Cooling tower
+* `dry-cooler` - Dry cooler
+* `crac` - CRAC
+* `crah` - CRAH"
+  status:
+    required: false
+    type: string
+    description: "* `offline` - Offline
+* `active` - Active
+* `planned` - Planned
+* `failed` - Failed"
+  fluid_type:
+    required: false
+    type: string
+    description: "* `water` - Water
+* `water-glycol` - Water/glycol
+* `dielectric` - Dielectric
+* `refrigerant` - Refrigerant"
+  cooling_capacity:
+    required: false
+    type: integer
+    description: "Total rated cooling capacity (kW)"
+  description:
+    required: false
+    type: string
+    description: "Description"
+  owner:
+    required: false
+    type: object
+    description: "Owner"
+  comments:
+    required: false
+    type: string
+    description: "Comments"
+  tags:
+    required: false
+    type: array
+    description: "Array of tag strings"
+  custom_fields:
+    required: false
+    type: object
+    description: "Custom fields"
+  id:
+    required: true
+    type: integer
+    description: "ID of the object to patch."
+runner_type: python-script

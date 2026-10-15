@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.6
+# NetBox API version: 4.7
 description: "Patch a Zone object."
 enabled: true
 entry_point: run.py
@@ -52,7 +52,8 @@ parameters:
 * `reserved` - Reserved
 * `deprecated` - Deprecated
 * `parked` - Parked
-* `dynamic` - Dynamic"
+* `dynamic` - Dynamic
+* `external` - External"
   default_ttl:
     required: false
     type: integer
@@ -175,6 +176,10 @@ parameters:
     required: false
     type: object
     description: "Template to apply to the zone"
+  owner:
+    required: false
+    type: object
+    description: "Owner"
   id:
     required: true
     type: integer

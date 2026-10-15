@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.6
+# NetBox API version: 4.7
 description: "Get a list of custom field objects."
 enabled: true
 entry_point: run.py
@@ -409,6 +409,10 @@ parameters:
     required: false
     type: array
     description: "Name"
+  nulls_first:
+    required: false
+    type: boolean
+    description: "Nulls_first"
   object_type:
     required: false
     type: array
@@ -565,6 +569,62 @@ parameters:
     required: false
     type: integer
     description: "Cursor-based pagination: return results with pk &gt;= start, ordered by pk. Mutually exclusive with offset."
+  status:
+    required: false
+    type: string
+    description: "Operational state of the field
+
+* `active` - Active
+* `provisioning` - Provisioning
+* `deleting` - Deleting"
+  status__empty:
+    required: false
+    type: boolean
+    description: "Status is empty/null (boolean)"
+  status__ic:
+    required: false
+    type: array
+    description: "Status contains (case-insensitive)"
+  status__ie:
+    required: false
+    type: array
+    description: "Status exact match (case-insensitive)"
+  status__iew:
+    required: false
+    type: array
+    description: "Status ends with (case-insensitive)"
+  status__iregex:
+    required: false
+    type: array
+    description: "Status"
+  status__isw:
+    required: false
+    type: array
+    description: "Status starts with (case-sensitive)"
+  status__n:
+    required: false
+    type: string
+    description: "Status not equal to"
+  status__nic:
+    required: false
+    type: array
+    description: "Status does not contain (case-insensitive)"
+  status__nie:
+    required: false
+    type: array
+    description: "Status inverse exact match (case-insensitive)"
+  status__niew:
+    required: false
+    type: array
+    description: "Status does not end with (case-insensitive)"
+  status__nisw:
+    required: false
+    type: array
+    description: "Status does not start with (case-sensitive)"
+  status__regex:
+    required: false
+    type: array
+    description: "Status"
   type:
     required: false
     type: array

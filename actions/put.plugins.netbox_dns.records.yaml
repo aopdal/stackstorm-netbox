@@ -1,5 +1,5 @@
 # This action was auto generated from the NetBox API Swagger Spec
-# NetBox API version: 4.6
+# NetBox API version: 4.7
 description: "Put a Record object."
 enabled: true
 entry_point: run.py
@@ -157,6 +157,10 @@ parameters:
     required: false
     type: string
     description: "Expiration date"
+  owner:
+    required: false
+    type: object
+    description: "Owner"
   id:
     required: true
     type: integer
